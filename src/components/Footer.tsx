@@ -113,7 +113,7 @@ const Footer = () => {
           <div className="inline-flex items-center justify-center gap-2 mb-4 bg-white px-6 py-3 rounded-lg">
             <span className="text-gray-700">Site desenvolvido por</span>
             <a 
-              href="https://montesite.com.br" 
+              href="https://montesite.com.br/vitrine-publica" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-smooth"
