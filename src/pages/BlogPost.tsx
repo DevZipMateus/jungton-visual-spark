@@ -110,6 +110,36 @@ const BlogPost = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "gourmetizacao-granulare-brigadeiros",
+      title: "Doce gourmetização: a comunicação visual da Granulare Brigadeiros",
+      date: "08 de outubro de 2019",
+      author: "Jungton",
+      excerpt: "Quem é que consegue recusar um brigadeiro? A gourmetização na gastronomia abre portas para a criatividade, e está muito ligada ao empreendedorismo, aos produtos artesanais e ao valor agregado.",
+      image: "/imagens/blog/gourmetizacao-granulare.jpg",
+      category: "Ramo alimentício",
+      content: {
+        introduction: "Quem é que consegue recusar um brigadeiro? E ainda mais quando além do sabor tradicional tem também o de leite ninho, brigadeiro de churros, de morango… A gourmetização na gastronomia abre portas para a criatividade, e está muito ligada ao empreendedorismo, aos produtos artesanais e ao valor agregado. O conceito da gourmetização está diretamente relacionado ao oferecimento de um diferencial, de uma experiência que conquista além do paladar.",
+        sections: [
+          {
+            title: "A culinária e o empreendedorismo: uma relação que dá certo",
+            content: "Os programas de culinária, como MasterChef, Cozinha sob Pressão e o próprio programa da Ana Maria Braga, já fazem parte do entretenimento dos brasileiros. Essa popularização, tanto dos programas que ensinam a fazer pratos, quanto dos que mostram chefs cumprindo desafios, fez com que o mundo da gastronomia se tornasse mais acessível, incentivando que mais indivíduos começassem a se aventurar na cozinha.\n\nA gourmetização começa a aparecer quando a criatividade para pensar em receitas envolve aquelas que já são queridinhas dos brasileiros, como o brigadeiro citado lá no início.\n\nQuando o conceito começou a aparecer nas redes sociais e em blogs especializados em gastronomia, a publicidade percebeu que utilizar o termo poderia alavancar vendas, já que deixava explícito o diferencial do produto, estimulando o desejo e o consumo.\n\nA utilização exaustiva do termo em produtos que não tinham um real diferencial acabou afetando o conceito da gourmetização, e é bem provável que você já tenha visto diversas piadas envolvendo esse termo.\n\nO significado do termo 'gourmet' é cunhado no livro A Fisiologia do Gosto (1885), do gastrônomo francês Jean Anthelme Brillat-Savarin, e designa, em resumo, aquele que tem o paladar apurado. No mesmo livro, considerado a bíblia da gastronomia, Brillat-Savarin traz o conceito de 'o prazer da mesa', que é próprio dos seres humanos – diferente do prazer de comer, e ressalta o quão importante são os cuidados preliminares com a refeição, incluindo a escolha do local e as pessoas com quem você divide a mesa.\n\nO prazer da mesa é o que surge quando a fome é satisfeita, é quando a conversação se instala e reflexões acontecem.",
+            image: "/imagens/blog/gourmetizacao-granulare-brigadeiros.jpg"
+          },
+          {
+            title: "A gourmetização dos doces e a comunicação visual: Granulare Brigadeiros",
+            content: "Com a evolução da gastronomia, dos estilos de comida e dos movimentos em novas direções, o conceito de gourmet se expandiu, sendo utilizado inclusive em áreas como transportes, moda e serviços de cuidados com o corpo.\n\nQuando se fala em alimentação, pode-se dizer que gourmetizar significa oferecer uma experiência diferenciada com aquele produto ou serviço, que vai além do sabor e da qualidade dos ingredientes, envolvendo também a embalagem e o ambiente em que ocorre a venda.\n\nÉ aí que entra a importância da comunicação visual. Se o seu produto vende uma experiência diferenciada, toda a identidade relacionada a ele precisa também construir essa experiência.\n\nSanta Maria conta com opções variadas de produtos gourmet, e os doces são o forte da Granulare Brigadeiros, que fica na Rua Floriano Peixoto, 1250. Com uma identidade artesanal, a brigaderia oferece diversas opções de doces, que vão desde o queridinho bolo de cenoura até as invenções mais criativas, como a coxinha de brigadeiro.",
+            image: "/imagens/blog/gourmetizacao-granulare-doces.jpg"
+          },
+          {
+            title: "A identidade visual que valoriza a marca",
+            content: "E claro, não poderiam faltar os brigadeiros, os astros da Granulare, que além do brigadeiro clássico também oferece opções de sabores como napolitano, esticadinho e amêndoa.\n\nPara valorizar a identidade da Granulare, a comunicação visual da fachada ressalta as cores da marca, junto com o logotipo aplicado em letras caixa.\n\nA ambientação do espaço também é importante para fixar a sua marca na lembrança do consumidor, e utilizar painéis fotográficos que complementem a identidade da marca é uma ótima estratégia.\n\nA gourmetização também envolve as embalagens do produto, e os adesivos são uma ótima alternativa, pois podem ser aplicados em qualquer superfície, do vidro ao papel.",
+            image: "/imagens/blog/gourmetizacao-granulare-bolo-pote.jpg"
+          }
+        ],
+        images: []
+      }
     }
   ];
 
