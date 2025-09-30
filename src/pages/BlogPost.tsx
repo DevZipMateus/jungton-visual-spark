@@ -183,6 +183,46 @@ const BlogPost = () => {
           "/imagens/blog/letras-caixa-retroiluminada.jpg"
         ]
       }
+    },
+    {
+      slug: "envelopamento-de-frota",
+      title: "Envelopamento de frota: por que sua empresa deveria investir?",
+      date: "29 de julho de 2019",
+      author: "Jungton",
+      excerpt: "Na era da sobrecarga de informações, é necessário ter cada vez mais criatividade para atingir potenciais clientes. Uma ótima estratégia é o envelopamento de frota.",
+      image: "/imagens/blog/envelopamento-de-frota-delivery.jpg",
+      category: "Marketing",
+      content: {
+        introduction: "Na era da sobrecarga de informações, é necessário ter cada vez mais criatividade para atingir potenciais clientes da sua marca. Uma ótima estratégia de comunicação visual é o envelopamento de frota, que pode ser feito em motocicletas, automóveis, vans, kombis, trailers de food truck, caminhões e ônibus.\n\nAlém de fazer sua marca circular, o envelopamento também protege a pintura contra danos do sol e pequenos riscos. Confira todos os benefícios de aderir ao envelopamento de frota.",
+        sections: [
+          {
+            title: "Envelopamento de frota como ferramenta de marketing",
+            content: "Uma boa estratégia de comunicação visual é transformar os veículos a serviço da sua empresa em 'outdoors móveis', através do envelopamento de frota. A técnica, também conhecida como adesivagem ou plotagem de veículos, auxilia na circulação e visibilidade da sua marca, com um ótimo custo-benefício.\n\nO envelopamento também associa confiabilidade ao seu negócio, demonstrando profissionalismo e seriedade.",
+            image: "/imagens/blog/envelopamento-de-frota-ipiranga.jpg"
+          },
+          {
+            title: "Proteção do veículo",
+            content: "Quando há envelopamento total, o veículo fica protegido da ação do sol e da chuva, além de protegido contra arranhões leves, garantindo valor de mercado e prolongando a vida útil do automóvel.\n\nSe em algum momento você decidir retirar o adesivo, não há nenhum risco para a pintura original da moto, carro, caminhão, etc. Basta que a instalação e remoção seja realizada por profissionais.",
+            image: "/imagens/blog/envelopamento-de-frota-domus.jpg"
+          },
+          {
+            title: "Segurança para o cliente",
+            content: "A frota envelopada, além de proteger o veículo, traz também o sentimento de segurança para clientes e fornecedores.\n\nEssa personalização deixa o cliente seguro quando o veículo chega na residência, e também facilita processos de carga e descarga.",
+            image: ""
+          },
+          {
+            title: "Materiais utilizados no envelopamento de frota",
+            content: "Para personalização de frota empresarial, o mais comum é o envelopamento com PVC Vinil, e nele é impressa a arte que vai identificar cada veículo.\n\nVale lembrar que para envelopamento de mais de 50% do automóvel, que altera a cor predominante original, é necessário atualizar os documentos do carro no Detran.",
+            image: ""
+          },
+          {
+            title: "Cuidados com veículos envelopados",
+            content: "Quando levar o veículo para abastecer, preste atenção: as manchas de combustível podem danificar a película permanentemente, por isso, caso haja superfície envelopada próximo ao tanque, é necessário avisar ao frentista.\n\nAlém disso, há outro cuidado: não é indicado levar o veículo em lavagens automáticas, nem utilizar lavadoras de alta pressão. A limpeza deve ser feita, preferencialmente, com sabão e água.\n\nE caso sua frota tenha envelopamento parcial, é necessário utilizar cera com proteção solar nas demais áreas do veículo, evitando que haja diferenças de cor na hora de remover o adesivo.",
+            image: ""
+          }
+        ],
+        images: []
+      }
     }
   ];
 
