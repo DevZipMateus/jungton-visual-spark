@@ -618,6 +618,36 @@ const BlogPost = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "comunicacao-visual-ponto-venda-totem",
+      title: "Comunicação Visual no ponto de venda – Case Totem Vestibulares",
+      date: "16 de maio de 2018",
+      author: "Jungton",
+      excerpt: "Se \"uma imagem vale mais que mil palavras\", conseguir dizer mil coisas sobre si é o melhor caminho para a empresa que busca seu espaço no mercado.",
+      image: "/imagens/blog/MG_9329_1200_800px.jpg",
+      category: "Ponto de Venda",
+      content: {
+        introduction: "Se \"uma imagem vale mais que mil palavras\", conseguir dizer mil coisas sobre si é o melhor caminho para a empresa que busca seu espaço no mercado. Investir em comunicação visual é a porta de entrada para novos clientes, principalmente no ponto de venda. Isso garante até 40% de aumento em número de vendas e um bom retorno sob o valor investido em publicidade.",
+        sections: [
+          {
+            title: "A importância da comunicação visual",
+            content: "As características visuais são um fator fundamental na aproximação do cliente, facilitando a percepção do produto comercializado. As empresas que possuem um ambiente sinalizado com sua identidade visual ganham a confiança do consumidor potencial e viram referência no segmento.",
+            image: ""
+          },
+          {
+            title: "Fatores psicológicos da compra",
+            content: "Para a psicologia, há quatro fatores essenciais que influenciam na tomada de decisão na hora de uma compra. A motivação, a necessidade, a atitude e a personalidade. Esses fatores fazem o indivíduo se sentir exclusivo e estão ligados diretamente às características visuais do ambiente onde acontece o consumo/compra.",
+            image: ""
+          },
+          {
+            title: "Case Totem Vestibulares",
+            content: "Apostando nisso, o Totem Vestibulares investiu na reformulação da sua marca e nos confiou a tarefa da sinalização visual dos seus espaços. Agora, o sucesso da empresa está materializado visualmente na estrutura física de todas as suas unidades.\n\nSua comunicação visual tinha como critério firmar a marca em três pilares: qualidade do produto, segurança dos resultados e conforto do espaço. A jovialidade da marca e o tradicionalismo do segmento foram alinhados com a nova sinalização do ambiente, aumentando a valorização pelos alunos. O retorno se traduziu em valor agregado, aumento da fidelização e do número de novos estudantes.",
+            image: "/imagens/blog/MG_9329_1200_800px.jpg"
+          }
+        ],
+        images: []
+      }
     }
   ];
 
