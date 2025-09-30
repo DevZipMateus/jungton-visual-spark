@@ -695,6 +695,20 @@ const Blog = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "acrilico-material-versatil",
+      title: "Acrílico: material versátil e com alta resistência",
+      date: "16 de junho de 2016",
+      author: "Jungton",
+      excerpt: "O acrílico conquista cada vez mais o mercado de comunicação visual pela sua facilidade de adquirir formas, uniformidade e alta resistência.",
+      image: "/imagens/blog/acrilico.jpg",
+      category: "Matéria-prima",
+      content: {
+        introduction: "O acrílico conquista cada vez mais o mercado de comunicação visual pela sua facilidade de adquirir formas, uniformidade e alta resistência. Por ser versátil, pode ser usado tanto em ambientes internos quanto externos. Disponível em diversas espessuras, a Jungton utiliza o acrílico para produzir, displays, luminosos, placas, entre outros.",
+        sections: [],
+        images: ["/imagens/blog/acrilico.jpg"]
+      }
     }
   ];
 
