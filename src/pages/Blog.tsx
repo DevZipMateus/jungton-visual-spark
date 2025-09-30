@@ -585,6 +585,36 @@ const Blog = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "acoes-promovem-orquestrando-arte",
+      title: "Ações que proMOVEM – Projeto Social \"Orquestrando Arte\"",
+      date: "04 de junho de 2018",
+      author: "Jungton",
+      excerpt: "Apoiar causas filantrópicas promove a interação entre as empresas por intermédio das ações sociais, tornando-se uma relação de benefício mútuo quando o empreendedor participa de projetos de forma voluntária.",
+      image: "/imagens/blog/DSC_7713_1200_800px.jpg",
+      category: "Ação Social",
+      content: {
+        introduction: "Apoiar causas filantrópicas promove a interação entre as empresas por intermédio das ações sociais, tornando-se uma relação de benefício mútuo quando o empreendedor participa de projetos de forma voluntária. Além do incentivo social, isso agrega valor à marca e melhora até as relações sociais de seus colaboradores.",
+        sections: [
+          {
+            title: "Nossa parceria com o Orquestrando Arte",
+            content: "Para nós da Jungton, estar presente vai muito além da valorização da nossa identidade. Carregamos como uma de nossas missões o desejo de estimular o desenvolvimento sociocultural dos cidadãos santamarienses. Para tornar esse objetivo real, construímos nosso caminho através de parcerias com alguns projetos sociais, como o desenvolvido pela Associação Orquestrando Arte.\n\nFomos conhecer a causa a convite de um dos nossos clientes, e como agradecimento recebemos os músicos do projeto para uma apresentação em nossa sede. A experiência foi enriquecedora, e o encanto foi a peça-chave que nos cativou como apoiadores. Atualmente, contribuímos através de auxílio financeiro, doação de peças para a comunicação visual, participando voluntariamente nos brechós mensais e angariando novos parceiros em nosso catálogo de clientes.",
+            image: "/imagens/blog/DSC_7713_1200_800px.jpg"
+          },
+          {
+            title: "Benefícios para todos",
+            content: "Mais do que proporcionar a inclusão social de crianças, adolescentes e jovens através da arte, o projeto também trouxe benefícios para dentro da nossa empresa. Nossos colaboradores ficam à vontade para contribuir com o projeto se quiserem. Seja no brechó, na produção do material que será doado ou como público dos eventos, eles estimulam cada vez mais o engajamento da Jungton em ações sociais e refletem isso melhorando a sua conduta no ambiente de trabalho.",
+            image: ""
+          },
+          {
+            title: "Como participar",
+            content: "Para conhecer melhor os projetos da Associação Orquestrando Arte, acesse www.orquestrandoarte.org.\n\nSe deseja ser voluntário ou fazer doações, entre em contato através do telefone (055) 98114-9042 ou e-mail orquestrandoarte@gmail.com.\n\nA sede da Associação Orquestrando Arte está localizada no 2º andar do prédio da ULBRA, no endereço BR 287, KM 252, Trevo Maneco Pedroso, Boca do Monte.",
+            image: ""
+          }
+        ],
+        images: []
+      }
     }
   ];
 
