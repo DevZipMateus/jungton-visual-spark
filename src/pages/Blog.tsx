@@ -510,6 +510,41 @@ const Blog = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "comunicacao-ecologica-projeto-relona",
+      title: "Comunicação ECOlógica – Projeto RElona",
+      date: "27 de junho de 2018",
+      author: "Jungton",
+      excerpt: "Numa sociedade cada vez mais consciente, não basta respeitar apenas os seus clientes, é necessário tratar com igualdade a sociedade e o meio ambiente onde estamos inseridos.",
+      image: "/imagens/blog/relona-4_800_600px.jpg",
+      category: "Sustentabilidade",
+      content: {
+        introduction: "Numa sociedade cada vez mais consciente, não basta respeitar apenas os seus clientes, é necessário tratar com igualdade a sociedade e o meio ambiente onde estamos inseridos. Com foco nisso, estabelecer uma meta de redução de resíduos para favorecer a preservação ecológica foi um compromisso da Jungton em todas as suas produções.",
+        sections: [
+          {
+            title: "O Projeto RElona",
+            content: "Ainda em 2016, através da professora Marta Tocchetto, nos tornamos apoiadores do Projeto RElona, parte do Programa Grupo Incorpore: Ações Coletivas para o Meio Ambiente, da Universidade Federal de Santa Maria (UFSM). Uma atitude simples, mas que reduz o impacto ambiental reutilizando lonas na confecção de bolsas, sacolas, estojos e afins.",
+            image: "/imagens/blog/relona-4_800_600px.jpg"
+          },
+          {
+            title: "Nossa participação",
+            content: "A função da Jungton nessa empreitada acontece na divulgação do projeto, na doação de lonas para a reciclagem, de ferramentas como réguas e estiletes e na produção de etiquetas que vão fixadas nos produtos. Assumindo a responsabilidade ecológica da nossa empresa, também oferecemos aos nossos clientes a coleta gratuita de lonas e destinamos ao RElona.\n\nAlém de cumprirmos nosso papel na preservação do meio ambiente, também conscientizamos o nosso público da importância de apoiar ações sociais voltadas para a reciclagem. Dentro da nossa empresa nossos colaboradores são incentivados à cultura da reutilização e destinação correta de resíduos. Nossos clientes reconhecem a Jungton como uma empresa que cumpre a sua tarefa na redução dos danos ambientais.",
+            image: ""
+          },
+          {
+            title: "Impacto social",
+            content: "Os voluntários do projeto se encontram uma vez por semana para realizar a confecção dos produtos. Uma parte deles é doada como um convite à conscientização coletiva e a outra vira fonte de renda para a Associação de Apoio a Pessoas com Câncer (AAPECAN).",
+            image: ""
+          },
+          {
+            title: "Como participar",
+            content: "Caso você queira doar material para o Projeto RElona, basta entrar em contato com a Jungton através do telefone (55) 3221.7731 ou pelo e-mail contato@jungton.com.br e realizaremos a coleta gratuitamente.",
+            image: ""
+          }
+        ],
+        images: []
+      }
     }
   ];
 
