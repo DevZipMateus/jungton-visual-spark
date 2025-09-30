@@ -110,8 +110,8 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-secondary-foreground/20 pt-8 text-center text-sm text-secondary-foreground/80">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <span>Site desenvolvido por</span>
+          <div className="inline-flex items-center justify-center gap-2 mb-4 bg-white px-6 py-3 rounded-lg">
+            <span className="text-gray-700">Site desenvolvido por</span>
             <a 
               href="https://montesite.com.br" 
               target="_blank" 
