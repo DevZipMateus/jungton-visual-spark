@@ -350,6 +350,46 @@ const Blog = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "retail-design-venda-produtos",
+      title: "O poder do Retail Design na venda de produtos",
+      date: "30 de agosto de 2018",
+      author: "Jungton",
+      excerpt: "O Retail Design é um conjunto de técnicas que ajudam alcançar uma quantidade de lucro onde se torna possível realizar saldões sem ter prejuízos. Descubra como usá-lo.",
+      image: "/imagens/blog/IMG_8717_1200_800px.jpg",
+      category: "Retail Design",
+      content: {
+        introduction: "Os Estados Unidos é um exemplo a ser seguido por ser uma potência mundial, inclusive quando falamos em venda e consumo. Seus modelos de promoção são replicados em vários países com a expectativa de aumentar o lucro das empresas, como a famosa Black Friday. O que pouca gente entende é que para realizar esse tipo de oferta os outros dias do ano são movidos por vendas intensas, e isso só é possível com um bom Retail Design.\n\nE ele nada mais é do que um conjunto de técnicas que ajudam alcançar uma quantidade de lucro, onde se torna possível realizar até um saldão, como o Black Friday sem ter prejuízos. Então separamos 4 dicas para você entender o que é Retail Design, como usá-lo em seu empreendimento e ainda um exemplo que faz sucesso na região Sul do país.\n\nTodas as dicas são com base nos fundamentos de Jonathan Levav, professor da Escola de Negócios na Universidade de Stanford, especialista em psicologia do consumo, e responsável por pesquisas que explicam o peso do poder de escolha na mente humana.",
+        sections: [
+          {
+            title: "1) O segredo da organização espacial",
+            content: "Saber como organizar, de forma funcional, os produtos na sua loja é a principal ferramenta para aumentar as vendas, já que pessoas compram e escolhem facilmente o que já conhecem, e na maioria das vezes já entram na loja sabendo o que comprar. A escolha do produto em ambiente de varejo não é como em um supermercado, é muito mais do que só colocar os itens em uma prateleira à vista do consumidor.\n\nUma pesquisa realizada pelo professor Levav apontou que quando o consumidor está na loja e esbarra em outro cliente, tende a deixar a loja mais rápido e sem efetuar a compra. Isso fez com que as lojas aumentassem o espaço nos corredores para evitar esse contato indesejado. Puro Retail Design. É ele também é o que ajuda a induzir o inconsciente à compra ao dividir o ambiente com base em psicologia do consumo, classificando itens e gerando movimento nos corredores.",
+            image: ""
+          },
+          {
+            title: "2) O papel da comunicação na compra",
+            content: "A segunda etapa dessa mesma pesquisa do professor Levav, feita em meio a um período de decadência do consumo nos Estados Unidos, descobriu que a falta de comunicação correta não cria a necessidade de compra nas pessoas. E foi daí que as empresas investiram em comunicação visual, a melhor forma de conduzir o cliente pela loja sem o auxílio de um vendedor.",
+            image: ""
+          },
+          {
+            title: "3) O ambiente escolhe pelo cliente",
+            content: "Uma das teorias mais famosa de Levav influenciou até o ex-presidente Barack Obama. Conhecida como 'gas tank', ela compara a mente com um tanque de gasolina que vai se esvaziando conforme tomamos decisões diariamente. Após ler sobre isso, o ex-presidente dos Estados Unidos decidiu eliminar as decisões simples da sua rotina, como o que vestir ou o que comer, e assim passou a focar em decisões mais difíceis.\n\nNo Retail Design aplica-se o mesmo. Como o cliente já sabe o que quer, o ambiente para onde ele se direciona precisa ter coisas que ele passe a querer. É como você entrar no setor de sapatos e ter ao lado um display com meias e palmilhas.",
+            image: ""
+          },
+          {
+            title: "4) Comunicação que vira aquisição",
+            content: "Quase 60% das pessoas entram nas lojas incertas sobre comprar, apenas para olhar os produtos, e é aí que comunicação do espaço precisa dar razões para que elas efetuem uma compra. Por exemplo, em uma loja de roupas como a Renner, onde os espelhos espalhados no ambiente parecem apenas ser decoração, na verdade são estímulos para que o consumidor experimente algo. Ao ver seu reflexo ele imagina como as roupas ficariam no seu corpo e se elas combinam com algo do seu guarda-roupa, e então decide experimentar.\n\nQuando o produto não é uma necessidade imediata uma boa oferta é o que estimula a compra. É a oferta que 'escolhe' pelo consumidor, como os saldões de casaco de inverno no meio do verão.",
+            image: ""
+          },
+          {
+            title: "Rede Clip, um Retail Design que dá certo",
+            content: "Parece impossível, mas é a disposição do espaço e de seus produtos os maiores responsáveis pelo lucro das empresas de varejo. É dessa forma que elas dizem para o cliente que ele precisa adquirir algo.\n\nA rede de lojas Clip é um exemplo gaúcho de empresa que apostou nesse tipo de estudo para criar a necessidade de consumo em seus clientes. O moderno ambiente conta com uma expressiva comunicação visual, informando ao consumidor sobre tudo que está à sua disposição. Do que ele precisa até ao que ele passa a precisar. Isso impulsionou a Clip a ser a maior Rede de Multilojas do sul do país.\n\nVale lembrar que em Santa Maria a Jungton foi a parceira responsável pela produção de toda a sua comunicação visual, da fachada ao interior da Clip.\n\nE a sua loja ainda pode ousar além do Retail Design, principalmente se o ideal for a uma experiência de compra agradável.",
+            image: ""
+          }
+        ],
+        images: []
+      }
     }
   ];
 
