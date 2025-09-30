@@ -72,6 +72,41 @@ const Blog = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "retrofit-fachadas-comerciais-artestilo",
+      title: "Retrofit em fachadas comerciais: a Artestilo de moldura nova",
+      date: "09 de dezembro de 2019",
+      author: "Jungton",
+      excerpt: "O retrofit é uma técnica que busca revitalizar fachadas comerciais e residenciais. Entenda como o retrofit faz parte da comunicação visual do seu negócio.",
+      image: "/imagens/blog/retrofit-fachadas-comerciais.jpg",
+      category: "Fachadas",
+      content: {
+        introduction: "O retrofit é uma técnica que busca revitalizar fachadas comerciais e residenciais, além de também ser um conceito aplicado à renovação de um espaço físico, como a renovação de um bairro ou de uma parte dele. Entenda como o retrofit faz parte da comunicação visual do seu negócio, e de que maneira ele pode valorizar a fachada da sua loja, escritório, restaurante ou outro estabelecimento.",
+        sections: [
+          {
+            title: "Retrofit x Reforma: existe diferença?",
+            content: "O conceito surgiu na Europa pela necessidade de se encontrar uma alternativa para modernizar o grande número de prédios históricos, que não podiam ser demolidos ou ter suas estruturas modificadas.\n\nO retrofit permite que se modernize a aparência de uma construção sem que se alterem questões estruturais, e essa é a grande diferença do termo para suas possíveis traduções em português.\n\nPode-se dizer que cada área adapta conceitos, e que retrofit pode ter um direcionamento diferente quando pronunciado por um arquiteto ou por um engenheiro, por exemplo.\n\nNa área da comunicação visual o retrofit tem o sentido de atualização da aparência de um imóvel que não pode/não vale a pena ter sua estrutura modificada, demolida ou apenas reformada.\n\nQuem mora em cidades com grande número de prédios históricos sabe como é comum que os prédios fiquem abandonados durante anos, pois seu uso para a área comercial fica muito restrito. Com o retrofit é possível conservar a parte estrutural da fachada desses prédios, e inserir um visual moderno e com foco na eficiência energética, pois faz parte do retrofit prever atualização de parte elétrica e de ventilação.",
+            image: "/imagens/blog/1_retrofit_ANTES.jpg"
+          },
+          {
+            title: "Fachadas comerciais: o retrofit em união com o ACM",
+            content: "Cada caso é um caso, mas podemos fazer uma generalização e dizer que o ACM é um dos materiais mais utilizados na área da sinalização visual para fazer o retrofit de fachadas comerciais. É com ele que se cria um revestimento sobre a estrutura da fachada original, que não é alterada e fica protegida atrás do material.\n\nO maior intuito do retrofit é modernizar o visual, e junto com ele também buscar eficiência energética, aproveitando para repensar iluminação e ventilação que entra no prédio através da fachada.",
+            image: "/imagens/blog/2_retrofit_DEPOIS.jpg"
+          },
+          {
+            title: "Diferenças do retrofit para prédios altos tipo arranha-céu para prédios mais baixos",
+            content: "Como já comentamos, cada área tem uma relação com o retrofit, que é uma técnica aplicável não só nas fachadas comerciais, mas também em todas as faces externas de prédios residenciais ou de empreendimentos, como hotéis e outros prédios comerciais de vários andares.\n\nNesse caso, ocorre um processo que pode ser definido como embalar o edifício. Nesse tipo de trabalho há o envolvimento direto de profissionais da área da construção, e um dos principais materiais utilizados costuma ser o vidro, ou a mesclagem dele com outros sistemas, como as fachadas ventiladas. Esse é um escopo fora da sinalização visual, sendo realizado por empresas especializadas em construção.\n\nQuando se fala do retrofit em fachadas comerciais de pequeno e médio porte, a sinalização visual realiza a instalação de placas, geralmente de ACM, na extensão da fachada do prédio, com o objetivo de fazer com que ela transmita a identidade do empreendimento comercial, sinalizando para o cliente que a parte externa reflete o que ele vai encontrar na parte interna.\n\nUm dos principais objetivos do retrofit nesse tipo de fachada é em relação a estética, alinhando o espaço físico com a identidade da marca, criando uma imagem correta na mente dos clientes.",
+            image: ""
+          },
+          {
+            title: "A transformação com o retrofit em uma fachada comercial: Artestilo Molduras",
+            content: "A Artestilo atua em Santa Maria há 20 anos, e possui um showroom com a maior variedade de molduras, quadros e espelhos belíssimos para decorar espaços. E como essa história já tem 20 anos, é comum que as modernizações tenham ocorrido com força na parte interna da loja, mas a fachada não refletia todo esse espírito moderno.\n\nAssim como um quadro pode dar vida a um ambiente, o retrofit pode dar uma nova cara para a fachada, e foi exatamente isso que fizemos na Artestilo.\n\nCom a instalação das placas de ACM e o letreiro vazado, o exterior da loja reflete o interior: a Artestilo é a loja com a maior variedade de molduras do mercado, é uma loja alinhada com o trabalho dos arquitetos, sempre em busca das novidades do mercado de molduras.\n\nA versatilidade do ACM permite alinhar a fachada com a identidade de cada negócio, e se você quiser conhecer a fundo os benefícios desse material nas fachadas, entre em contato conosco!",
+            image: "/imagens/blog/3_retrofit_letreiro-vazado-iluminado.jpg"
+          }
+        ],
+        images: []
+      }
     }
   ];
 
