@@ -1,11 +1,15 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +18,16 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleNavigation = (id: string) => {
+    if (isHomePage) {
+      // Se estamos na home, apenas faz scroll
+      scrollToSection(id);
+    } else {
+      // Se estamos em outra página, navega para home com hash
+      navigate(`/#${id}`);
+    }
+  };
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -29,6 +43,14 @@ const Header = () => {
       setIsMobileMenuOpen(false);
     }
   };
+
+  // Efeito para scroll quando voltamos à home com hash
+  useEffect(() => {
+    if (isHomePage && location.hash) {
+      const id = location.hash.replace("#", "");
+      setTimeout(() => scrollToSection(id), 100);
+    }
+  }, [location, isHomePage]);
 
   const navItems = [
     { label: "A Jungton", id: "about" },
@@ -46,20 +68,20 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <button
-            onClick={() => scrollToSection("hero")}
+          <Link
+            to="/"
             className="flex items-center gap-3 transition-smooth hover:opacity-80"
           >
             <img src={logo} alt="Jungton Comunicação Visual" className="h-12 w-12" />
             <span className="font-bold text-lg hidden sm:block">Jungton</span>
-          </button>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6">
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                onClick={() => handleNavigation(item.id)}
                 className="text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
               >
                 {item.label}
@@ -122,7 +144,7 @@ const Header = () => {
               {navItems.map((item) => (
                 <button
                   key={item.id}
-                  onClick={() => scrollToSection(item.id)}
+                  onClick={() => handleNavigation(item.id)}
                   className="text-left text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
                 >
                   {item.label}
