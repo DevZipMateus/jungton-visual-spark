@@ -23,17 +23,6 @@ const Solutions = () => {
       ],
     },
     {
-      title: "Construtoras & Incorporadoras",
-      description: "Comunicação visual que agrega valor e credibilidade às obras",
-      image: constructionImg,
-      services: [
-        "Placas de obra e outdoors",
-        "Identificação de empreendimentos",
-        "Sinalização de segurança e informativa",
-        "Decorativos e branding em áreas comuns",
-      ],
-    },
-    {
       title: "Supermercados & Varejo",
       description: "Identidade forte para gerar impacto e estimular vendas",
       image: retailImg,
