@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/jungton-logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -71,10 +71,9 @@ const Header = () => {
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center gap-3 transition-smooth hover:opacity-80"
+            className="flex items-center transition-smooth hover:opacity-80"
           >
-            <img src={logo} alt="Jungton Comunicação Visual" className="h-12 w-12" />
-            <span className="font-bold text-lg hidden sm:block">Jungton</span>
+            <img src={logo} alt="Jungton Comunicação Visual" className="h-14" />
           </Link>
 
           {/* Desktop Navigation */}

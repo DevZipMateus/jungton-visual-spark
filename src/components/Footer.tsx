@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png";
+import logo from "@/assets/jungton-logo.png";
 import montesiteLogo from "@/assets/montesite-logo.png";
 
 const Footer = () => {
@@ -8,9 +8,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="Jungton" className="h-12 w-12" />
-              <span className="font-bold text-xl">Jungton</span>
+            <div className="mb-4">
+              <img src={logo} alt="Jungton" className="h-16" />
             </div>
             <p className="text-secondary-foreground/80 text-sm">
               Comunicação visual que gera conexão e resultados
