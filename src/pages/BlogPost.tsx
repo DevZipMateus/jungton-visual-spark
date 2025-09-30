@@ -648,6 +648,36 @@ const BlogPost = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "comunicacao-visual-construcao-civil-jobim",
+      title: "Comunicação Visual na construção civil – Case Construtora Jobim",
+      date: "07 de maio de 2018",
+      author: "Jungton",
+      excerpt: "Prédios em construção fazem parte da rotina santa-mariense. Tão comuns, só não passam despercebidos pelo barulho que emitem, e ser imperceptível não seria o ideal para esse tipo de mercado.",
+      image: "/imagens/blog/IMG_5968_1200_800px.jpg",
+      category: "Construção Civil",
+      content: {
+        introduction: "Prédios em construção fazem parte da rotina santa-mariense. Tão comuns, só não passam despercebidos pelo barulho que emitem, e ser imperceptível não seria o ideal para esse tipo de mercado. Como saída, o setor da construção civil tem investido em publicidade, focando na comunicação visual dos seus pontos de venda (PDV).",
+        sections: [
+          {
+            title: "O papel da comunicação visual",
+            content: "O empreendimento de uma construtora é criar e vender espaço para quem busca investir em um imóvel. Alinhar esse objetivo com uma boa campanha publicitária constrói o elo entre oferta e demanda no atual mercado da construção civil, em especial quando se trata de espaços ainda na planta.\n\nA comunicação visual promove as estratégias publicitárias e reforça a presença de marca da empresa. Essa presença age no processo psicológico da percepção, influenciando na forma como a mente conecta referências visuais e as armazenada no cérebro. O resultado é lembrança de marca e conquista do público-alvo.",
+            image: ""
+          },
+          {
+            title: "Case Construtora Jobim - Espírito Santo",
+            content: "Em Santa Maria, a Construtora Jobim é um exemplo desse resultado. Seu maior empreendimento, o Espírito Santo, conta com o planejamento publicitário da J. Adams Propaganda e a execução da comunicação visual da Jungton.\n\nDas 4 torres que estão sendo construídas, a torre Amor, com entrega prevista para outubro de 2018, está completamente vendida. As torres Bondade e Caridade estão em excelente ritmo de vendas e tendem ao esgotamento da mesma forma. A torre Divindade ainda não está à venda.",
+            image: "/imagens/blog/IMG_5968_1200_800px.jpg"
+          },
+          {
+            title: "Ações realizadas",
+            content: "Esse sucesso é fruto das ações realizadas, tanto em termos de identidade visual como a sinalização do empreendimento, que contou com placas de veículos personalizadas com o nome das torres que compõem o Espírito Santo; confecção de display em MDF com um demonstrativo da aparência final; letras caixa com a numeração do prédio e adesivação de tapumes e de vidros do ponto de venda, junto ao empreendimento.\n\nAs ações de comunicação fortaleceram a marca da Construtora Jobim em mais essa empreitada, reforçando a posição da empresa como referência no ramo da construção civil.",
+            image: ""
+          }
+        ],
+        images: []
+      }
     }
   ];
 
