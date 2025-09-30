@@ -709,6 +709,20 @@ const Blog = () => {
         sections: [],
         images: ["/imagens/blog/acrilico.jpg"]
       }
+    },
+    {
+      slug: "programa-reducao-residuos",
+      title: "Jungton desenvolve programa de redução de resíduos",
+      date: "15 de junho de 2016",
+      author: "Jungton",
+      excerpt: "Desde o lançamento do Programa \"Todos Jungton pelo meio Ambiente\", temos adotado algumas práticas para reduzir os resíduos de produção.",
+      image: "/imagens/blog/RECICLE.jpg",
+      category: "Responsabilidade Ambiental",
+      content: {
+        introduction: "Desde o lançamento do Programa \"Todos Jungton pelo meio Ambiente\", temos adotado algumas práticas para reduzir os resíduos de produção. Dentre elas: a adoção de matérias-primas recicláveis e a reutilização de substratos que antes eram descartados. Mesmo com estas práticas, alguns resíduos tem que ser destinados e para tanto, contamos com dois parceiros: a Cetric e Resilog.",
+        sections: [],
+        images: ["/imagens/blog/RECICLE.jpg"]
+      }
     }
   ];
 
