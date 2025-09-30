@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Solutions = () => {
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
@@ -10,6 +11,7 @@ const Solutions = () => {
       title: "Arquitetura & Engenharia",
       description: "Soluções visuais para valorizar projetos, fachadas e interiores",
       image: "/imagens/arquitetura e engenharia/0808bb33-eb15-44b7-9289-1e48e5d19744.jpg",
+      link: "/arquitetura-engenharia",
       services: [
         "Placas e sinalização técnica",
         "Totens e fachadas personalizadas",
@@ -21,6 +23,7 @@ const Solutions = () => {
       title: "Supermercados & Varejo",
       description: "Identidade forte para gerar impacto e estimular vendas",
       image: "/imagens/supermercado e varejo/2016-11-24 13.17.53-2.jpg",
+      link: "/supermercados-varejo",
       services: [
         "Fachadas e luminosos",
         "Comunicação interna e PDV",
@@ -32,6 +35,7 @@ const Solutions = () => {
       title: "Saúde & Bem-estar",
       description: "Ambientes que inspiram confiança, credibilidade e bem-estar",
       image: "/imagens/saude e bem estar/0512b11e-fd73-41a3-836a-5ca62627c429.jpg",
+      link: "/saude-bem-estar",
       services: [
         "Fachadas e placas de identificação",
         "Sinalização interna (consultórios, recepções, salas)",
@@ -43,6 +47,7 @@ const Solutions = () => {
       title: "Empresas & Negócios em Geral",
       description: "Presença visual para marcas de todos os segmentos",
       image: "/imagens/empresas e negocios/01fd69d8-8302-4943-8dde-5dd456fc9acb.jpg",
+      link: "/empresas-negocios",
       services: [
         "Fachadas e sinalização corporativa",
         "Totens e comunicação institucional",
@@ -106,13 +111,15 @@ const Solutions = () => {
                     </div>
                   )}
                   
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="w-full mt-4"
-                  >
-                    {expandedCard === index ? "Ver menos" : "Ver mais"}
-                  </Button>
+                  <Link to={solution.link}>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="w-full mt-4"
+                    >
+                      Ver mais
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}

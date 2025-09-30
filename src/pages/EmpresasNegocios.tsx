@@ -1,0 +1,96 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
+
+const EmpresasNegocios = () => {
+  const images = [
+    "01fd69d8-8302-4943-8dde-5dd456fc9acb.jpg",
+    "07bf1d39-a35c-4dd9-b2bb-f539022f4282.jpg",
+    "17e46c1d-7be7-46c2-806d-2c53dbb8901d.jpg",
+    "254d5638-23c7-4e7b-8354-f66db394d894.jpg",
+    "26fe3ff4-6db6-4626-8268-425e717067fd.jpg",
+    "5068bcfa-103a-47d7-8a83-7f8482116100.jpg",
+    "61a13cbc-6bdd-444b-b3be-b8e535ada664.jpg",
+    "93530f0b-e47a-4d0e-a71b-4516ab6552e5.jpg",
+    "FOTO 2 - PRAXIS - ANUARRIO ARQ - MICHELLE FLORES -.jpg",
+    "IMG_20200601_150544469_HDR.jpg",
+    "IMG_20230214_150233364_HDR.jpg",
+    "WhatsApp Image 2020-08-26 at 13.50.16.jpg",
+    "WhatsApp Image 2022-11-03 at 18.34.34e.jpg",
+    "WhatsApp Image 2023-11-28 at 17.35.19 (3).jpg",
+    "WhatsApp Image 2023-12-15 at 09.30.48.jpg",
+    "WhatsApp Image 2024-02-02 at 17.49.34.jpg",
+    "WhatsApp Image 2024-07-31 at 18.10.09.jpg",
+    "WhatsApp Image 2025-07-29 at 11.48.17 (1).jpg",
+    "WhatsApp Image 2025-09-25 at 11.53.15.jpg",
+    "e901b544-730b-4c77-8e02-61b317a35bc0.jpg",
+  ];
+
+  const services = [
+    "Fachadas e sinalização corporativa",
+    "Totens e comunicação institucional",
+    "Impressão digital de grande formato",
+    "Adesivos e letras caixa",
+  ];
+
+  return (
+    <div className="min-h-screen">
+      <Header />
+      <main className="pt-20">
+        <section className="py-12 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <Link to="/#solutions">
+              <Button variant="ghost" className="mb-6">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Voltar para soluções
+              </Button>
+            </Link>
+
+            <div className="max-w-6xl mx-auto">
+              <h1 className="mb-4">Empresas & Negócios em Geral</h1>
+              <p className="text-lg text-muted-foreground mb-8">
+                Presença visual para marcas de todos os segmentos
+              </p>
+
+              <div className="bg-card p-6 rounded-lg shadow-sm mb-12">
+                <h2 className="mb-4">Serviços inclusos:</h2>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {services.map((service, idx) => (
+                    <li key={idx} className="flex items-start">
+                      <span className="text-primary mr-2">•</span>
+                      <span className="text-foreground/80">{service}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <h2 className="mb-8">Galeria de projetos</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {images.map((image, idx) => (
+                  <div
+                    key={idx}
+                    className="overflow-hidden rounded-lg shadow-sm hover:shadow-elegant transition-smooth animate-scale-in"
+                    style={{ animationDelay: `${idx * 0.05}s` }}
+                  >
+                    <img
+                      src={`/imagens/empresas e negocios/${image}`}
+                      alt={`Projeto empresarial ${idx + 1}`}
+                      className="w-full h-64 object-cover hover:scale-110 transition-smooth"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+      <WhatsAppButton />
+    </div>
+  );
+};
+
+export default EmpresasNegocios;
