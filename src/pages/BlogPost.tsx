@@ -443,6 +443,41 @@ const BlogPost = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "comunicacao-visual-design-servico",
+      title: "A Comunicação Visual como um Design de Serviço",
+      date: "01 de agosto de 2018",
+      author: "Jungton",
+      excerpt: "A personalidade de como uma empresa oferece seu serviço é o que está por trás do sucesso que ela tem, e várias etapas são necessárias para construí-lo.",
+      image: "/imagens/blog/img_post_1200_800px.jpg",
+      category: "Design de Serviço",
+      content: {
+        introduction: "A personalidade de como uma empresa oferece seu serviço é o que está por trás do sucesso que ela tem, e várias etapas são necessárias para construí-lo. Conseguir entender o que cliente deseja para surpreendê-lo, especialmente oferecendo o seu produto da forma como ele merece, faz com que ele sinta que a sua empresa é algo que facilita a rotina da vida dele.",
+        sections: [
+          {
+            title: "O que é Design de Serviço?",
+            content: "Planejar a personalização do seu empreendimento é o que chamamos de design de serviço, que é quando uma empresa consegue oferecer ao cliente algo pensado especialmente para ele. Os serviços são as coisas que usamos mas não os possuímos, como ir cortar o cabelo ou fazer as unhas. Usufruir deles é sempre uma experiência.\n\nPara melhorá-la, o primeiro passo é analisar como a empresa a proporciona e assim solucionar os problemas que podem prejudicar o atendimento ao cliente. Isso agrega valor à identidade do empreendimento e fideliza seus clientes.",
+            image: ""
+          },
+          {
+            title: "Exemplos práticos de Design de Serviço",
+            content: "Temos como exemplo o Uber que, além do preço atrativo, oferece em seu serviço opções personalizadas e mimos que constroem o seu diferencial. Balas e garrafinhas de água mineral estão presentes em quase todos os carros nas grandes cidades, e ainda há também versões especiais que oferecem até sorvete ou comida.",
+            image: ""
+          },
+          {
+            title: "Comunicação Visual como primeira etapa",
+            content: "Para quem tem loja física, a comunicação visual é a primeira etapa de um design de serviço. Ela identifica o empreendimento e o seu diferencial, e ainda pode ser a ponte para o que a empresa precisa conhecer para melhorar e satisfazer seus clientes. Como quando entramos em um grande magazine e vemos a caixa de sugestões e reclamações.\n\nPara entender melhor, é preciso pensar na seguinte situação: Quando duas empresas vendem serviços idênticos pelo mesmo preço, o que define qual vai atrair mais clientes para fazer sucesso? A resposta é simples, o design de serviço fará a diferença. Ele estará presente da vitrine à disposição confortável dos móveis onde os clientes consumirão o serviço ofertado. Ou, como no caso das operadoras de telefonia móvel, ele será a forma como a empresa atende sua clientela.",
+            image: "/imagens/blog/img_post_1200_800px.jpg"
+          },
+          {
+            title: "O caminho para o sucesso",
+            content: "Há 40 anos acompanhando o exemplo de vários empreendimentos, incluindo os nossos parceiros, afirmamos que é impossível chegar ao topo pulando etapas. A sua empresa também pode contar com a Jungton para a execução do seu projeto de comunicação visual. Afinal, quem pensa no cliente na hora de oferecer seu serviço já está um passo à frente na jornada para o sucesso.",
+            image: ""
+          }
+        ],
+        images: []
+      }
     }
   ];
 
