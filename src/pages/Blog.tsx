@@ -220,6 +220,36 @@ const Blog = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "fachadas-em-acm",
+      title: "A versatilidade e o impacto das fachadas em ACM",
+      date: "26 de junho de 2019",
+      author: "Jungton",
+      excerpt: "Uma fachada comercial que transmite a essência do seu empreendimento é uma poderosa ferramenta de comunicação visual. As fachadas em ACM aliam modernidade com durabilidade.",
+      image: "/imagens/blog/fachadas-em-acm-escutebem.jpg",
+      category: "Fachadas",
+      content: {
+        introduction: "Uma fachada comercial que transmite a essência do seu empreendimento é uma poderosa ferramenta de comunicação visual, capaz de influenciar na construção de valor da marca, estimular vendas e garantir o destaque do seu empreendimento.\n\nAs fachadas em ACM aliam modernidade com durabilidade. Saiba se esse é o material perfeito para a fachada do seu negócio.",
+        sections: [
+          {
+            title: "O que é ACM?",
+            content: "Em inglês, ACM é a sigla para Aluminum Composite Material, ou painel de alumínio composto. As placas de ACM são compostas por duas lâminas de alumínio e polietileno entre elas. Essa união de materiais faz com que as fachadas em ACM sejam bonitas.\n\nCada vez mais a estética dos empreendimentos comerciais se torna um ponto chave para garantir o sucesso, e a fachada em ACM pode ser responsável por criar um visual moderno e arrojado. O ACM também pode ser utilizado em ambientes internos, inclusive como revestimento de pilares, por exemplo.",
+            image: "/imagens/blog/fachadas-em-acm-cauzzo.jpg"
+          },
+          {
+            title: "Vantagens do ACM",
+            content: "Em termos de pintura, é possível escolher acabamento fosco ou brilho e a durabilidade pode alcançar os 10 anos.\n\nO alumínio junto com o polietileno confere isolamento térmico e acústico para a fachada, e quanto maior a superfície de instalação do ACM, menor o gasto com ar condicionado na hora de resfriar o ambiente.\n\nAlém disso, o ACM alia resistência com leveza e flexibilidade, podendo ser moldado de acordo com o projeto para a fachada ou para áreas internas.\n\nÉ um material de fácil limpeza e manutenção, além de estar disponível em cores e texturas diversas. As fachadas em ACM podem ser utilizadas em conjunto com outros materiais e podem ser aplicadas em superfícies diversas, como ferro e alvenaria, sendo elas curvas ou retas.\n\nAlém disso, elas podem ser elaboradas com outros elementos, como as letras caixas e letreiros luminosos, confeccionando um ótimo acabamento.\n\nApesar da facilidade de manuseio, a garantia de durabilidade dos projetos em ACM depende de uma aplicação profissional, bem como cuidado com o prazo para a retirada do liner – filme protetor que protege as placas até o momento da instalação.",
+            image: "/imagens/blog/fachadas-em-acm-nilo.jpg"
+          },
+          {
+            title: "Fachadas em ACM: cuidados com manutenção",
+            content: "A limpeza das fachadas em ACM deve ocorrer com frequência, e os produtos utilizados devem ser água e sabão. Assim o material conserva o seu aspecto original por mais tempo.\n\nDurante o projeto, é importante prever o comportamento das superfícies em termos de retenção de sujeira, bem como a atuação da chuva como agente de limpeza.\n\nApesar de as fachadas em ACM possuírem uma instalação de baixa complexidade, o desempenho e resultado estético estão diretamente ligados à qualidade desse serviço.",
+            image: ""
+          }
+        ],
+        images: []
+      }
     }
   ];
 
