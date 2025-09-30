@@ -548,6 +548,46 @@ const BlogPost = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "multissensorial-tecnica-vendas",
+      title: "Multissensorial: conheça como essa técnica de vendas converte experiência em consumo",
+      date: "15 de junho de 2018",
+      author: "Jungton",
+      excerpt: "Se a primeira impressão é a que fica, a comunicação visual cria a experiência no PDV e vira a fotografia que seu cliente armazena como uma memória afetiva.",
+      image: "/imagens/blog/MG_9372_1200_800px.jpg",
+      category: "Técnicas de Venda",
+      content: {
+        introduction: "Se a primeira impressão é a que fica, a comunicação visual cria a experiência no PDV e vira a fotografia que seu cliente armazena como uma memória afetiva. Tudo faz parte das técnicas de venda baseadas em psicologia do consumo para criar um ambiente multissensorial que estimula o consumidor a comprar. Daí em diante, a imagem que ele tem do seu empreendimento é muito mais do que os olhos puderam ver, é um conjunto de técnicas que foram aplicadas para agregar valor a sua marca.",
+        sections: [
+          {
+            title: "A trilha sonora é o conforto",
+            content: "Do planejamento do ambiente à escolha das músicas que tocarão no PDV, as estratégias comunicacionais são as peças-chave que agirão no subconsciente do consumidor e estimulará a aquisição de produtos e a preferência pelo seu espaço.\n\nNesse caso, a trilha sonora tem o papel de causar conforto e fazer o cliente entender que está em uma loja que tem tudo a ver com os seu gosto. Essa identificação com a música que toca no PDV também relaxa o consumidor e faz com que ele consiga concentrar-se nos produtos a sua disposição.",
+            image: ""
+          },
+          {
+            title: "Toque para sentir a qualidade",
+            content: "A possibilidade de contato com o produto estimula a curiosidade e o tato. O sentido do toque é um dos mais importantes na hora de vender algo pois é o que confirma a sua qualidade. Apesar do mercado está migrando também para o online, raramente o consumidor vai adquirir algo à distância sem conhecer a sua marca.",
+            image: ""
+          },
+          {
+            title: "O cheiro que marca momentos",
+            content: "O cheiro do ambiente provoca reações imediatas que vão direto para o sistema nervoso central. Isso desperta e até cria uma memória olfativa mais intensa e frequente. Sabe quando compramos uma peça de roupa nova e ela exala seu cheiro único? Isso transforma a ação de abrir o guarda-roupas em uma viagem em direção ao local onde vivemos a experiência daquela aquisição.\n\nComprar entrega dopamina ao cérebro, o hormônio do prazer. É uma ação que nos diz que naquele momento temos o poder de adquirir algo que queremos. Utilizar fragrâncias exclusivas no seu PDV conectam o produto que o cliente consome à sua marca, onde quer que ele esteja.",
+            image: ""
+          },
+          {
+            title: "Cenários marcantes e funcionais",
+            content: "A organização visual de um PDV está presente desde o design mobiliário que proporciona circulação e acessibilidade, passa pela iluminação que valoriza o produto e vai até os detalhes do acabamento arquitetônico que identifica a sua marca. Nessa hora a comunicação visual é o que estimula o sentido mais óbvio, a visão. Mas ela precisa ser planejada e executada de forma equilibrada para gerar conforto e segurança, materializando a sua identidade e missão.",
+            image: ""
+          },
+          {
+            title: "Case de sucesso: Loja Zana",
+            content: "Em Santa Maria, a loja de roupa feminina Zana é um exemplo para quem busca viver essa experiência multissensorial. A sua comunicação visual, que contou com a parceira Jungton, está presente na riqueza de detalhes de uma fachada em ACM com elementos vazados, letra caixa em MDF, acrílico e luminosas, placas informativas, sinalização de setores, displays de mesa e até nos adesivos das suas vitrines.\n\nO emprego dessas técnicas regou a árvore da trajetória da loja Zana e o fruto colhido é o sucesso já perceptível nas suas redes sociais. Um conjunto de estratégias simples que ao serem bem executadas fizeram toda a diferença na hora de se estabelecer como a preferida entre seu público. Um exemplo disso é a importância do conhecimento das técnicas de vitrinismo mais atuais para fidelizar.",
+            image: "/imagens/blog/MG_9372_1200_800px.jpg"
+          }
+        ],
+        images: []
+      }
     }
   ];
 
