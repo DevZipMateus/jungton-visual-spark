@@ -53,10 +53,11 @@ const Header = () => {
   }, [location, isHomePage]);
 
   const navItems = [
-    { label: "A Jungton", id: "about" },
-    { label: "Nossa história", id: "history" },
-    { label: "Soluções personalizadas", id: "solutions" },
-    { label: "Contato", id: "contact" },
+    { label: "A Jungton", id: "about", type: "scroll" },
+    { label: "Nossa história", id: "history", type: "scroll" },
+    { label: "Soluções personalizadas", id: "solutions", type: "scroll" },
+    { label: "Blog", id: "blog", type: "link" },
+    { label: "Contato", id: "contact", type: "scroll" },
   ];
 
   return (
@@ -78,15 +79,25 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => handleNavigation(item.id)}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
-              >
-                {item.label}
-              </button>
-            ))}
+            {navItems.map((item) =>
+              item.type === "link" ? (
+                <Link
+                  key={item.id}
+                  to={`/${item.id}`}
+                  className="text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <button
+                  key={item.id}
+                  onClick={() => handleNavigation(item.id)}
+                  className="text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
+                >
+                  {item.label}
+                </button>
+              )
+            )}
           </nav>
 
           {/* Social Links - Desktop */}
@@ -141,15 +152,26 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="lg:hidden pb-4 animate-fade-in">
             <nav className="flex flex-col gap-4">
-              {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => handleNavigation(item.id)}
-                  className="text-left text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
-                >
-                  {item.label}
-                </button>
-              ))}
+              {navItems.map((item) =>
+                item.type === "link" ? (
+                  <Link
+                    key={item.id}
+                    to={`/${item.id}`}
+                    className="text-left text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <button
+                    key={item.id}
+                    onClick={() => handleNavigation(item.id)}
+                    className="text-left text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
+                  >
+                    {item.label}
+                  </button>
+                )
+              )}
               <div className="flex items-center gap-4 pt-4 border-t border-border">
                 <a
                   href="https://www.facebook.com/jungtoncomunicacaovisual"
