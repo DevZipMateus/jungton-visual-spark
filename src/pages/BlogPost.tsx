@@ -318,6 +318,41 @@ const BlogPost = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "vitrinismo-4-dicas",
+      title: "Vitrinismo: descubra em 4 dicas como melhorar a porta de entrada da sua loja e conquiste mais clientes",
+      date: "18 de setembro de 2018",
+      author: "Jungton",
+      excerpt: "Todo dono de loja física sabe que a vitrine é o seu principal expositor para conquistar o público. Com boas técnicas de vitrinismo, é possível incentivar potenciais clientes a entrarem.",
+      image: "/imagens/blog/vitrine_900_600px.jpg",
+      category: "Vitrinismo",
+      content: {
+        introduction: "Todo dono de loja física sabe que a vitrine é o seu principal expositor para conquistar o público com comunicação visual. Com boas técnicas de venda, o vitrinismo é responsável por incentivar potenciais clientes a entrarem para conhecer mais os produtos.\n\nCriar o hábito de acompanhar as tendências de mercado e principalmente o desejo do público faz com que ela precise mudar constantemente. Entender um pouco mais sobre vitrinismo e saber como usá-lo com base na psicologia do consumo é o que pode transformar a sua vitrine em um convite irresistível para quem estava 'só olhando'.",
+        sections: [
+          {
+            title: "1 – Conheça bem o seu público",
+            content: "É necessário saber quem é o público, pois isso dá as coordenadas de como é a vitrine ideal para a loja. Para a geração anterior a experiência proporcionada pelo produto era um resultado do consumo. Já para a geração atual, conhecida como Y e Z, a experiência é o que motiva esse consumo.\n\nPodemos ver isso nas vitrines das lojas de celular. Os aparelhos mais tecnológicos estão sempre à disposição do contato pessoal, e provavelmente conectados a algum acessório que potencialize a experiência para ser mais imersiva, ideal para o público mais jovem. Os menos tecnológicos, procurados por quem não prioriza aproveitar toda a evolução dos smartphones, estão em posições menos acessíveis pelas laterais da loja e pouco presentes nas vitrines abertas.\n\nEsse conhecimento sobre o cliente fornece dados para o planejamento das vitrines e será ideal que ele preveja pelo menos 18 meses. Dessa forma é possível estipular os gastos e apostar na criação visual que conquiste mais pessoas em vez de só ser uma exibição dos produtos.",
+            image: ""
+          },
+          {
+            title: "2 – Use da tecnologia para aumentar a interação",
+            content: "O uso da tecnologia na vitrine faz ela ir muito além de apenas servir para adesivar as promoções que estão acontecendo. A tecnologia tem a capacidade de mexer com a curiosidade do consumidor e estimulá-lo a entrar na loja, mas isso depende de ter um bom elemento surpresa.\n\nUm exemplo de elemento surpresa que impulsiona o consumo é o uso de realidade aumentada nas vitrines de lojas de brinquedo. Esse tipo de criatividade é capaz de atrair crianças e, consequentemente, seus responsáveis. Isso tem aumentando o consumo de seus itens e gerado compartilhamento nas redes sociais.\n\nNas grandes metrópoles já há vitrines onde essa interatividade é voltada também para adultos, onde é possível o cliente experimentar óculos e roupas em si antes mesmo de entrar na loja. Para quem possui um empreendimento com bom desempenho nas redes sociais, a vitrine pode ser um argumento que convence o consumidor do sucesso da marca ao exibir ao vivo o engajamento que acontece online.",
+            image: ""
+          },
+          {
+            title: "3 – Analise bem o calendário e organize o seu",
+            content: "Estar atento ao calendário garante um contato indireto com o seu cliente. Todos os anos surgem novas datas comemorativas e por várias vezes elas são somente simbólicas e específicas, como o 4 de maio para os fãs de Star Wars. Utilizar isso para dedicar uma vitrine diz ao seu público que você se importa com ele e supre seu gosto.\n\nO calendário também é uma forma de antever e determinar as principais promoções, como natal e queimas de estoque. As promoções secundárias não podem ser descartadas, elas acontecem em comum com outras lojas, então exigem que a vitrine convença o cliente de que a sua loja tem os melhores produtos.\n\nOs períodos livres, entre uma data e outra, podem servir para apresentar novas coleções, como as de mudança de estação. A vitrine apresenta o que há de diferencial para o cliente, então também pode reservar um espaço para promover novas seções e eventos.\n\nDe acordo com o calendário, é possível planejar o gasto com cada design de vitrine, priorizando a maior parte da verba para o que atrai mais clientes ou exige mais merchandising. Vitrines mais simples, ou que não duram muito tempo, devem ter um orçamento menor e sempre de acordo com o seu retorno.",
+            image: ""
+          },
+          {
+            title: "4 – Padronize as cores e desperte a intuição",
+            content: "A comunicação visual de um espaço é o que mais estampa a sua personalidade e o ideal é que ela esteja presente desde a vitrine. Usar as cores da sua marca para segmentar seções ou apresentar novas coleções, além de gravar na memória do consumidor o padrão cromático da identidade do seu negócio, cria uma interação com o interior da loja e tudo que ela dispõe.\n\nAs cores são entendidas de formas diferentes em cada cultura, às vezes até pelo público. Algumas podem ser chamativas e atrativas, como o vermelho. Mas há cores que podem acabar afugentando a clientela por parecerem monótonas e apagadas, como o cinza. Nesses casos é necessário usar da criatividade para combinar uma boa paleta de cores como um bom argumento para a aquisição de produtos.\n\nOuvir o consumidor é essencial desde sempre. Ele está atento a tudo que gosta através da internet, inclusive com influências internacionais, então o seu favoritismo muda sempre. Satisfazer essa demanda faz o seu negócio ser uma vitrine para o que acontece ao redor do mundo, e o seu cliente ficará satisfeito por consumir a sua marca.\n\nO vitrinismo também faz parte de um mercado bem específico e voltado principalmente para as lojas de varejo. Ele é a porta de entrada para que o design de serviço atraia, convença e fidelize mais clientes.",
+            image: ""
+          }
+        ],
+        images: []
+      }
     }
   ];
 
