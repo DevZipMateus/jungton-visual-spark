@@ -828,11 +828,11 @@ const BlogPost = () => {
               <span>{post.date}</span>
             </div>
 
-            <div className="relative w-full h-[400px] mb-8 rounded-lg overflow-hidden">
+            <div className="relative w-full mb-8 rounded-lg overflow-hidden bg-muted">
               <img
                 src={post.image}
                 alt={post.title}
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
               />
             </div>
 
@@ -848,11 +848,11 @@ const BlogPost = () => {
                     </p>
                   ))}
                   {section.image && (
-                    <div className="relative w-full h-[400px] my-6 rounded-lg overflow-hidden">
+                    <div className="relative w-full my-6 rounded-lg overflow-hidden bg-muted">
                       <img
                         src={section.image}
                         alt={section.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-auto object-contain"
                       />
                     </div>
                   )}
@@ -860,11 +860,11 @@ const BlogPost = () => {
               ))}
 
               {post.content.images && post.content.images.map((image, index) => (
-                <div key={index} className="relative w-full h-[400px] my-6 rounded-lg overflow-hidden">
+                <div key={index} className="relative w-full my-6 rounded-lg overflow-hidden bg-muted">
                   <img
                     src={image}
                     alt={`${post.title} - imagem ${index + 1}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto object-contain"
                   />
                 </div>
               ))}
