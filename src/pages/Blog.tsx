@@ -4,26 +4,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Blog = () => {
-  const posts = [
-    {
-      title: "Como escolher a comunicação visual ideal para seu negócio",
-      date: "15 de março de 2025",
-      excerpt: "Descubra as melhores práticas para definir a identidade visual que melhor representa sua marca e atrai seu público-alvo.",
-      image: "/imagens/empresas e negocios/01fd69d8-8302-4943-8dde-5dd456fc9acb.jpg",
-    },
-    {
-      title: "Tendências em sinalização para saúde e bem-estar",
-      date: "08 de março de 2025",
-      excerpt: "Conheça as últimas tendências em comunicação visual para clínicas, consultórios e espaços de bem-estar.",
-      image: "/imagens/saude e bem estar/0512b11e-fd73-41a3-836a-5ca62627c429.jpg",
-    },
-    {
-      title: "A importância da fachada no varejo",
-      date: "01 de março de 2025",
-      excerpt: "Entenda como uma fachada bem planejada pode aumentar significativamente o fluxo de clientes no seu estabelecimento.",
-      image: "/imagens/supermercado e varejo/2016-11-24 13.17.53-2.jpg",
-    },
-  ];
+  const posts: any[] = [];
 
   return (
     <div className="min-h-screen">
