@@ -393,6 +393,56 @@ const BlogPost = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "confiabilidade-empresa-fidelizar-clientes",
+      title: "Confira 6 dicas para aumentar a confiabilidade da sua empresa e fidelizar seus clientes",
+      date: "20 de agosto de 2018",
+      author: "Jungton",
+      excerpt: "A imagem de uma empresa deve conduzi-la ao sucesso. Ela pode ser comunicada de diversas formas, mas é necessário ter cautela para não afetar a confiabilidade do serviço.",
+      image: "/imagens/blog/DSC_0008_1200_800px-1.jpg",
+      category: "Prestação de Serviço",
+      content: {
+        introduction: "A imagem de uma empresa deve conduzi-la ao sucesso. Ela pode ser comunicada de diversas formas, mas é necessário ter cautela para não afetar a confiabilidade do serviço. Qualquer ruído vira prejuízo e pode baixar os números de lucro e público. Se uma multinacional passa por um escândalo e suas ações desvalorizam de forma responsiva, a sua equipe de comunicação entra em ação para gerir a crise e evitar danos maiores. Mas e quando é uma empresa menor ou um profissional liberal?",
+        sections: [
+          {
+            title: "1 – Nada de ruídos",
+            content: "Empresas menores e profissionais liberais geralmente exercem uma comunicação de forma autônoma. Eles atendem o seu consumidor de uma forma mais direta e por isso devem ter cuidado com qualquer informação que não seja clara, tudo para evitar a possibilidade de causar uma má impressão. Por exemplo, prestar um serviço de saúde em um ambiente que não apresenta assepsia demonstra que o profissional não se preocupa com seus clientes.",
+            image: ""
+          },
+          {
+            title: "2 – Postura compatível",
+            content: "É necessário ter atenção com a postura nas redes sociais e na empresa, pois a forma como trata seus clientes deve ser igual em todo lugar. Usufruir da mesma cordialidade para gerenciar o ambiente da empresa, principalmente onde o serviço é prestado, comunica uma identidade mais densa.",
+            image: ""
+          },
+          {
+            title: "3 – Sem subjetividade nas promoções",
+            content: "No mercado há muita empresa que busca lucrar com a subjetividade em ofertas mascarando alguns defeitos, e por isso acabam sendo as que menos estão entre a preferência na escolha quando o cliente entende isso. É a qualidade do serviço que a destaca na concorrência. Segundo o Sebrae-SP, o consumidor só opta pelo mais barato quando não pode pagar pelo o que tiver mais qualidade, e geralmente tentará negociar com o melhor fornecedor antes de adquirir um produto.",
+            image: ""
+          },
+          {
+            title: "4 – Foco em compromisso",
+            content: "A confiabilidade representa 32% na hora de avaliar o que define qualidade, e ela significa prestar o serviço exatamente como oferecido mesmo que o contrato seja inferior a oferta. Ou seja, se um dentista prometeu restauração, limpeza e clareamento na consulta por um preço X, mas no contrato só deveria fornecer restauração e limpeza por esse valor, ele deve manter a sua palavra e fornecer também o clareamento. E não adianta ser o mais barato e menos eficaz do mundo, o cliente avaliará a experiência da aquisição ao resultado e isso será a identidade do negócio.",
+            image: ""
+          },
+          {
+            title: "5 – Evite erros",
+            content: "Em casos onde o serviço envolve tempo qualquer erro que cause atraso vira insatisfação, principalmente se fica claro que podia ter sido evitado. Por exemplo, por mais que o cliente sempre tenha tido uma boa experiência na aquisição, a partir do momento que ele enfrenta algum erro que o cause problemas optará por parar de consumir o seu serviço, pois perdeu a confiabilidade. Nos Estados Unidos isso é levado tão a sério que a maioria das empresas que oferecem delivery não cobram nada pelo produto caso a entrega ultrapasse o tempo estimado.",
+            image: ""
+          },
+          {
+            title: "6 – Foque em imagem",
+            content: "O primeiro contato do cliente é com a imagem da empresa, seja na internet ou no local onde o produto é ofertado. Ela precisa expressar tudo o que o empreendimento tem a oferecer, pois é essa comunicação que definirá se esse contato transformará a procura em aquisição. Isso acontece frequentemente com profissionais liberais como os advogados, dentistas, médicos, arquitetos e etc.",
+            image: ""
+          },
+          {
+            title: "Case de sucesso: Consultório Larissa Giacomelli",
+            content: "Em Santa Maria, o Consultório de Odontologia Estética e Ortodontia Larissa Giacomelli é um exemplo de confiabilidade. Ela apostou no projeto da arquiteta Alexandra Scotta para expressar o seu serviço em cada metro quadrado da sua clínica. A sua essência está presente na comunicação visual e contou com a Jungton para a produção e aplicação do adesivo na porta de entrada, na logo em acrílico da parede da recepção e nas placas de identificação das salas.\n\nA qualidade do produto ofertado pela clínica agora está presente até nos acabamentos da sua sinalização, aumentando a confiabilidade de seus clientes. São empreendimentos assim que se firmam diante da clientela, pois comunicam a sua identidade de acordo com o serviço que prestam.",
+            image: "/imagens/blog/DSC_0008_1200_800px-1.jpg"
+          }
+        ],
+        images: []
+      }
     }
   ];
 
