@@ -250,6 +250,41 @@ const Blog = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "visual-merchandising-pdv",
+      title: "Visual Merchandising no PDV: motivos para implementar já",
+      date: "21 de maio de 2019",
+      author: "Jungton",
+      excerpt: "O Visual Merchandising engloba técnicas de varejo que podem melhorar vendas, estimular o movimento na sua loja, contribuir para a fidelização de clientes e estimular o aumento do valor de marca.",
+      image: "/imagens/blog/visual-merchandising-jungton.jpg",
+      category: "Merchandising",
+      content: {
+        introduction: "O Visual Merchandising engloba técnicas de varejo que já abordamos aqui, como Retail Design e Vitrinismo. Ampliar o conhecimento de técnicas pode melhorar vendas, estimular o movimento na sua loja, contribuir para a fidelização de clientes e estimular o aumento do valor de marca.",
+        sections: [
+          {
+            title: "O que é Visual Merchandising?",
+            content: "O Visual Merchandising é o conjunto de técnicas que padroniza tudo o que trabalha para vender o seu produto, como a vitrine, manequins, mostruário e Retail Design. Ele faz a propaganda externa e interna do seu negócio, criando uma identidade própria e despertando a necessidade de consumo em quem estava apenas passando.\n\nÉ muito mais do que bons vendedores, boa vitrine ou boa fachada, é sobre como harmonizar tudo isso para contar uma história sobre a experiência de consumo relacionada ao seu negócio.",
+            image: ""
+          },
+          {
+            title: "Como o VM funciona",
+            content: "Para o cliente que vai constantemente nas mesmas lojas, a sensação é a de que sempre existem produtos novos. A verdade é que eles, geralmente, sempre estiveram lá a maior parte do tempo, só mudaram de lugar, entrando em evidência de acordo com a necessidade do público ou data.\n\nA maneira mais fácil de perceber isso é em lojas de roupas, onde as coleções só alteram a cada estação, de 3 em 3 meses.\n\nA montagem dos manequins e vitrines tende a seguir um cronograma para que todas as principais roupas fiquem em evidência pelo menos uma vez até a chegada da próxima coleção.\n\nEsteja o seu produto em um manequim, uma prateleira ou na vitrine, o Visual Merchandising conversa com as tendências que aproximam o público do produto, criando um relacionamento que fideliza a longo prazo.\n\nÉ importante manter um registro completo de todas as vendas do seu empreendimento, pois é a partir desses dados que você vai definir o melhor horário de venda, quais produtos são mais vendidos e qual é o público que mais os consome. Com isso, é possível criar estratégias que valorizem o que está dando certo, e permitam testar novos caminhos para o que precisa ser melhorado.",
+            image: ""
+          },
+          {
+            title: "Conte uma história através do seu produto ou serviço",
+            content: "Quando o cliente entra em uma loja e consegue entender o que cada setor quer vender, mesmo que ele não esteja identificado por placas, isso é o storytelling criado pelo Visual Merchandising.\n\nSe ele deseja comprar roupas para uma determinada ocasião, como uma entrevista de emprego, ele vai direto na loja onde ele sabe que tem. E é esse saber que confirma que o Visual Merchandising fidelizou mais um cliente.\n\nAté as peças de roupas que parecem comuns passam a fazer mais sentido quando combinadas com outros acessórios. Nos manequins elas atraem o cliente com estilo parecido, e expostas na loja ao lado de produtos com cores e cortes diferentes levam a imaginação de qualquer consumidor a criar outras possibilidades de combinações que o agradam.",
+            image: "/imagens/blog/visual-conte-historia-900-500px.jpg"
+          },
+          {
+            title: "Encante para estimular o consumo",
+            content: "O Visual Merchandising é, basicamente, a padronização e integração de tudo o que faz parte do empreendimento. É preciso ficar evidente o que o negócio oferece, desde a fachada, criando um sentimento de identificação com o público.\n\nAlém das cores e combinações de produtos na vitrine, o Visual Merchandising alinha o Retail Design com técnicas de venda. Se bem executado, ele seduz o consumidor a fazer a sua escolha, antes mesmo do vendedor entrar em cena.\n\nÉ possível ver isso de maneira mais explícita nas lojas de departamento, em que cada espaço tem uma organização por cor e tipo, respondendo a todas as dúvidas que possam surgir na mente do cliente, e incentivando o consumo.\n\nAqui entra a importância do layout da loja, da iluminação adequada, da paleta de cores, do uniforme dos vendedores, dos móveis, da sinalização interna e da vitrine, e que tudo isso converse para transmitir a essência do seu empreendimento.\n\nAlém de atrair o consumidor, você precisa criar um ambiente confortável para que ele queira ficar tempo o suficiente para comprar bastante, e para isso, nada melhor do que estimular todos os sentidos.",
+            image: "/imagens/blog/visual-encante-900-500px.jpg"
+          }
+        ],
+        images: []
+      }
     }
   ];
 
