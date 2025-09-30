@@ -675,6 +675,26 @@ const Blog = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "jungton-apoia-projeto-relona",
+      title: "Jungton apoia o Projeto RElona",
+      date: "17 de junho de 2016",
+      author: "Jungton",
+      excerpt: "O RElona é um projeto do Programa Grupo Incorpore: Ações Coletivas para o Meio Ambiente da UFSM que faz o reaproveitamento de lonas publicitárias para produção de bolsas e sacolas.",
+      image: "/imagens/blog/projeto-relona.jpg",
+      category: "Responsabilidade Social",
+      content: {
+        introduction: "O RElona é um projeto do Programa Grupo Incorpore: Ações Coletivas para o Meio Ambiente da Universidade Federal de Santa Maria (UFSM) que faz o reaproveitamento de lonas publicitárias para produção de bolsas e sacolas. Além de dar o destino ecologicamente correto para estas lonas, traz uma nova fonte de renda para a Associação de Apoio a Pessoas com Câncer (AAPECAN).",
+        sections: [
+          {
+            title: "Como participar",
+            content: "Quer participar? Basta entrar em contato com a Jungton através do telefone (55) 3221.7731 ou pelo e-mail contato@jungton.com.br que realizamos a coleta gratuitamente e destinamos ao Projeto.",
+            image: "/imagens/blog/projeto-relona.jpg"
+          }
+        ],
+        images: []
+      }
     }
   ];
 
