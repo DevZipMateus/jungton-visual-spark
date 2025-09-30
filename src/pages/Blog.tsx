@@ -475,6 +475,41 @@ const Blog = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "restaurante-santo-garden-personalidade",
+      title: "Restaurante Santo Garden: o sucesso de estampar a personalidade além dos seus pratos",
+      date: "20 de julho de 2018",
+      author: "Jungton",
+      excerpt: "A internet trouxe consigo mais alternativas para as empresas alcançarem suas metas, principalmente para quem pretende solidificar o seu negócio. No setor alimentício não foi diferente.",
+      image: "/imagens/blog/MG_9038_1200_800px.jpg",
+      category: "Restaurantes",
+      content: {
+        introduction: "A internet trouxe consigo mais alternativas para as empresas alcançarem suas metas, principalmente para quem pretende solidificar o seu negócio. No setor alimentício não foi diferente, as novas possibilidades abriram as portas para mais restaurantes como o Santo Garden. As redes sociais têm sido uma grande amiga na hora de estampar a personalidade, conquistar mais clientes e divulgar a qualidade por trás do serviço.",
+        sections: [
+          {
+            title: "A timeline que dá vontade de comer",
+            content: "Desde a pré-história o ser humano celebra seus melhores momentos ao redor da comida. A partir da popularização de cenas históricas como o afresco d'A Última Ceia de Leonardo Da Vinci, ele tem sido inconscientemente estimulado a retratar o que come. E o 'com quem come' também é importante, pois além da fartura demonstra poder e prestígio.\n\nPara a psicologia, havia só dois tipos de fome que levavam a pessoa a se alimentar fora de casa: a fisiológica e a social. A fisiológica é a fome em si, a que deixa a pessoa ansiosa para comer. A social, caracterizada pelo hábito de comer por estar em grupo, estimula a interação das pessoas com o ambiente. Porém agora também há um terceiro tipo, a fome estimulada por imagem, e principalmente pelas redes sociais. Ela é a que aguça o nosso desejo quando vemos a foto de um prato saboroso na nossa timeline e também nos estimula ao compartilhamento do momento, seja social ou fisiológico.\n\nFocado em atender a esses três tipos de fome, o Restaurante Santo Garden investiu na organização do seu espaço físico e do seu feed nas redes sociais, recheando ambos com os seus melhores pratos. O senso de estética fotográfica estampa fica armazenado no subconsciente de seus seguidores e clientes. Ele sempre vem a tona quando a fome aparece, principalmente se tiver uma companhia para um jantar agradável. Esse foi o primeiro o primeiro passo no rumo do sucesso.",
+            image: ""
+          },
+          {
+            title: "Mas como estampar a personalidade?",
+            content: "Dependendo da grandeza da ocasião que gera a fome por interação social, a identidade é o que tem mais peso na hora da escolha do restaurante, e conta principalmente com a estrutura do ambiente. Por isso é importante priorizar a harmonização da arquitetura com cor, iluminação e sinalização visual. Além de informar sobre tudo que o local dispõe, transmite a personalidade do lugar ao ser o plano de fundo nas fotografias registradas pelos clientes no local e compartilhadas com seus seguidores.",
+            image: ""
+          },
+          {
+            title: "O case do Santo Garden em Santa Maria",
+            content: "Em Santa Maria, o restaurante Santo Garden já é uma moldura conhecida para quem opta por se alimentar fora de casa. Seja pelo simples prazer de comer bem ou pela elegância do motivo, seu cardápio atende clientes dos mais variados gostos. Vale lembrar que o espaço contou com a parceria Jungton para a materialização da sua identidade visual, um dos símbolos da sua originalidade.\n\nFoi sob o projeto publicitário de Fabiano Rosa que a Jungton estampou vários tipos de adesivos decorativos como os impressos sobre vinil transparente, os de recorte com frases decorativas e os de sinalização dos banheiros. Há também placas direcionais, o totem externo com a identificação da marca em ACM e letras em inox polido, e totens menores para orientação da entrada. A forma mais objetiva de informar qual é a identidade do local.",
+            image: "/imagens/blog/MG_9038_1200_800px.jpg"
+          },
+          {
+            title: "O poder das redes sociais",
+            content: "Anos atrás o sucesso de um restaurante dependia dos grandes meios de comunicação e seus críticos gastronômicos. Atualmente, uma postagem no Instagram é capaz de impulsionar o crescimento e a fidelidade do público quase que gratuitamente. Tudo depende da imagem, e ela vai do prato ao ambiente. O restaurante Santo Garden é um exemplo de como a harmonização da boa culinária com uma estrutura bem comunicada é a chave para o sucesso nas redes sociais.",
+            image: ""
+          }
+        ],
+        images: []
+      }
     }
   ];
 
