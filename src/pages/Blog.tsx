@@ -137,6 +137,49 @@ const Blog = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "fachadas-letras-caixa",
+      title: "Fachadas com letras caixa: 4 razões para investir agora",
+      date: "06 de setembro de 2019",
+      author: "Jungton",
+      excerpt: "As letras caixa são um tipo de sinalização visual muito utilizada em fachadas. Uma tendência que nunca sai de moda, a letra caixa conta com diversas qualidades que fazem dela uma opção que se encaixa com praticamente todo projeto.",
+      image: "/imagens/blog/letras-caixa-jungton.jpg",
+      category: "Fachadas",
+      content: {
+        introduction: "As letras caixa são um tipo de sinalização visual muito utilizada em fachadas, tanto nas comerciais quanto nas de prédios e condomínios. Além disso, também aparecem em ambientes internos, como na sinalização de consultórios, escritórios e lojas.\n\nUma tendência que nunca sai de moda, a letra caixa conta com diversas qualidades que fazem dela uma opção que se encaixa com praticamente todo projeto.",
+        sections: [
+          {
+            title: "Fachadas e letras caixa: saiba por que essa é a melhor combinação",
+            content: "Também conhecidas como letra bloco ou letra caixa alta, as letras caixa fazem com que a sua fachada chame a atenção, fazendo com que a frase 'a primeira impressão é a que fica' se encaixe perfeitamente.\n\nÉ por isso que o primeiro contato com a fachada deve ser suficiente para informar ao cliente em potencial que ele está no lugar certo. É ali que você começa a comunicação, e é por isso que é tão importante escolher a sinalização perfeita.",
+            image: "/imagens/blog/letras-caixa-numerica.jpg"
+          },
+          {
+            title: "1. Grande disponibilidade de materiais",
+            content: "As letras caixa podem ser produzidas em materiais diversos, como aço galvanizado, alumínio, inox escovado, PVC expandido e acrílico. Alguns materiais são mais indicados para letras caixa instaladas em ambiente interno, e outros podem ser utilizados tanto na área externa quanto na interna.\n\nPVC Expandido, Acrílico e Letra aço inox são alguns dos materiais mais utilizados.",
+            image: "/imagens/blog/letras-caixa-pvc-expandido.jpg"
+          },
+          {
+            title: "2. Diversos tamanhos e espessuras",
+            content: "A técnica de produção das letras comumente utiliza o corte a laser, permitindo que infinitos recortes sejam feitos. Ou seja, a sua marca pode ser fielmente reproduzida através desse tipo de sinalização.",
+            image: "/imagens/blog/letras-caixa-tamanhos.jpg"
+          },
+          {
+            title: "3. Durabilidade e 4. Bom custo-benefício",
+            content: "Dependendo da escolha do material, as letras caixa podem ter uma vida útil de até 50 anos, mesmo em contato com sol e chuva.\n\nAlém da durabilidade, esse tipo de sinalização visual precisa de pouca manutenção, resultando em um ótimo custo-benefício.\n\nAlém disso, cabe ressaltar que esse tipo de sinalização visual empresta autoridade e diferencial para o estabelecimento. Imagine que o cliente está em dúvida entre escolher o seu restaurante ou o que fica ao lado. Quando um deles tem uma fachada bonita, bem cuidada e com a sinalização que reflete a essência do estabelecimento, qual você acha que vai conquistá-lo?\n\nUma fachada bem projetada transmite ao consumidor que houve um cuidado com cada detalhe, simbolizando qualidade tanto do estabelecimento quanto dos serviços e produtos que ele oferta.\n\nAlém de constituir uma sinalização perfeita para as fachadas, as letras caixa também são utilizadas na identificação de edifícios e condomínios, e não só como letras, uma vez que a técnica engloba também a numeração.",
+            image: "/imagens/blog/letras-caixa-inox.jpg"
+          },
+          {
+            title: "Iluminação das letras caixa: o que levar em conta",
+            content: "Além da escolha dos materiais há uma outra possibilidade: que as letras caixa sejam iluminadas ou não.\n\n– Letra caixa com face iluminada: Cada face da letra é iluminada, geralmente por LED, e é uma opção indicada para bares, restaurantes, supermercados, lojas de shopping e escritórios.\n\nAntigamente, as letras caixa de face aberta eram muito comuns, e mostravam os componentes internos responsáveis pela iluminação. Entretanto, esse tipo de letra tem uma durabilidade limitada, e não é tão resistente a intempéries. Por isso, nas fachadas é mais comum utilizar a letra caixa com face iluminada, onde uma face de acrílico esconde e protege os componentes elétricos. Essa estética promove uma iluminação difusa e agradável.\n\n– Com iluminação indireta ou traseira: Opção mais comum para fachadas, a iluminação traseira acontece da seguinte maneira: a letra caixa é instalada com afastadores, e a iluminação promove o contorno das letras, criando um brilho ao redor de cada uma.\n\nTambém existe a possibilidade de combinar os dois tipos de iluminação, e criar um resultado único para a sinalização da sua fachada.",
+            image: "/imagens/blog/letras-caixa-iluminacao.jpg"
+          }
+        ],
+        images: [
+          "/imagens/blog/letras-caixa-acrilico.jpg",
+          "/imagens/blog/letras-caixa-retroiluminada.jpg"
+        ]
+      }
     }
   ];
 
