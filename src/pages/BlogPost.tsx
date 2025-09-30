@@ -45,6 +45,36 @@ const BlogPost = () => {
           "/imagens/blog/4-comunicacao-visual-praxis-letras-caixa-iluminadas-900x500px.jpg"
         ]
       }
+    },
+    {
+      slug: "comunicacao-visual-eventos",
+      title: "Comunicação visual: ela é importante para o sucesso do evento?",
+      date: "21 de janeiro de 2020",
+      author: "Jungton",
+      excerpt: "Há casos em que as imagens impactam muito mais do que o texto puro. A comunicação visual tem o objetivo de comunicar para o público tudo o que ele precisa associar a sua marca.",
+      image: "/imagens/blog/comunicacao-visual-eventos-900x500px.jpg",
+      category: "Eventos",
+      content: {
+        introduction: "Há casos em que as imagens impactam muito mais do que o texto puro, que precisa ser lido e interpretado antes de entregar a sua mensagem. As imagens também são lidas, contudo são capazes de entregar uma mensagem que pode ser assimilada mais rapidamente. A comunicação visual tem o objetivo de comunicar para o público tudo o que ele precisa associar a sua marca.\n\nEm eventos, transmitir a essência da marca é ainda mais importante, e é por isso que a comunicação visual e a sinalização do evento precisa ser uma etapa mapeada na hora de planejar o evento.",
+        sections: [
+          {
+            title: "Comunicação visual em eventos: precisa mesmo?",
+            content: "Quando o público chega a um evento, um feirão de imóveis por exemplo, ele precisa ter uma noção clara de quais empresas fazem parte daquele evento, qual é o percurso que ele deve fazer para visitar todos os estandes ou saber onde está alguma empresa em específico. Além disso, também é preciso ficar claro onde ficam entradas e saídas, se existem empresas patrocinadoras, e principalmente, qual é o nome do evento.\n\nA comunicação visual também deve estar bem representada nas redes sociais, e quando necessário, em veículos impressos também. É um processo que começa antes da realização do evento, e precisa se manter enquanto ele durar.\n\nA comunicação visual e a sinalização também são igualmente importantes em outros eventos, como inauguração de lojas, uma vez que é nesse momento que a empresa está mostrando toda a sua identidade, e a primeira impressão do seu público, tanto do que comparece ao evento de inauguração quanto o que vai conhecer a loja nos primeiros dias de funcionamento, é um dos marketings mais poderosos.\n\nO marketing boca a boca pode gerar o buzz positivo que vai fazer a diferença para alavancar o sucesso do empreendimento.",
+            image: "/imagens/blog/comunicacao-visual-eventos-estandes.jpg"
+          },
+          {
+            title: "A materialização da comunicação visual",
+            content: "A sinalização visual é a materialização da sua comunicação visual em um espaço físico, e é ela que vai transmitir todos os elementos que devem ser associados com a sua marca durante o evento.\n\nCada tipo de evento exige um tipo de sinalização. Por exemplo, um evento que apresenta várias palestras, como o RD Summit (maior evento de marketing digital da América Latina), mas que também possui expositores, você consegue imaginar o papel importantíssimo da sinalização visual no local?\n\nEventos são ótimos lugares para gerar leads, os potenciais consumidores do seu produto ou serviço, e para chamar a atenção desse potencial consumidor, o seu stand, a sua loja, enfim, o espaço em que você estiver presente com a sua marca precisa transmitir identidade, confiabilidade e qualidade.\n\nE é por isso que a sinalização visual precisa transmitir a comunicação visual da sua marca.",
+            image: "/imagens/blog/comunicacao-visual-eventos-corporativos.jpg"
+          },
+          {
+            title: "Quais os tipos de sinalização visual que posso utilizar em eventos?",
+            content: "O porte do evento é o que influenciará na quantidade de opções que você irá escolher. Lembre-se de ter em mente que os detalhes são tão importantes quanto o resto, e mesmo em eventos menores é preciso deixar claro para o seu público quem é você, a sua marca, o seu produto ou o seu serviço.\n\nO reconhecimento de marca sempre deve ser um objetivo, além da captação de potenciais clientes. E quais são as formas que você pode fazer isso? Através de:\n\n• Banner em lona ou tecido\n• Cubos\n• Totens\n• Displays de mesa\n• Sinalização que promova acessibilidade, como placas de sinalização, mapas em braile e pisos táteis\n• Brindes que tenham relação com a sua marca, como chaveiros e adesivos\n• Flyers e folders\n• Backdrop onde as pessoas que forem ao evento possam tirar fotos\n• Sinalização do estande em si (adesivação do estande e adesivos para o chão, testeiras, painéis e roletas para sorteios)",
+            image: "/imagens/blog/comunicacao-visual-eventos-musicais.jpg"
+          }
+        ],
+        images: []
+      }
     }
   ];
 
