@@ -288,6 +288,36 @@ const BlogPost = () => {
         ],
         images: []
       }
+    },
+    {
+      slug: "plano-de-negocios-empreender",
+      title: "3 passos para montar um plano de negócios e empreender seus sonhos",
+      date: "02 de outubro de 2018",
+      author: "Jungton",
+      excerpt: "Ser dono do próprio empreendimento é o sonho da vida de muitos brasileiros. Para não medir esforços e alcançar suas metas, é preciso contar com planejamento e o apoio do SEBRAE.",
+      image: "/imagens/blog/photos_66276007_xl-2015_1200_800px.jpg",
+      category: "Empreendedorismo",
+      content: {
+        introduction: "Ser dono do próprio empreendimento é o sonho da vida de muitos brasileiros. Enquanto alguns ainda planejam como entrar para o mercado, outros já estão até ampliando seus investimentos. O que separa uns dos outros é o percurso, mas para dominar todas as fases que ele impõe é preciso, e possível, contar com o Serviço Brasileiro de Apoio às Micro e Pequenas Empresas (SEBRAE) para montar o plano de negócios ideal.\n\nPara sonhar com a independência de ser seu próprio patrão é preciso aceitar que isso não significa uma rotina mais fácil do que ser subordinado de outra pessoa. Pelo contrário, esse caminho costuma ser mais rigoroso e cheio de pressão. Um desafio ideal para quem não mede esforços para alcançar suas metas.\n\nEmpreender exige dedicação, planejamento e capacidade de execução. E para não te deixar falhar, o SEBRAE disponibiliza cursos e profissionais capazes de auxiliar na hora de montar o plano de negócios ideal para tirar sua empresa do papel.",
+        sections: [
+          {
+            title: "Primeiro: Crie o plano de negócios",
+            content: "Receber uma consultoria do SEBRAE é como aceitar a ajuda de uma mão amiga, independente de precisar ou não. E então, qual é o seu plano de negócios?\n\nParece ser uma pergunta simples de responder, mas sem planejamento o sonho pode acabar virando pesadelo e desperdício de tempo e investimento. O plano consiste em você reunir tudo o que já sabe sobre o mercado que quer entrar, a aplicabilidade da ideia, a meta com o empreendimento e o que você dispõe para colocar em prática a sua empresa. Ou seja, há recurso financeiro, humano e físico? Então há uma possibilidade.\n\nComece pequeno e não faça nada igual ao que outros já fizeram. Seja o vendedor do seu produto pelo menos duas horas por dia, isso ajuda no aperfeiçoamento do plano e da empresa. Seja sempre generoso como puder, às vezes oferecer água ou café faz toda a diferença. Ouça seus clientes e quem tem mais experiência no ramo, é a melhor forma de eliminar o que estiver dando errado no trajeto.\n\nSegundo o IBGE, em cada 5 empresas 3 declaram falência após o 5º de mercado, e sem nunca terem consultado o SEBRAE. Para não fazer parte do saldo negativo desses dados, siga sempre o seu plano de negócios e não tenha medo de abandonar algumas ideias se elas não derem certo. Ser dono de empresa é um constante aprendizado pois o mercado se renova o tempo todo.",
+            image: ""
+          },
+          {
+            title: "Segundo: Desenvolva o processo empreendedor",
+            content: "É necessário identificar quais são as oportunidades de fazer negócio e gerar ideias a partir da criatividade, intuição e experiência. O processo empreendedor é algo constante e presente em todo o caminho, mas principalmente quando está começando ou já começou e percebeu que pode estar falhando.\n\nNo SEBRAE as empresas contam com um serviço de consultoria voltado especialmente para esclarecer essas dúvidas. Às vezes o que falta no seu empreendimento, já deu certo para outros e só quem conhece a história de várias empresas pode te indicar a melhor alternativa.\n\nA captação de recursos é uma das coisas que faz parte do processo empreendedor, e é preciso ser bastante realista na hora de buscar o que seu sonho precisa para sair do papel. É essa a etapa que põe em prática o modelo de negócio que sustenta a sua empresa. Afinal, o que ela é ou pretende ser é mais do que uma simples ideia, é um raciocínio lógico sobre as possibilidades que envolvem mais erros do que acertos.",
+            image: ""
+          },
+          {
+            title: "Terceiro: Empreenda com os pés no chão",
+            content: "Ser realista é a melhor forma de gerenciar uma empresa. Por exemplo, a comunicação visual é um dos passos vitais para que o negócio seja reconhecido no mercado. Ela carrega a identidade do empreendimento, mas para ser viável é necessário ser firme com a visão, missão e valores da empresa, além de estar dentro do seu orçamento sempre. Saber reconhecer o que pesa mais na hora de investir é o que dá vida ao sonho e garante o seu retorno.\n\nNo mercado internacional as micro e pequenas empresas são conhecidas como 'always beta', ou seja, sempre um teste. Elas estão suscetíveis à falhas o tempo todo, mas não podem perder o seu ponto de partida jamais. É reconhecendo suas capacidades que uma empresa presta seu serviço da melhor maneira.\n\nAssim como é vital procurar um engenheiro ou arquiteto na hora de construir ou reformar, um empreendedor precisa contar com o SEBRAE no desenvolvimento do seu negócio. O empreendedorismo é algo que transforma, mas também cobra que saibamos vencer todos os dias os maiores desafios da jornada.\n\nEm Santa Maria o SEBRAE está localizado na Rua Coronel Niederauer, 1221, entre Duque de Caxias e Conde de Porto Alegre; o telefone de contato é 0800 570 0800 e o site www.sebrae.com.br. Agende uma consultoria e não tenha medo de sonhar.",
+            image: ""
+          }
+        ],
+        images: []
+      }
     }
   ];
 
