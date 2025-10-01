@@ -95,8 +95,8 @@ const EmpresasNegocios = () => {
       <WhatsAppButton />
       
       <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
-        <DialogContent className="max-w-[100vw] max-h-[100vh] w-screen h-screen p-0 m-0 bg-background border-0 rounded-none overflow-hidden flex items-center justify-center">
-          <DialogClose className="absolute right-4 top-4 z-50 rounded-sm opacity-70 bg-black/50 p-2 transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring disabled:pointer-events-none">
+        <DialogContent className="max-w-[100vw] max-h-[100vh] w-screen h-screen p-0 m-0 bg-black border-0 rounded-none overflow-hidden flex items-center justify-center">
+          <DialogClose className="absolute right-4 top-4 z-50 rounded-sm opacity-70 bg-white/20 p-2 transition-opacity hover:opacity-100 focus:outline-none disabled:pointer-events-none">
             <X className="h-6 w-6 text-white" />
             <span className="sr-only">Fechar</span>
           </DialogClose>
