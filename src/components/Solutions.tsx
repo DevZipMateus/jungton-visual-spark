@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import OptimizedImage from "@/components/OptimizedImage";
 
 const Solutions = () => {
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
@@ -57,6 +58,17 @@ const Solutions = () => {
     },
   ];
 
+  // Preload critical images
+  useEffect(() => {
+    solutions.slice(0, 3).forEach((solution) => {
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.as = "image";
+      link.href = solution.image;
+      document.head.appendChild(link);
+    });
+  }, []);
+
   return (
     <section id="solutions" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -83,10 +95,11 @@ const Solutions = () => {
                 onClick={() => setExpandedCard(expandedCard === index ? null : index)}
               >
                 <div className="relative h-48 overflow-hidden">
-                  <img
+                  <OptimizedImage
                     src={solution.image}
                     alt={solution.title}
                     className="w-full h-full object-cover transition-smooth hover:scale-110"
+                    priority={index < 3}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent" />
                   <h3 className="absolute bottom-4 left-4 right-4 text-secondary-foreground">
