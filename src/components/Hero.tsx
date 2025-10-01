@@ -19,7 +19,7 @@ const Hero = () => {
     <section id="hero" className="relative min-h-screen flex items-center pt-20 bg-gradient-to-br from-black via-yellow-500 to-black">
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center animate-fade-in">
+        <div className="max-w-4xl mx-auto text-center animate-fade-in bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/20">
           <h1 className="mb-6">
             Jungton Comunicação Visual Ltda
           </h1>
