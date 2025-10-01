@@ -46,7 +46,6 @@ const Hero = () => {
             }`}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-br from-background/20 via-background/10 to-primary/5" />
       </div>
 
       {/* Content */}
