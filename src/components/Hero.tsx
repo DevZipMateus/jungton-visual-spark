@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/20">
           <div className="mb-6 inline-flex items-center justify-center bg-white rounded-full p-4">
-            <img src={logo} alt="Jungton" className="h-20 md:h-24" />
+            <img src={logo} alt="Jungton" className="h-28 md:h-36" />
           </div>
           
           <h1 className="mb-6">
