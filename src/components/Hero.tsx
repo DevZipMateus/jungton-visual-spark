@@ -16,7 +16,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-20">
+    <section id="hero" className="relative min-h-screen flex items-center pt-20 bg-gradient-to-br from-black via-yellow-500 to-black">
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
