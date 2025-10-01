@@ -1,6 +1,23 @@
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
+import heroBg1 from "@/assets/hero-bg-1.jpg";
+import heroBg2 from "@/assets/hero-bg-2.jpg";
+import heroBg3 from "@/assets/hero-bg-3.jpg";
+
+const carouselImages = [heroBg1, heroBg2, heroBg3];
 
 const Hero = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % carouselImages.length
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -17,8 +34,20 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center pt-20">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-background via-background/95 to-primary/5" />
+      {/* Background Image Carousel with Overlay */}
+      <div className="absolute inset-0 z-0">
+        {carouselImages.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt=""
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+              index === currentImageIndex ? "opacity-30" : "opacity-0"
+            }`}
+          />
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-primary/5" />
+      </div>
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
