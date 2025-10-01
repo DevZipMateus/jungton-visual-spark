@@ -3,9 +3,12 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, X } from "lucide-react";
+import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
+import { useState } from "react";
 
 const SaudeBemEstar = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const images = [
     "0512b11e-fd73-41a3-836a-5ca62627c429.jpg",
     "06cf2689-0438-4a2b-9f0c-da82a8bd090f.jpg",
@@ -77,8 +80,9 @@ const SaudeBemEstar = () => {
                 {images.map((image, idx) => (
                   <div
                     key={idx}
-                    className="overflow-hidden rounded-lg shadow-sm hover:shadow-elegant transition-smooth animate-scale-in"
+                    className="overflow-hidden rounded-lg shadow-sm hover:shadow-elegant transition-smooth animate-scale-in cursor-pointer"
                     style={{ animationDelay: `${idx * 0.05}s` }}
+                    onClick={() => setSelectedImage(`/imagens/saude e bem estar/${image}`)}
                   >
                     <img
                       src={`/imagens/saude e bem estar/${image}`}
@@ -94,6 +98,22 @@ const SaudeBemEstar = () => {
       </main>
       <Footer />
       <WhatsAppButton />
+      
+      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 bg-black/95 border-0">
+          <DialogClose className="absolute right-4 top-4 z-50 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+            <X className="h-6 w-6 text-white" />
+            <span className="sr-only">Fechar</span>
+          </DialogClose>
+          {selectedImage && (
+            <img
+              src={selectedImage}
+              alt="Imagem expandida"
+              className="w-full h-full object-contain"
+            />
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

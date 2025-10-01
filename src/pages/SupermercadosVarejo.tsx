@@ -3,9 +3,12 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, X } from "lucide-react";
+import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
+import { useState } from "react";
 
 const SupermercadosVarejo = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const images = [
     "2016-11-24 13.17.53-2.jpg",
     "369938264_802073055253429_576168362097189884_n.jpg",
@@ -70,8 +73,9 @@ const SupermercadosVarejo = () => {
                 {images.map((image, idx) => (
                   <div
                     key={idx}
-                    className="overflow-hidden rounded-lg shadow-sm hover:shadow-elegant transition-smooth animate-scale-in"
+                    className="overflow-hidden rounded-lg shadow-sm hover:shadow-elegant transition-smooth animate-scale-in cursor-pointer"
                     style={{ animationDelay: `${idx * 0.05}s` }}
+                    onClick={() => setSelectedImage(`/imagens/supermercado e varejo/${image}`)}
                   >
                     <img
                       src={`/imagens/supermercado e varejo/${image}`}
@@ -87,6 +91,22 @@ const SupermercadosVarejo = () => {
       </main>
       <Footer />
       <WhatsAppButton />
+      
+      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 bg-black/95 border-0">
+          <DialogClose className="absolute right-4 top-4 z-50 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+            <X className="h-6 w-6 text-white" />
+            <span className="sr-only">Fechar</span>
+          </DialogClose>
+          {selectedImage && (
+            <img
+              src={selectedImage}
+              alt="Imagem expandida"
+              className="w-full h-full object-contain"
+            />
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
