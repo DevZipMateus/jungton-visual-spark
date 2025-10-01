@@ -8,18 +8,18 @@ import heroCarousel5 from "@/assets/hero-carousel-5.jpg";
 import heroCarousel6 from "@/assets/hero-carousel-6.jpg";
 import heroCarousel7 from "@/assets/hero-carousel-7.jpg";
 
+const carouselImages = [
+  heroCarousel1,
+  heroCarousel2,
+  heroCarousel3,
+  heroCarousel4,
+  heroCarousel5,
+  heroCarousel6,
+  heroCarousel7,
+];
+
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-  const carouselImages = [
-    heroCarousel1,
-    heroCarousel2,
-    heroCarousel3,
-    heroCarousel4,
-    heroCarousel5,
-    heroCarousel6,
-    heroCarousel7,
-  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -29,7 +29,7 @@ const Hero = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [carouselImages.length]);
+  }, []);
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
