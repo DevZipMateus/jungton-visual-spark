@@ -157,9 +157,25 @@ const Solutions = () => {
             ))}
           </div>
 
-          <p className="text-center text-lg font-semibold text-primary mt-16">
-            Na Jungton, seu projeto ganha vida com qualidade e precisão
-          </p>
+          {/* Bottom Section with Decorative Design */}
+          <div className="mt-16 flex items-center gap-4 max-w-5xl mx-auto">
+            {/* Orange Bar */}
+            <div className="w-1 h-16 bg-[#FF8C00] flex-shrink-0" />
+            
+            {/* Text */}
+            <div className="flex-shrink-0">
+              <p className="text-sm md:text-base font-semibold leading-tight">
+                NA JUNGTON<br />
+                SEU PROJETO GANHA VIDA<br />
+                COM QUALIDADE E PRECISÃO
+              </p>
+            </div>
+            
+            {/* Decorative Line with Diamond */}
+            <div className="relative flex-grow h-px bg-border ml-4">
+              <div className="absolute left-8 top-1/2 -translate-y-1/2 w-2 h-2 bg-border rotate-45" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
