@@ -1,12 +1,8 @@
 const About = () => {
   return <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-center mb-16 animate-fade-in">
-          A Jungton
-        </h2>
-
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center animate-fade-in">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center animate-fade-in relative">
             {/* Left Column - Text with Orange Bar */}
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#FF8C00]" />
@@ -45,12 +41,12 @@ const About = () => {
             <div className="relative">
               <div className="absolute right-0 top-0 bottom-0 w-px bg-border hidden md:block" />
               <div className="md:pr-8">
-                <h3 className="text-3xl md:text-4xl font-bold leading-tight">
+                <h2 className="text-3xl md:text-4xl font-bold leading-tight">
                   A JUNGTON<br />
                   COMUNICAÇÃO VISUAL<br />
                   QUE GERA CONEXÃO<br />
                   E RESULTADOS
-                </h3>
+                </h2>
               </div>
             </div>
           </div>
