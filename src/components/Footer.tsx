@@ -108,7 +108,6 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-secondary-foreground/20 pt-8 text-center text-sm text-secondary-foreground/80">
-          <div id="montesite-footer-badge" className="mb-4"></div>
           <p>&copy; {new Date().getFullYear()} Jungton Comunicação Visual Ltda. Todos os direitos reservados.</p>
           <p className="mt-2">CNPJ: 87.802.179/0001-89</p>
         </div>
