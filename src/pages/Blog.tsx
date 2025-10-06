@@ -3,6 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, Tag } from "lucide-react";
 
 const Blog = () => {
   const posts = [
@@ -821,48 +823,86 @@ const Blog = () => {
     }
   ];
 
+  // Extract unique categories
+  const allCategories = [...new Set(posts.map(post => post.category))].sort();
+
   return (
     <div className="min-h-screen">
       <Header />
       <main className="pt-20">
         <section className="py-12 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-7xl mx-auto">
               <h1 className="mb-4 text-center">Blog Jungton</h1>
               <p className="text-lg text-muted-foreground mb-12 text-center max-w-3xl mx-auto">
                 Fique por dentro das novidades, tendências e dicas sobre comunicação visual
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {posts.map((post, index) => (
-                  <Link key={index} to={`/blog/${post.slug}`}>
-                    <Card
-                      className="overflow-hidden transition-smooth hover:shadow-elegant cursor-pointer animate-scale-in"
-                      style={{ animationDelay: `${index * 0.1}s` }}
-                    >
-                    <div className="relative h-48 overflow-hidden">
-                      <img
-                        src={post.image}
-                        alt={post.title}
-                        className="w-full h-full object-cover transition-smooth hover:scale-110"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent" />
-                    </div>
-                    
-                    <CardContent className="p-6">
-                      <p className="text-xs text-muted-foreground mb-2">{post.date}</p>
-                      <h3 className="mb-3 text-lg">{post.title}</h3>
-                      <p className="text-sm text-foreground/80">{post.excerpt}</p>
-                    </CardContent>
-                  </Card>
+              <div className="grid grid-cols-1 lg:grid-cols-[200px_1fr_250px] gap-8">
+                {/* Left Column - Back Button */}
+                <div className="lg:sticky lg:top-24 h-fit">
+                  <Link to="/">
+                    <Button variant="outline" className="w-full">
+                      <ArrowLeft className="mr-2 h-4 w-4" />
+                      Voltar ao Site
+                    </Button>
                   </Link>
-                ))}
-              </div>
+                </div>
 
-              <div className="text-center mt-12">
-                <p className="text-muted-foreground">
-                  Em breve, mais conteúdos sobre comunicação visual e tendências do mercado
-                </p>
+                {/* Center Column - Posts Grid */}
+                <div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {posts.map((post, index) => (
+                      <Link key={index} to={`/blog/${post.slug}`}>
+                        <Card
+                          className="overflow-hidden transition-smooth hover:shadow-elegant cursor-pointer animate-scale-in h-full"
+                          style={{ animationDelay: `${index * 0.1}s` }}
+                        >
+                          <div className="relative h-48 overflow-hidden">
+                            <img
+                              src={post.image}
+                              alt={post.title}
+                              className="w-full h-full object-cover transition-smooth hover:scale-110"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent" />
+                          </div>
+                          
+                          <CardContent className="p-6">
+                            <p className="text-xs text-muted-foreground mb-2">{post.date}</p>
+                            <h3 className="mb-3 text-lg">{post.title}</h3>
+                            <p className="text-sm text-foreground/80">{post.excerpt}</p>
+                          </CardContent>
+                        </Card>
+                      </Link>
+                    ))}
+                  </div>
+
+                  <div className="text-center mt-12">
+                    <p className="text-muted-foreground">
+                      Em breve, mais conteúdos sobre comunicação visual e tendências do mercado
+                    </p>
+                  </div>
+                </div>
+
+                {/* Right Column - Tags Cloud */}
+                <div className="lg:sticky lg:top-24 h-fit">
+                  <Card className="p-6">
+                    <div className="flex items-center gap-2 mb-4">
+                      <Tag className="h-5 w-5 text-primary" />
+                      <h3 className="text-lg font-semibold">Nuvem de Tags</h3>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {allCategories.map((category, index) => (
+                        <span
+                          key={index}
+                          className="inline-block px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full hover:bg-primary/20 transition-colors cursor-pointer"
+                        >
+                          {category}
+                        </span>
+                      ))}
+                    </div>
+                  </Card>
+                </div>
               </div>
             </div>
           </div>
