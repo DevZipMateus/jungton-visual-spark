@@ -1,10 +1,20 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import textureGrid from "@/assets/texture-grid.png";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-20 bg-background relative overflow-hidden">
+      {/* Background Texture */}
+      <div className="absolute inset-0 opacity-30 pointer-events-none">
+        <img 
+          src={textureGrid} 
+          alt="" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-center mb-16 animate-fade-in">
             Contato

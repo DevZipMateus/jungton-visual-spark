@@ -1,6 +1,17 @@
+import textureGrid from "@/assets/texture-grid.png";
+
 const About = () => {
-  return <section id="about" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+  return <section id="about" className="py-20 bg-background relative overflow-hidden">
+      {/* Background Texture */}
+      <div className="absolute inset-0 opacity-30 pointer-events-none">
+        <img 
+          src={textureGrid} 
+          alt="" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center animate-fade-in relative">
             {/* Left Column - Text with Orange Bar */}

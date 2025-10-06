@@ -1,4 +1,5 @@
 import { Building2, Palette, Monitor, Users, TrendingUp, Home } from "lucide-react";
+import textureGrid from "@/assets/texture-grid.png";
 
 const Timeline = () => {
   const milestones = [
@@ -41,8 +42,17 @@ const Timeline = () => {
   ];
 
   return (
-    <section id="history" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="history" className="py-20 bg-background relative overflow-hidden">
+      {/* Background Texture */}
+      <div className="absolute inset-0 opacity-30 pointer-events-none">
+        <img 
+          src={textureGrid} 
+          alt="" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Header Section with Layout Similar to About */}
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center animate-fade-in relative mb-16">
