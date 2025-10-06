@@ -8,20 +8,20 @@ const About = () => {
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#FF8C00]" />
               <div className="pl-8 space-y-6 text-base leading-relaxed text-foreground/80">
                 <p>
-                  Na Jungton, temos soluções em comunicação visual que valorizam espaços, marcas e serviços. 
-                  Atendemos escritórios de arquitetura e engenharia, construtoras, supermercadistas, varejistas, 
-                  profissionais de saúde e empresas que buscam destacar sua identidade.
+                  Na Jungton, temos soluções em <strong>comunicação visual</strong> que valorizam espaços, marcas e serviços. 
+                  Atendemos escritórios de <strong>arquitetura e engenharia</strong>, <strong>construtoras</strong>, <strong>supermercadistas</strong>, <strong>varejistas</strong>, 
+                  profissionais de <strong>saúde</strong> e <strong>empresas</strong> que buscam destacar sua identidade.
                 </p>
 
                 <p>
-                  Combinamos tecnologia, design inteligente e mão de obra especializada para entregar resultados 
-                  que unem estética, funcionalidade e credibilidade. Cada detalhe é pensado para transmitir 
+                  Combinamos <strong>tecnologia</strong>, <strong>design inteligente</strong> e <strong>mão de obra especializada</strong> para entregar resultados 
+                  que unem <strong>estética</strong>, <strong>funcionalidade</strong> e <strong>credibilidade</strong>. Cada detalhe é pensado para transmitir 
                   confiança, gerar conexão com o público e fortalecer sua marca.
                 </p>
 
                 <p>
-                  Trabalhamos com ética, transparência e responsabilidade socioambiental, oferecendo agilidade 
-                  e qualidade em cada etapa. Nosso compromisso é transformar sua visão em resultados reais, 
+                  Trabalhamos com <strong>ética</strong>, <strong>transparência</strong> e <strong>responsabilidade socioambiental</strong>, oferecendo <strong>agilidade</strong> 
+                  e <strong>qualidade</strong> em cada etapa. Nosso compromisso é transformar sua visão em resultados reais, 
                   com soluções de melhor custo e benefício que comunicam e encantam.
                 </p>
               </div>
