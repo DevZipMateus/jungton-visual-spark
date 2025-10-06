@@ -105,7 +105,7 @@ const Solutions = () => {
             Cada negócio tem sua identidade, seu público e suas próprias necessidades de comunicação visual. Por isso, na Jungton colocamos em prática, com excelência, os projetos desenvolvidos por escritórios de arquitetura, engenharia, agências de publicidade e empresas em geral.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {solutions.map((solution, index) => (
               <Card
                 key={index}
