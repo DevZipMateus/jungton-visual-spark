@@ -154,9 +154,7 @@ const Timeline = () => {
             <div className="relative mt-12 pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#FF8C00]" />
               <p className="text-xl md:text-2xl font-bold leading-tight">
-                A HISTÓRIA CONTINUA<br />
-                E CADA NOVO DESAFIO É UM<br />
-                CONVITE PARA INOVAR AINDA MAIS
+                A HISTÓRIA CONTINUA E CADA NOVO DESAFIO É UM CONVITE PARA INOVAR AINDA MAIS
               </p>
             </div>
           </div>
