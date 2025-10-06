@@ -766,7 +766,7 @@ const Blog = () => {
       content: {
         introduction: "Desde o lançamento do Programa \"Todos Jungton pelo meio Ambiente\", temos adotado algumas práticas para reduzir os resíduos de produção. Dentre elas: a adoção de matérias-primas recicláveis e a reutilização de substratos que antes eram descartados. Mesmo com estas práticas, alguns resíduos tem que ser destinados e para tanto, contamos com a Cetric.",
         sections: [],
-        images: ["/imagens/blog/cetric-caminhao.jpg", "/imagens/blog/responsabilidade-ambiental-cetric.jpg"]
+        images: ["/imagens/blog/responsabilidade-ambiental-cetric.jpg"]
       }
     },
     {
