@@ -37,16 +37,43 @@ const Timeline = () => {
   return (
     <section id="history" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-center mb-4 animate-fade-in">
-            Nossa história
-          </h2>
-          
-          <p className="text-center text-lg text-muted-foreground mb-16 max-w-3xl mx-auto">
-            Na Jungton, cada projeto é mais do que comunicação visual: é a soma de história, 
-            inovação e paixão pelo que fazemos. Nossa trajetória começou há mais de 50 anos 
-            e continua evoluindo.
-          </p>
+        <div className="max-w-7xl mx-auto">
+          {/* Header Section with Layout Similar to About */}
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center animate-fade-in relative mb-16">
+            {/* Left Column - Highlighted Statement */}
+            <div className="relative">
+              <div className="absolute left-0 top-0 bottom-0 w-px bg-border hidden md:block" />
+              <div className="md:pl-8">
+                <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+                  <strong>NOSSA HISTÓRIA</strong><br />
+                  TRADIÇÃO E INOVAÇÃO<br />
+                  EM CADA PROJETO
+                </h2>
+              </div>
+            </div>
+
+            {/* Center Decorative Line */}
+            <div className="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-px h-32 bg-border">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8">
+                <svg viewBox="0 0 32 32" className="w-full h-full text-border">
+                  <line x1="0" y1="0" x2="32" y2="32" stroke="currentColor" strokeWidth="1" />
+                  <line x1="32" y1="0" x2="0" y2="32" stroke="currentColor" strokeWidth="1" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Right Column - Text with Orange Bar */}
+            <div className="relative">
+              <div className="absolute right-0 top-0 bottom-0 w-2 bg-[#FF8C00]" />
+              <div className="pr-8 space-y-6 text-base leading-relaxed text-foreground/80">
+                <p>
+                  Na Jungton, cada projeto é mais do que comunicação visual: é a soma de história, 
+                  inovação e paixão pelo que fazemos. Nossa trajetória começou há mais de 50 anos 
+                  e continua evoluindo.
+                </p>
+              </div>
+            </div>
+          </div>
 
           {/* Desktop Timeline - Horizontal */}
           <div className="hidden lg:block relative">
