@@ -637,7 +637,7 @@ const BlogPost = () => {
     content: {
       introduction: "Desde o lançamento do Programa \"Todos Jungton pelo meio Ambiente\", temos adotado algumas práticas para reduzir os resíduos de produção. Dentre elas: a adoção de matérias-primas recicláveis e a reutilização de substratos que antes eram descartados. Mesmo com estas práticas, alguns resíduos tem que ser destinados e para tanto, contamos com dois parceiros: a Cetric e Resilog.",
       sections: [],
-      images: ["/imagens/blog/RECICLE.jpg"]
+      images: ["/imagens/blog/cetric-caminhao.jpg", "/imagens/blog/responsabilidade-ambiental-cetric.jpg"]
     }
   }, {
     slug: "trofeus-acrilico-premiacao-imobiliaria",
@@ -743,8 +743,8 @@ const BlogPost = () => {
                 </div>)}
 
               {post.content.images && post.content.images.map((image, index) => <div key={index} className="relative w-full my-6 rounded-lg overflow-hidden bg-muted">
-                  
-                </div>)}
+                    <img src={image} alt={`${post.title} - imagem ${index + 1}`} className="w-full h-auto object-contain" />
+                 </div>)}
             </div>
 
             <div className="mt-12 pt-8 border-t">
