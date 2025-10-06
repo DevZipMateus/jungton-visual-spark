@@ -43,6 +43,9 @@ const ArquiteturaEngenharia = () => {
     "Totens e fachadas personalizadas",
     "Comunicação visual para stands e mostras",
     "Revestimentos e painéis decorativos",
+    "Placas de obra",
+    "Identificação de empreendimentos",
+    "Decorativos e branding em áreas comuns",
   ];
 
   return (
