@@ -7,6 +7,51 @@ import { Card, CardContent } from "@/components/ui/card";
 const Blog = () => {
   const posts = [
     {
+      slug: "memoria-documentacao-projetos-nuvem",
+      title: "A MEMÓRIA QUE NÃO SE APAGA: Por que documentamos cada detalhe do seu projeto na nuvem",
+      date: "06 de outubro de 2025",
+      author: "Jungton",
+      excerpt: "Você já precisou refazer um material de comunicação visual depois de algum tempo e percebeu que a cor não era exatamente a mesma? A memória humana falha, anotações se perdem e computadores podem quebrar.",
+      image: "/imagens/blog/memoria-documentacao-nuvem.jpg",
+      category: "Gestão de Projetos",
+      content: {
+        introduction: "Você já precisou refazer um material de comunicação visual depois de algum tempo e percebeu que a cor não era exatamente a mesma? Ou talvez quisesse replicar um projeto em uma nova filial, mas as medidas e os detalhes de instalação originais haviam se perdido? A memória humana falha, anotações se perdem e computadores podem quebrar. É por isso que, na Jungton Comunicação Visual, tratamos cada projeto como um ativo valioso da sua marca, com um registro que não se perde: uma memória digital completa e segura na nuvem.",
+        sections: [
+          {
+            title: "O Fim do 'Achismo' na Comunicação Visual",
+            content: "Acreditamos que a excelência está nos detalhes. Um trabalho profissional não pode depender de suposições ou da sorte. Por isso, implementamos um processo rigoroso onde cada orçamento ou trabalho executado pela nossa equipe é documentado nos mínimos detalhes. Não deixamos espaço para o 'eu acho que era essa tinta' ou 'parece que usamos aquele material'.\n\nNós transformamos informações em dados precisos. Para cada projeto, registramos um histórico completo que inclui:\n\n• Datas: Do orçamento à instalação e entrega final\n• Materiais: Especificação exata de lonas, adesivos, acrílicos, ACM, etc.\n• Tintas e Cores: O código exato da tinta, garantindo fidelidade de cor em qualquer produção futura\n• Equipamentos: As máquinas de impressão e corte utilizadas\n• Perfis de Impressão: As configurações e calibragens exatas usadas, que influenciam diretamente no resultado final das cores e da qualidade\n• Estruturas e Acabamentos: O tipo de estrutura metálica, a madeira utilizada, e até mesmo a marca e o modelo da fita dupla-face para garantir a melhor fixação\n• Iluminação: O tipo de LED, a potência da fonte e o esquema de montagem para fachadas e luminosos\n• Observações de Instalação: Detalhes cruciais anotados por nossa equipe em campo para garantir segurança e eficiência em manutenções ou projetos futuros\n\nTodo esse dossiê, acompanhado de fotos de cada etapa da produção e instalação, é armazenado de forma segura em nosso sistema na nuvem.",
+            image: ""
+          },
+          {
+            title: "Os Benefícios Diretos para o Seu Negócio",
+            content: "'Mas o que eu ganho com isso?', você pode se perguntar. A resposta é simples: segurança, economia e consistência.",
+            image: ""
+          },
+          {
+            title: "1. Padronização Absoluta",
+            content: "Precisa de uma segunda peça para a sua fachada daqui a dois anos? Quer adesivar um novo veículo para a sua frota? Nós garantimos que ele será idêntico ao primeiro. Mesma cor, mesmo material, mesma qualidade.",
+            image: ""
+          },
+          {
+            title: "2. Agilidade em Novos Projetos",
+            content: "Ao solicitar uma nova peça ou um orçamento para replicar um trabalho, não perdemos tempo levantando todas as informações novamente. Acessamos o histórico do seu projeto em segundos, tornando o processo muito mais rápido e preciso.",
+            image: ""
+          },
+          {
+            title: "3. Manutenção Eficiente",
+            content: "Seu luminoso apresentou um problema? Nós sabemos exatamente qual tipo de LED e qual fonte de energia foram instalados, permitindo um diagnóstico rápido e uma substituição exata, sem 'quebra-cabeças' ou adaptações.",
+            image: ""
+          },
+          {
+            title: "4. Tranquilidade e Confiança",
+            content: "O histórico do seu projeto não está em uma pasta de papel que pode se perder ou em um HD que pode queimar. Ele está seguro, organizado e sempre acessível para nós. É a garantia de que o investimento na identidade visual da sua empresa está protegido e tem continuidade.\n\nNa JUNGTON, um projeto não termina na entrega. Ele se torna parte de um registro duradouro, um reflexo do nosso compromisso com a qualidade e com o sucesso a longo prazo dos nossos clientes.\n\nPensando em seu próximo projeto de comunicação visual? Fale com a JUNGTON e descubra a tranquilidade de trabalhar com uma empresa que valoriza a memória e a precisão do seu investimento.",
+            image: ""
+          }
+        ],
+        images: []
+      }
+    },
+    {
       slug: "arquitetura-comercial-comunicacao-visual",
       title: "Arquitetura comercial e comunicação visual: o segredo do sucesso",
       date: "18 de fevereiro de 2020",
