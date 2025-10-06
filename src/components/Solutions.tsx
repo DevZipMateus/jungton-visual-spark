@@ -77,13 +77,8 @@ const Solutions = () => {
             Soluções personalizadas
           </h2>
           
-          <p className="text-center text-lg text-muted-foreground mb-4 max-w-3xl mx-auto">
-            Cada negócio tem sua identidade, seu público e suas próprias necessidades de comunicação visual.
-          </p>
-
-          <p className="text-center text-base text-foreground/80 mb-16 max-w-2xl mx-auto">
-            Por isso, na Jungton colocamos em prática, com excelência, os projetos desenvolvidos por 
-            escritórios de arquitetura, engenharia, agências de publicidade e empresas em geral.
+          <p className="text-center text-lg text-muted-foreground mb-16 max-w-3xl mx-auto">
+            Cada negócio tem sua identidade, seu público e suas próprias necessidades de comunicação visual. Por isso, na Jungton colocamos em prática, com excelência, os projetos desenvolvidos por escritórios de arquitetura, engenharia, agências de publicidade e empresas em geral.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
