@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import OptimizedImage from "@/components/OptimizedImage";
-import textureMosaic from "@/assets/texture-mosaic.jpg";
+import textureGrid from "@/assets/texture-grid.png";
 
 const Solutions = () => {
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
@@ -73,9 +73,9 @@ const Solutions = () => {
   return (
     <section id="solutions" className="py-20 bg-muted/30 relative overflow-hidden">
       {/* Background Texture */}
-      <div className="absolute inset-0 opacity-5 pointer-events-none">
+      <div className="absolute inset-0 opacity-30 pointer-events-none">
         <img 
-          src={textureMosaic} 
+          src={textureGrid} 
           alt="" 
           className="w-full h-full object-cover"
         />
