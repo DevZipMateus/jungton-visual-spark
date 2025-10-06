@@ -1,5 +1,4 @@
 import logo from "@/assets/jungton-logo.png";
-import montesiteLogo from "@/assets/montesite-logo.png";
 
 const Footer = () => {
   return (
@@ -109,17 +108,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-secondary-foreground/20 pt-8 text-center text-sm text-secondary-foreground/80">
-          <div className="inline-flex items-center justify-center gap-2 mb-4 bg-white px-6 py-3 rounded-lg">
-            <span className="text-gray-700">Site desenvolvido por</span>
-            <a 
-              href="https://montesite.com.br/vitrine-publica" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="hover:opacity-80 transition-smooth"
-            >
-              <img src={montesiteLogo} alt="MonteSite" className="h-5" />
-            </a>
-          </div>
+          <div id="montesite-footer-badge" className="mb-4"></div>
           <p>&copy; {new Date().getFullYear()} Jungton Comunicação Visual Ltda. Todos os direitos reservados.</p>
           <p className="mt-2">CNPJ: 87.802.179/0001-89</p>
         </div>
