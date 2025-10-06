@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Tag } from "lucide-react";
 
 const Blog = () => {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  
   const posts = [
     {
       slug: "memoria-documentacao-projetos-nuvem",
@@ -826,6 +830,11 @@ const Blog = () => {
   // Extract unique categories
   const allCategories = [...new Set(posts.map(post => post.category))].sort();
 
+  // Filter posts based on selected category
+  const filteredPosts = selectedCategory 
+    ? posts.filter(post => post.category === selectedCategory)
+    : posts;
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -852,7 +861,7 @@ const Blog = () => {
                 {/* Center Column - Posts Grid */}
                 <div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {posts.map((post, index) => (
+                    {filteredPosts.map((post, index) => (
                       <Link key={index} to={`/blog/${post.slug}`}>
                         <Card
                           className="overflow-hidden transition-smooth hover:shadow-elegant cursor-pointer animate-scale-in h-full"
@@ -892,13 +901,22 @@ const Blog = () => {
                       <h3 className="text-lg font-semibold">Nuvem de Tags</h3>
                     </div>
                     <div className="flex flex-wrap gap-2">
+                      <Badge
+                        variant={selectedCategory === null ? "default" : "outline"}
+                        className="cursor-pointer hover:bg-primary/20 transition-colors"
+                        onClick={() => setSelectedCategory(null)}
+                      >
+                        Todas
+                      </Badge>
                       {allCategories.map((category, index) => (
-                        <span
+                        <Badge
                           key={index}
-                          className="inline-block px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full hover:bg-primary/20 transition-colors cursor-pointer"
+                          variant={selectedCategory === category ? "default" : "outline"}
+                          className="cursor-pointer hover:bg-primary/20 transition-colors"
+                          onClick={() => setSelectedCategory(category)}
                         >
                           {category}
-                        </span>
+                        </Badge>
                       ))}
                     </div>
                   </Card>
