@@ -68,7 +68,6 @@ const SupermercadosVarejo = () => {
                 </ul>
               </div>
 
-              <h2 className="mb-8">Galeria de projetos</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {images.map((image, idx) => (
                   <div
