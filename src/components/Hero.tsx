@@ -45,9 +45,7 @@ const Hero = () => {
             Jungton Comunicação Visual Ltda
           </h1>
           
-          <h2 className="mb-8 text-white/90 font-normal">
-            Comunicação visual que gera conexão e resultados
-          </h2>
+          
 
           
 
