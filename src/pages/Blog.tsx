@@ -743,7 +743,7 @@ const Blog = () => {
     },
     {
       slug: "acrilico-material-versatil",
-      title: "Acrílico: material versátil e com alta resistência",
+      title: "Material versátil e com alta resistência",
       date: "16 de junho de 2016",
       author: "Jungton",
       excerpt: "O acrílico conquista cada vez mais o mercado de comunicação visual pela sua facilidade de adquirir formas, uniformidade e alta resistência.",
