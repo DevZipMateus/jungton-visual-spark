@@ -775,7 +775,7 @@ const Blog = () => {
       date: "30 de janeiro de 2025",
       author: "Jungton",
       excerpt: "Os troféus de acrílico são uma escolha moderna e sofisticada para valorizar o desempenho dos corretores no mercado imobiliário.",
-      image: "/imagens/blog/a954fba5-e8b8-4060-837f-16191976a7a8-cropped.jpg",
+      image: "/imagens/blog/a954fba5-e8b8-4060-837f-16191976a7a8.jpg",
       category: "Premiação",
       content: {
         introduction: "Os troféus de acrílico são uma escolha moderna e sofisticada para valorizar o desempenho dos corretores no mercado imobiliário. Versáteis e elegantes, eles podem ser produzidos em diferentes formas e tamanhos, refletindo a identidade visual da imobiliária e o tema da campanha de vendas.",
@@ -783,17 +783,17 @@ const Blog = () => {
           {
             title: "Vantagens dos Troféus de Acrílico",
             content: "Além da leveza e resistência do material — que facilitam o transporte e a entrega durante eventos — o acrílico permite personalização em alta qualidade, incluindo o logotipo da empresa, o nome do corretor e a categoria conquistada. Isso transforma cada troféu em um reconhecimento exclusivo, que fortalece o orgulho profissional e o vínculo do corretor com a marca.\n\nOutro diferencial é o design transparente, que pode ser combinado com acrílicos coloridos, criando um efeito visual marcante na cerimônia de premiação. Esse cuidado não apenas valoriza o momento, mas também reforça a imagem da imobiliária como inovadora e atenta aos detalhes.",
-            image: "/imagens/blog/IMG_20240802_092609124_HDR-cropped.jpg"
+            image: "/imagens/blog/IMG_20240802_092609124_HDR.jpg"
           },
           {
             title: "Mais que um prêmio",
             content: "Com os troféus de acrílico, o reconhecimento ganha mais que forma: ganha prestígio e destaque, tornando-se um símbolo de conquista que os corretores terão orgulho de expor e compartilhar.\n\nPremie corretores com troféus de acrílico exclusivos. Afinal, a premiação vai além do prêmio em si — ela é também uma ferramenta de marketing interno (motivação e retenção de talentos) e externo (fortalecimento da marca).",
-            image: "/imagens/blog/IMG_20240408_080240098-cropped.jpg"
+            image: "/imagens/blog/IMG_20240408_080240098.jpg"
           },
           {
             title: "Campanha de Premiação: Troféu Estrelas da Venda 2025",
             content: "**Objetivo:**\n• Reconhecer e valorizar os corretores com melhor desempenho\n• Estimular engajamento e competição saudável\n• Reforçar a imagem da imobiliária como empresa que valoriza talentos\n\n**Nome e Identidade da Campanha:**\n• Nome: Estrelas da Venda 2025\n• Slogan: \"Cada conquista merece brilhar.\"\n• Cores e Visual: dourado, preto e branco (transmitem sofisticação e prestígio)\n• Elementos gráficos: estrelas, faixas de vitória, toques metálicos",
-            image: "/imagens/blog/IMG_20230824_075009549_HDR-cropped.jpg"
+            image: "/imagens/blog/IMG_20230824_075009549_HDR.jpg"
           },
           {
             title: "Etapas da Campanha",
@@ -803,7 +803,7 @@ const Blog = () => {
           {
             title: "Categorias de Premiação",
             content: "• **Troféu Ouro – Top Vendedor do Ano:** maior volume em vendas\n• **Troféu Prata – Destaque em Captação:** corretor que mais trouxe novos imóveis\n• **Troféu Bronze – Revelação do Ano:** corretor iniciante que se destacou\n• **Troféu Cliente Satisfeito:** mais avaliações positivas de clientes\n\n(Opcional: todos recebem certificado de participação, reforçando o reconhecimento coletivo)",
-            image: "/imagens/blog/IMG_20230329_144545030_HDR-cropped.jpg"
+            image: "/imagens/blog/IMG_20230329_144545030_HDR.jpg"
           },
           {
             title: "Exemplos de Prêmios",
