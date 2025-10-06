@@ -138,7 +138,7 @@ const Timeline = () => {
           </div>
 
           {/* Additional History Text */}
-          <div className="mt-16 max-w-4xl mx-auto space-y-6 text-lg leading-relaxed text-foreground/80">
+          <div className="mt-16 max-w-4xl mx-auto space-y-6 text-lg leading-relaxed text-foreground/80 text-justify">
             <p>
               De São Borja a Santa Maria, da pintura manual aos mais avançados recursos digitais, 
               crescemos junto com as transformações do mercado. O olhar cuidadoso e criativo que 
