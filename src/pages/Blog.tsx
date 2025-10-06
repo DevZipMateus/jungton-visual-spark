@@ -764,7 +764,7 @@ const Blog = () => {
       image: "/imagens/blog/RECICLE.jpg",
       category: "Responsabilidade Ambiental",
       content: {
-        introduction: "Desde o lançamento do Programa \"Todos Jungton pelo meio Ambiente\", temos adotado algumas práticas para reduzir os resíduos de produção. Dentre elas: a adoção de matérias-primas recicláveis e a reutilização de substratos que antes eram descartados. Mesmo com estas práticas, alguns resíduos tem que ser destinados e para tanto, contamos com dois parceiros: a Cetric e Resilog.",
+        introduction: "Desde o lançamento do Programa \"Todos Jungton pelo meio Ambiente\", temos adotado algumas práticas para reduzir os resíduos de produção. Dentre elas: a adoção de matérias-primas recicláveis e a reutilização de substratos que antes eram descartados. Mesmo com estas práticas, alguns resíduos tem que ser destinados e para tanto, contamos com a Cetric.",
         sections: [],
         images: ["/imagens/blog/RECICLE.jpg"]
       }
