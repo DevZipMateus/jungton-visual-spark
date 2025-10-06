@@ -2,7 +2,10 @@ import logo from "@/assets/jungton-logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary text-secondary-foreground py-12">
+    <>
+      <div id="montesite-footer-badge"></div>
+      <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
+      <footer className="bg-secondary text-secondary-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
@@ -113,6 +116,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 
