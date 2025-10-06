@@ -151,9 +151,14 @@ const Timeline = () => {
               confiança de que entregaremos dentro do prazo e com a qualidade de sempre.
             </p>
 
-            <p className="text-xl font-semibold text-primary text-center pt-4">
-              A história da Jungton continua — e cada novo desafio é um convite para inovar ainda mais
-            </p>
+            <div className="relative mt-12 pl-8">
+              <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#FF8C00]" />
+              <p className="text-xl md:text-2xl font-bold leading-tight">
+                A HISTÓRIA CONTINUA<br />
+                E CADA NOVO DESAFIO É UM<br />
+                CONVITE PARA INOVAR AINDA MAIS
+              </p>
+            </div>
           </div>
         </div>
       </div>
