@@ -1,4 +1,4 @@
-import { Building2, Palette, Monitor, Users, TrendingUp } from "lucide-react";
+import { Building2, Palette, Monitor, Users, TrendingUp, Home } from "lucide-react";
 
 const Timeline = () => {
   const milestones = [
@@ -25,6 +25,12 @@ const Timeline = () => {
       title: "Nova gestão",
       description: "Ana Cristina e Zélia Maria assumem a gestão e aceleram a modernização",
       icon: Users,
+    },
+    {
+      year: "2012",
+      title: "Sede própria",
+      description: "Mudança para sede própria, maior e mais completa, reunindo atendimento, administrativo e produção em um só lugar",
+      icon: Home,
     },
     {
       year: "Hoje",
@@ -80,7 +86,7 @@ const Timeline = () => {
             {/* Line */}
             <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-primary/20 -translate-y-1/2" />
             
-            <div className="relative grid grid-cols-5 gap-4">
+            <div className="relative grid grid-cols-6 gap-4">
               {milestones.map((milestone, index) => {
                 const Icon = milestone.icon;
                 return (
