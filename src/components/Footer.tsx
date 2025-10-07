@@ -7,8 +7,7 @@ const Footer = () => {
       <div id="montesite-footer-badge"></div>
       <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
       <footer 
-        className="bg-white text-foreground py-12 relative bg-cover bg-center"
-        style={{ backgroundImage: `url(${footerBg})` }}
+        className="bg-white text-foreground py-12 relative"
       >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
