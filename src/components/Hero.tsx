@@ -26,46 +26,7 @@ const Hero = () => {
     }
   };
   return <>
-      {/* Full-width decorative line at header/hero division */}
-      <div className="fixed top-20 left-0 right-0 w-full bg-background z-40">
-        <svg 
-          width="100%" 
-          height="16" 
-          preserveAspectRatio="none"
-          viewBox="0 0 1000 16"
-          className="w-full"
-        >
-          {/* Left line */}
-          <line 
-            x1="0" 
-            y1="2" 
-            x2="490" 
-            y2="2" 
-            stroke="hsl(var(--foreground))" 
-            strokeWidth="2.5" 
-          />
-          {/* Downward V notch with white fill */}
-          <polyline 
-            points="490,2 500,12 510,2" 
-            stroke="hsl(var(--foreground))" 
-            strokeWidth="2.5" 
-            fill="white"
-            strokeLinecap="square"
-            strokeLinejoin="miter"
-          />
-          {/* Right line */}
-          <line 
-            x1="510" 
-            y1="2" 
-            x2="1000" 
-            y2="2" 
-            stroke="hsl(var(--foreground))" 
-            strokeWidth="2.5" 
-          />
-        </svg>
-      </div>
-      
-      <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Images Carousel */}
       {backgroundImages.map((image, index) => <div key={index} className="absolute inset-0 transition-opacity duration-1000 ease-in-out" style={{
       opacity: currentImageIndex === index ? 1 : 0
