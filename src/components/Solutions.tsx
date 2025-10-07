@@ -71,13 +71,13 @@ const Solutions = () => {
   }, []);
 
   return (
-    <section id="solutions" className="py-20 bg-muted/30 relative overflow-hidden">
-      {/* Background Texture */}
-      <div className="absolute inset-0 opacity-30 pointer-events-none">
+    <section id="solutions" className="py-20 relative overflow-hidden">
+      {/* Background Texture - Full Width */}
+      <div className="absolute inset-0 pointer-events-none">
         <img 
           src={textureGrid} 
           alt="" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-20"
         />
       </div>
       
@@ -85,10 +85,10 @@ const Solutions = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             {/* Decorative line with title and arrow */}
-            <div className="relative max-w-2xl mx-auto mb-8">
+            <div className="relative mb-8">
               <div className="flex items-center justify-center gap-4">
                 <div className="flex-1 h-px bg-foreground" />
-                <h2 className="uppercase tracking-wider font-bold text-xl whitespace-nowrap">
+                <h2 className="whitespace-nowrap">
                   SOLUÇÕES PERSONALIZADAS
                 </h2>
                 <div className="flex-1 h-px bg-foreground" />
@@ -101,7 +101,7 @@ const Solutions = () => {
             </div>
           </div>
           
-          <p className="text-center text-justify text-lg text-muted-foreground mb-16 max-w-3xl mx-auto">
+          <p className="text-center text-justify text-muted-foreground mb-16 max-w-3xl mx-auto">
             Cada negócio tem sua identidade, seu público e suas próprias necessidades de comunicação visual. Por isso, na Jungton colocamos em prática, com excelência, os projetos desenvolvidos por escritórios de arquitetura, engenharia, agências de publicidade e empresas em geral.
           </p>
 
@@ -127,14 +127,14 @@ const Solutions = () => {
                 </div>
                 
                 <CardContent className="p-6">
-                  <p className="text-muted-foreground mb-4">{solution.description}</p>
+                  <h3 className="mb-4">{solution.description}</h3>
                   
                   {expandedCard === index && (
                     <div className="space-y-2 animate-fade-in">
-                      <p className="font-semibold text-sm text-primary mb-2">Serviços inclusos:</p>
+                      <p className="font-semibold text-primary mb-2">Serviços inclusos:</p>
                       <ul className="space-y-1">
                         {solution.services.map((service, idx) => (
-                          <li key={idx} className="text-sm text-foreground/80 flex items-start">
+                          <li key={idx} className="text-foreground/80 flex items-start">
                             <span className="text-primary mr-2">•</span>
                             {service}
                           </li>
@@ -164,11 +164,11 @@ const Solutions = () => {
             
             {/* Text */}
             <div className="flex-shrink-0">
-              <p className="text-sm md:text-base font-semibold leading-tight">
+              <h2 className="leading-tight">
                 NA JUNGTON<br />
                 SEU PROJETO GANHA VIDA<br />
                 COM QUALIDADE E PRECISÃO
-              </p>
+              </h2>
             </div>
             
             {/* Decorative Line with Diamond */}

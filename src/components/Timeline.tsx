@@ -42,13 +42,13 @@ const Timeline = () => {
   ];
 
   return (
-    <section id="history" className="py-20 bg-background relative overflow-hidden">
-      {/* Background Texture */}
-      <div className="absolute inset-0 opacity-30 pointer-events-none">
+    <section id="history" className="py-20 relative overflow-hidden">
+      {/* Background Texture - Full Width */}
+      <div className="absolute inset-0 pointer-events-none">
         <img 
           src={textureGrid} 
           alt="" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-20"
         />
       </div>
       
@@ -60,8 +60,8 @@ const Timeline = () => {
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-px bg-border hidden md:block" />
               <div className="md:pl-8">
-                <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-                  <strong>NOSSA HISTÓRIA</strong><br />
+                <h2 className="leading-tight">
+                  NOSSA HISTÓRIA<br />
                   TRADIÇÃO E INOVAÇÃO<br />
                   EM CADA PROJETO
                 </h2>
@@ -81,7 +81,7 @@ const Timeline = () => {
             {/* Right Column - Text with Orange Bar */}
             <div className="relative">
               <div className="absolute right-0 top-0 bottom-0 w-2 bg-[#FF8C00]" />
-              <div className="pr-8 space-y-6 text-base leading-relaxed text-foreground/80">
+              <div className="pr-8 space-y-6 leading-relaxed text-foreground/80">
                 <p>
                   Na Jungton, cada projeto é mais do que comunicação visual: é a soma de história, 
                   inovação e paixão pelo que fazemos. Nossa trajetória começou há mais de 50 anos 
@@ -110,8 +110,8 @@ const Timeline = () => {
                         <Icon className="w-8 h-8" />
                       </div>
                       <div className="font-bold text-2xl text-primary mb-2">{milestone.year}</div>
-                      <h3 className="text-lg font-semibold mb-2">{milestone.title}</h3>
-                      <p className="text-sm text-muted-foreground">{milestone.description}</p>
+                      <h3 className="mb-2">{milestone.title}</h3>
+                      <p className="text-muted-foreground">{milestone.description}</p>
                     </div>
                   </div>
                 );
@@ -139,8 +139,8 @@ const Timeline = () => {
                     
                     {/* Content */}
                     <div className="font-bold text-xl text-primary mb-1">{milestone.year}</div>
-                    <h3 className="text-lg font-semibold mb-2">{milestone.title}</h3>
-                    <p className="text-sm text-muted-foreground">{milestone.description}</p>
+                    <h3 className="mb-2">{milestone.title}</h3>
+                    <p className="text-muted-foreground">{milestone.description}</p>
                   </div>
                 );
               })}
@@ -148,7 +148,7 @@ const Timeline = () => {
           </div>
 
           {/* Additional History Text */}
-          <div className="mt-16 max-w-4xl mx-auto space-y-6 text-lg leading-relaxed text-foreground/80 text-justify">
+          <div className="mt-16 max-w-4xl mx-auto space-y-6 leading-relaxed text-foreground/80 text-justify">
             <p>
               De São Borja a Santa Maria, da pintura manual aos mais avançados recursos digitais, 
               crescemos junto com as transformações do mercado. O olhar cuidadoso e criativo que 
@@ -163,11 +163,11 @@ const Timeline = () => {
 
             <div className="relative mt-12 pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#FF8C00]" />
-              <p className="text-xl md:text-2xl font-bold leading-tight">
+              <h2 className="leading-tight">
                 A HISTÓRIA CONTINUA<br />
                 E CADA NOVO DESAFIO É UM<br />
                 CONVITE PARA INOVAR AINDA MAIS
-              </p>
+              </h2>
             </div>
           </div>
         </div>

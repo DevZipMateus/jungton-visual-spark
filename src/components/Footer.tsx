@@ -24,7 +24,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4">Links rápidos</h3>
+            <h3 className="mb-4">LINKS RÁPIDOS</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <button
@@ -75,7 +75,7 @@ const Footer = () => {
 
           {/* Social Media */}
           <div>
-            <h3 className="font-semibold mb-4">Redes sociais</h3>
+            <h3 className="mb-4">REDES SOCIAIS</h3>
             <div className="flex gap-4">
               <a
                 href="https://www.facebook.com/jungtoncomunicacaovisual"

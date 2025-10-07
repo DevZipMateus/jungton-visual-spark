@@ -88,24 +88,27 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-kozuka;
     font-feature-settings: "kern" 1, "liga" 1;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-bold tracking-tight;
-  }
-
+  /* Títulos de seção - CAIXA ALTA e NEGRITO - tamanho uniforme */
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl;
+    @apply text-xl font-bold uppercase tracking-wider;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl lg:text-5xl;
+    @apply text-xl font-bold uppercase tracking-wider;
   }
 
+  /* Subtítulos - sem negrito - tamanho uniforme */
   h3 {
-    @apply text-2xl md:text-3xl;
+    @apply text-base font-normal;
+  }
+
+  /* Textos padrão */
+  p {
+    @apply text-base;
   }
 }
 

@@ -1,13 +1,13 @@
 import textureGrid from "@/assets/texture-grid.png";
 
 const About = () => {
-  return <section id="about" className="py-20 bg-background relative overflow-hidden">
-      {/* Background Texture */}
-      <div className="absolute inset-0 opacity-30 pointer-events-none">
+  return <section id="about" className="py-20 relative overflow-hidden">
+      {/* Background Texture - Full Width */}
+      <div className="absolute inset-0 pointer-events-none">
         <img 
           src={textureGrid} 
           alt="" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-20"
         />
       </div>
       
@@ -17,7 +17,7 @@ const About = () => {
             {/* Left Column - Text with Orange Bar */}
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#FF8C00]" />
-              <div className="pl-8 space-y-6 text-base leading-relaxed text-foreground/80">
+              <div className="pl-8 space-y-6 leading-relaxed text-foreground/80">
                 <p>
                   Na Jungton, temos soluções em comunicação visual que valorizam espaços, marcas e serviços. 
                   Atendemos escritórios de arquitetura e engenharia, construtoras, supermercadistas, varejistas, 
@@ -52,8 +52,8 @@ const About = () => {
             <div className="relative">
               <div className="absolute right-0 top-0 bottom-0 w-px bg-border hidden md:block" />
               <div className="md:pr-8">
-                <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-                  <strong>A JUNGTON</strong><br />
+                <h2 className="leading-tight">
+                  A JUNGTON<br />
                   COMUNICAÇÃO VISUAL<br />
                   QUE GERA CONEXÃO<br />
                   E RESULTADOS

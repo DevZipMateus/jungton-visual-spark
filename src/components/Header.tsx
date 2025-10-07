@@ -83,7 +83,7 @@ const Header = () => {
                 <Link
                   key={item.id}
                   to={`/${item.id}`}
-                  className="text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
+                  className="font-medium text-foreground/80 hover:text-primary transition-smooth uppercase"
                 >
                   {item.label}
                 </Link>
@@ -91,7 +91,7 @@ const Header = () => {
                 <button
                   key={item.id}
                   onClick={() => handleNavigation(item.id)}
-                  className="text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
+                  className="font-medium text-foreground/80 hover:text-primary transition-smooth uppercase"
                 >
                   {item.label}
                 </button>
@@ -156,7 +156,7 @@ const Header = () => {
                   <Link
                     key={item.id}
                     to={`/${item.id}`}
-                    className="text-left text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
+                    className="text-left font-medium text-foreground/80 hover:text-primary transition-smooth uppercase"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
@@ -165,7 +165,7 @@ const Header = () => {
                   <button
                     key={item.id}
                     onClick={() => handleNavigation(item.id)}
-                    className="text-left text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
+                    className="text-left font-medium text-foreground/80 hover:text-primary transition-smooth uppercase"
                   >
                     {item.label}
                   </button>

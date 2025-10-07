@@ -47,13 +47,13 @@ const testimonials = [
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-background relative overflow-hidden">
-      {/* Background Texture */}
-      <div className="absolute inset-0 opacity-30 pointer-events-none">
+    <section id="contact" className="py-20 relative overflow-hidden">
+      {/* Background Texture - Full Width */}
+      <div className="absolute inset-0 pointer-events-none">
         <img 
           src={textureGrid} 
           alt="" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-20"
         />
       </div>
       
@@ -63,12 +63,12 @@ const Contact = () => {
             <div className="flex items-start gap-3">
               <div className="w-1 h-12 bg-primary" />
               <div>
-                <div className="text-sm font-light text-foreground/70 uppercase tracking-wider">
+                <h3 className="text-foreground/70">
                   ENTRE EM
-                </div>
-                <div className="text-3xl font-bold uppercase tracking-wide">
+                </h3>
+                <h2>
                   CONTATO
-                </div>
+                </h2>
               </div>
             </div>
             <div className="flex-1 h-px bg-border" />
@@ -82,7 +82,7 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2">Localização</h3>
+                  <h3 className="mb-2">Localização</h3>
                   <p className="text-foreground/80">
                     Rua Otávio Silvestre de Oliveira, 120<br />
                     N. Sra do Rosário<br />
@@ -96,12 +96,12 @@ const Contact = () => {
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2">Telefone</h3>
+                  <h3 className="mb-2">Telefone</h3>
                   <a href="tel:+555532217731" className="text-foreground/80 hover:text-primary transition-smooth">
                     (55) 3221-7731
                   </a>
                   <div className="mt-2">
-                    <h3 className="font-semibold mb-1">WhatsApp</h3>
+                    <h3 className="mb-1">WhatsApp</h3>
                     <a
                       href="https://wa.me/5555991630953"
                       target="_blank"
@@ -119,7 +119,7 @@ const Contact = () => {
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2">E-mail</h3>
+                  <h3 className="mb-2">E-mail</h3>
                   <a
                     href="mailto:contato@jungton.com.br"
                     className="text-foreground/80 hover:text-primary transition-smooth"
@@ -134,7 +134,7 @@ const Contact = () => {
                   <Clock className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2">Horário</h3>
+                  <h3 className="mb-2">Horário</h3>
                   <p className="text-foreground/80">
                     Segunda a sexta<br />
                     8h às 12h – 13h30 às 18h
@@ -170,7 +170,7 @@ const Contact = () => {
 
             {/* Testimonials */}
             <div className="space-y-4 animate-fade-in">
-              <h3 className="font-semibold text-lg mb-4">Avaliações de Clientes</h3>
+              <h3 className="mb-4">Avaliações de Clientes</h3>
               <div className="space-y-4 max-h-[600px] overflow-y-auto pr-2">
                 {testimonials.map((testimonial, index) => (
                   <div
@@ -182,7 +182,7 @@ const Contact = () => {
                         {testimonial.initial}
                       </div>
                       <div className="flex-1">
-                        <h4 className="font-semibold text-sm">{testimonial.name}</h4>
+                        <h4 className="font-semibold">{testimonial.name}</h4>
                         <div className="flex items-center gap-2 mt-1">
                           <div className="flex gap-0.5">
                             {[...Array(testimonial.rating)].map((_, i) => (
@@ -193,7 +193,7 @@ const Contact = () => {
                         </div>
                       </div>
                     </div>
-                    <p className="text-sm text-foreground/80 leading-relaxed">
+                    <p className="text-foreground/80 leading-relaxed">
                       {testimonial.text}
                     </p>
                   </div>
