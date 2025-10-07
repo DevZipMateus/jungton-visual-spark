@@ -42,7 +42,7 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <h1 className="mb-6 text-white">
+          <h1 className="mb-6 text-white font-bold text-5xl">
             Jungton Comunicação Visual Ltda
           </h1>
           
