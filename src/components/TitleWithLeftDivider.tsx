@@ -8,9 +8,9 @@ interface TitleWithLeftDividerProps {
 
 const TitleWithLeftDivider = ({ subtitle, title, className }: TitleWithLeftDividerProps) => {
   return (
-    <div className={cn("flex items-center my-12 md:my-16 w-full", className)}>
+    <div className={cn("flex items-center gap-4 md:gap-6 my-12 md:my-16 w-full", className)}>
       {/* Text with vertical bar */}
-      <div className="border-l-4 border-foreground pl-4 md:pl-6 mr-4 md:mr-6 whitespace-nowrap">
+      <div className="flex-shrink-0 border-l-4 border-foreground pl-4 md:pl-6 whitespace-nowrap">
         <div className="text-sm md:text-base text-muted-foreground leading-tight">
           {subtitle}
         </div>
@@ -19,21 +19,16 @@ const TitleWithLeftDivider = ({ subtitle, title, className }: TitleWithLeftDivid
         </div>
       </div>
       
-      {/* Line with V notch at start and chevron at end */}
+      {/* Line container with V notch */}
       <div className="flex-grow relative h-3">
-        <svg 
-          width="100%" 
-          height="12" 
-          preserveAspectRatio="none"
-          className="absolute top-1/2 -translate-y-1/2"
-        >
-          <path 
-            d="M 0 11 L 15 11 L 20 6 L 25 11 L 5000 11" 
-            stroke="hsl(var(--border))" 
-            strokeWidth="1.5" 
-            fill="none" 
-          />
-        </svg>
+        {/* Horizontal line */}
+        <div className="absolute left-0 top-[10px] w-full h-[1.5px] bg-border z-0" />
+        
+        {/* V notch that cuts into the line */}
+        <div 
+          className="absolute left-[15px] top-[5px] w-[10px] h-[6px] bg-background z-10"
+          style={{ clipPath: 'polygon(50% 100%, 0 0, 100% 0)' }}
+        />
       </div>
     </div>
   );
