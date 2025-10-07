@@ -29,8 +29,8 @@ const Hero = () => {
       <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Images Carousel */}
       {backgroundImages.map((image, index) => <div key={index} className="absolute inset-0 transition-opacity duration-1000 ease-in-out" style={{
-      opacity: currentImageIndex === index ? 1 : 0
-    }}>
+        opacity: currentImageIndex === index ? 1 : 0
+      }}>
           <img src={image} alt={`Hero background ${index + 1}`} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/60" />
         </div>)}
@@ -41,19 +41,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center animate-fade-in px-4">
-          <h1 className="mb-6 text-white text-xl md:text-2xl">
-            Jungton Comunicação Visual Ltda
-          </h1>
-          
-          
-
-          
-
-          
-        </div>
-      </div>
+      
     </section>
   </>;
 };
