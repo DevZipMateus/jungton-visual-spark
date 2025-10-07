@@ -57,11 +57,48 @@ const Timeline = () => {
         <div className="max-w-7xl mx-auto">
           {/* Header Section with Layout Similar to About */}
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center animate-fade-in relative mb-12 md:mb-16">
-            {/* Left Column - Highlighted Statement */}
+            {/* Left Column - Highlighted Statement with Vertical Decorative Line */}
             <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-px bg-border hidden md:block" />
+              {/* Vertical line with right-pointing V-notch */}
+              <div className="absolute left-0 top-0 bottom-0 hidden md:block">
+                <svg 
+                  width="16" 
+                  height="100%" 
+                  preserveAspectRatio="none"
+                  viewBox="0 0 16 1000"
+                  className="h-full"
+                >
+                  {/* Line from top to V notch */}
+                  <line 
+                    x1="2" 
+                    y1="0" 
+                    x2="2" 
+                    y2="300" 
+                    stroke="hsl(var(--foreground))" 
+                    strokeWidth="2.5" 
+                  />
+                  {/* Right-pointing V notch */}
+                  <polyline 
+                    points="2,300 12,310 2,320" 
+                    stroke="hsl(var(--foreground))" 
+                    strokeWidth="2.5" 
+                    fill="none"
+                    strokeLinecap="square"
+                    strokeLinejoin="miter"
+                  />
+                  {/* Line continuing to bottom */}
+                  <line 
+                    x1="2" 
+                    y1="320" 
+                    x2="2" 
+                    y2="1000" 
+                    stroke="hsl(var(--foreground))" 
+                    strokeWidth="2.5" 
+                  />
+                </svg>
+              </div>
               <div className="md:pl-8">
-                <h2 className="leading-tight text-2xl md:text-3xl">
+                <h2 className="leading-tight text-2xl md:text-3xl font-bold uppercase">
                   NOSSA HISTÓRIA<br />
                   TRADIÇÃO E INOVAÇÃO<br />
                   EM CADA PROJETO
