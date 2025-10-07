@@ -33,13 +33,13 @@ const TitleWithLeftDivider = ({ subtitle, title, className }: TitleWithLeftDivid
             x1="16" 
             y1="0" 
             x2="16" 
-            y2="60" 
+            y2="70" 
             stroke="hsl(var(--foreground))" 
             strokeWidth="2.5" 
           />
           {/* Left-pointing V notch on vertical */}
           <polyline 
-            points="16,60 0,100 16,140" 
+            points="16,70 0,100 16,130" 
             stroke="hsl(var(--foreground))" 
             strokeWidth="2.5" 
             fill="none"
@@ -49,7 +49,7 @@ const TitleWithLeftDivider = ({ subtitle, title, className }: TitleWithLeftDivid
           {/* Vertical line continuing down to corner */}
           <line 
             x1="16" 
-            y1="140" 
+            y1="130" 
             x2="16" 
             y2="198" 
             stroke="hsl(var(--foreground))" 
