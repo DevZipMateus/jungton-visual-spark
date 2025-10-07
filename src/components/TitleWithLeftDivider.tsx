@@ -32,7 +32,7 @@ const TitleWithLeftDivider = ({ subtitle, title, className }: TitleWithLeftDivid
           <polyline 
             points="15,2 25,12 35,2" 
             stroke="hsl(var(--border))" 
-            strokeWidth="1.5" 
+            strokeWidth="2.5" 
             fill="none"
             strokeLinecap="square"
             strokeLinejoin="miter"
@@ -44,7 +44,7 @@ const TitleWithLeftDivider = ({ subtitle, title, className }: TitleWithLeftDivid
             x2="1000" 
             y2="2" 
             stroke="hsl(var(--border))" 
-            strokeWidth="1.5" 
+            strokeWidth="2.5" 
           />
         </svg>
       </div>

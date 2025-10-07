@@ -33,13 +33,13 @@ const TitleWithCenteredDivider = ({ title, className, showImage = false }: Title
                 x2="490" 
                 y2="2" 
                 stroke="hsl(var(--border))" 
-                strokeWidth="1.5" 
+                strokeWidth="2.5" 
               />
               {/* Downward V notch */}
               <polyline 
                 points="490,2 500,12 510,2" 
                 stroke="hsl(var(--border))" 
-                strokeWidth="1.5" 
+                strokeWidth="2.5" 
                 fill="none"
                 strokeLinecap="square"
                 strokeLinejoin="miter"
@@ -51,7 +51,7 @@ const TitleWithCenteredDivider = ({ title, className, showImage = false }: Title
                 x2="1000" 
                 y2="2" 
                 stroke="hsl(var(--border))" 
-                strokeWidth="1.5" 
+                strokeWidth="2.5" 
               />
             </svg>
           </div>
