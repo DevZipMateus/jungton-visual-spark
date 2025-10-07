@@ -6,6 +6,46 @@ const Footer = () => {
     <>
       <div id="montesite-footer-badge"></div>
       <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
+      
+      {/* Decorative line with downward V notch */}
+      <div className="relative w-full py-8">
+        <svg 
+          width="100%" 
+          height="16" 
+          preserveAspectRatio="none"
+          viewBox="0 0 1000 16"
+          className="w-full"
+        >
+          {/* Left line */}
+          <line 
+            x1="0" 
+            y1="2" 
+            x2="490" 
+            y2="2" 
+            stroke="hsl(var(--border))" 
+            strokeWidth="1.5" 
+          />
+          {/* Downward V notch */}
+          <polyline 
+            points="490,2 500,12 510,2" 
+            stroke="hsl(var(--border))" 
+            strokeWidth="1.5" 
+            fill="none"
+            strokeLinecap="square"
+            strokeLinejoin="miter"
+          />
+          {/* Right line */}
+          <line 
+            x1="510" 
+            y1="2" 
+            x2="1000" 
+            y2="2" 
+            stroke="hsl(var(--border))" 
+            strokeWidth="1.5" 
+          />
+        </svg>
+      </div>
+
       <footer 
         className="bg-white text-foreground py-12 relative"
       >
