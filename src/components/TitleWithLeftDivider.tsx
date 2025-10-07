@@ -19,16 +19,34 @@ const TitleWithLeftDivider = ({ subtitle, title, className }: TitleWithLeftDivid
         </div>
       </div>
       
-      {/* Line container with V notch */}
-      <div className="flex-grow relative h-3">
-        {/* Horizontal line */}
-        <div className="absolute left-0 top-[10px] w-full h-[1.5px] bg-border z-0" />
-        
-        {/* V notch that cuts into the line */}
-        <div 
-          className="absolute left-[15px] top-[5px] w-[10px] h-[6px] bg-background z-10"
-          style={{ clipPath: 'polygon(50% 100%, 0 0, 100% 0)' }}
-        />
+      {/* Line with V notch */}
+      <div className="flex-grow relative">
+        <svg 
+          width="100%" 
+          height="16" 
+          preserveAspectRatio="none"
+          viewBox="0 0 1000 16"
+          className="w-full"
+        >
+          {/* Downward V notch at start */}
+          <polyline 
+            points="15,2 25,12 35,2" 
+            stroke="hsl(var(--border))" 
+            strokeWidth="1.5" 
+            fill="none"
+            strokeLinecap="square"
+            strokeLinejoin="miter"
+          />
+          {/* Line continuing to end */}
+          <line 
+            x1="35" 
+            y1="2" 
+            x2="1000" 
+            y2="2" 
+            stroke="hsl(var(--border))" 
+            strokeWidth="1.5" 
+          />
+        </svg>
       </div>
     </div>
   );
