@@ -1,7 +1,7 @@
 import { MapPin, Phone, Mail, Clock, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import textureGrid from "@/assets/texture-grid.png";
-import DecorativeLine from "@/components/DecorativeLine";
+import TitleWithLeftDivider from "@/components/TitleWithLeftDivider";
 
 const testimonials = [
   {
@@ -60,20 +60,11 @@ const Contact = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mb-12 md:mb-16 animate-fade-in px-4 md:px-0">
-            <div className="flex items-start gap-3">
-              <div className="w-1 h-10 md:h-12 bg-primary" />
-              <div>
-                <h3 className="text-foreground/70 text-sm md:text-base">
-                  ENTRE EM
-                </h3>
-                <h2 className="text-xl md:text-2xl">
-                  CONTATO
-                </h2>
-              </div>
-            </div>
-            <DecorativeLine className="flex-1 w-full md:w-auto" />
-          </div>
+          <TitleWithLeftDivider 
+            subtitle="ENTRE EM" 
+            title="CONTATO" 
+            className="mb-12 md:mb-16 animate-fade-in px-4 md:px-0" 
+          />
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-4 md:px-0">
             {/* Contact Information */}
