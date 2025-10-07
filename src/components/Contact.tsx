@@ -1,6 +1,7 @@
 import { MapPin, Phone, Mail, Clock, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import textureGrid from "@/assets/texture-grid.png";
+import DecorativeLine from "@/components/DecorativeLine";
 
 const testimonials = [
   {
@@ -71,7 +72,7 @@ const Contact = () => {
                 </h2>
               </div>
             </div>
-            <div className="flex-1 h-px bg-border w-full md:w-auto" />
+            <DecorativeLine className="flex-1 w-full md:w-auto" />
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-4 md:px-0">

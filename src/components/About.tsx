@@ -1,4 +1,5 @@
 import textureGrid from "@/assets/texture-grid.png";
+import DecorativeLine from "@/components/DecorativeLine";
 
 const About = () => {
   return <section id="about" className="py-20 relative overflow-hidden">
@@ -39,14 +40,10 @@ const About = () => {
             </div>
 
             {/* Center Decorative Line */}
-            <div className="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-px h-32 bg-border">
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8">
-                <svg viewBox="0 0 32 32" className="w-full h-full text-border">
-                  <line x1="0" y1="0" x2="32" y2="32" stroke="currentColor" strokeWidth="1" />
-                  <line x1="32" y1="0" x2="0" y2="32" stroke="currentColor" strokeWidth="1" />
-                </svg>
-              </div>
-            </div>
+            <DecorativeLine 
+              orientation="vertical"
+              className="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-32"
+            />
 
             {/* Right Column - Highlighted Statement */}
             <div className="relative order-1 md:order-2">

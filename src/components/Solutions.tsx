@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import OptimizedImage from "@/components/OptimizedImage";
 import textureGrid from "@/assets/texture-grid.png";
+import DecorativeLine from "@/components/DecorativeLine";
 
 const Solutions = () => {
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
@@ -84,20 +85,12 @@ const Solutions = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 md:mb-16 animate-fade-in">
-            {/* Decorative line with title and arrow */}
+            {/* Decorative line with title */}
             <div className="relative max-w-2xl mx-auto mb-6 md:mb-8 px-4">
-              <div className="flex items-center justify-center gap-2 md:gap-4">
-                <div className="flex-1 h-px bg-foreground" />
-                <h2 className="whitespace-nowrap text-base md:text-xl">
-                  SOLUÇÕES PERSONALIZADAS
-                </h2>
-                <div className="flex-1 h-px bg-foreground" />
-              </div>
-              <div className="flex justify-center mt-2">
-                <svg className="w-4 h-4 text-foreground" viewBox="0 0 24 24" fill="currentColor">
-                  <polygon points="12,17 7,12 17,12" />
-                </svg>
-              </div>
+              <DecorativeLine className="mb-4" />
+              <h2 className="text-center text-base md:text-xl">
+                SOLUÇÕES PERSONALIZADAS
+              </h2>
             </div>
           </div>
           
@@ -172,9 +165,7 @@ const Solutions = () => {
             </div>
             
             {/* Decorative Line with Diamond */}
-            <div className="relative flex-grow h-px bg-border ml-0 md:ml-4 w-full md:w-auto">
-              <div className="absolute left-8 top-1/2 -translate-y-1/2 w-2 h-2 bg-border rotate-45" />
-            </div>
+            <DecorativeLine className="flex-grow ml-0 md:ml-4 w-full md:w-auto" />
           </div>
         </div>
       </div>
