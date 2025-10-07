@@ -83,12 +83,12 @@ const Solutions = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
+          <div className="text-center mb-12 md:mb-16 animate-fade-in">
             {/* Decorative line with title and arrow */}
-            <div className="relative mb-8">
-              <div className="flex items-center justify-center gap-4">
+            <div className="relative max-w-2xl mx-auto mb-6 md:mb-8 px-4">
+              <div className="flex items-center justify-center gap-2 md:gap-4">
                 <div className="flex-1 h-px bg-foreground" />
-                <h2 className="whitespace-nowrap">
+                <h2 className="whitespace-nowrap text-base md:text-xl">
                   SOLUÇÕES PERSONALIZADAS
                 </h2>
                 <div className="flex-1 h-px bg-foreground" />
@@ -101,11 +101,11 @@ const Solutions = () => {
             </div>
           </div>
           
-          <p className="text-center text-justify text-muted-foreground mb-16 max-w-3xl mx-auto">
+          <p className="text-center md:text-justify text-muted-foreground mb-12 md:mb-16 max-w-3xl mx-auto px-4">
             Cada negócio tem sua identidade, seu público e suas próprias necessidades de comunicação visual. Por isso, na Jungton colocamos em prática, com excelência, os projetos desenvolvidos por escritórios de arquitetura, engenharia, agências de publicidade e empresas em geral.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 px-4 md:px-0">
             {solutions.map((solution, index) => (
               <Card
                 key={index}
@@ -158,13 +158,13 @@ const Solutions = () => {
           </div>
 
           {/* Bottom Section with Decorative Design */}
-          <div className="mt-16 flex items-center gap-4 max-w-5xl mx-auto">
+          <div className="mt-12 md:mt-16 flex flex-col md:flex-row items-start md:items-center gap-4 max-w-5xl mx-auto px-4">
             {/* Orange Bar */}
-            <div className="w-1 h-16 bg-[#FF8C00] flex-shrink-0" />
+            <div className="w-1 h-12 md:h-16 bg-[#FF8C00] flex-shrink-0" />
             
             {/* Text */}
             <div className="flex-shrink-0">
-              <h2 className="leading-tight">
+              <h2 className="leading-tight text-lg md:text-xl">
                 NA JUNGTON<br />
                 SEU PROJETO GANHA VIDA<br />
                 COM QUALIDADE E PRECISÃO
@@ -172,7 +172,7 @@ const Solutions = () => {
             </div>
             
             {/* Decorative Line with Diamond */}
-            <div className="relative flex-grow h-px bg-border ml-4">
+            <div className="relative flex-grow h-px bg-border ml-0 md:ml-4 w-full md:w-auto">
               <div className="absolute left-8 top-1/2 -translate-y-1/2 w-2 h-2 bg-border rotate-45" />
             </div>
           </div>

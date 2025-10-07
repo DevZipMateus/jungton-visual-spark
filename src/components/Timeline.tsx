@@ -55,12 +55,12 @@ const Timeline = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Header Section with Layout Similar to About */}
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center animate-fade-in relative mb-16">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center animate-fade-in relative mb-12 md:mb-16">
             {/* Left Column - Highlighted Statement */}
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-px bg-border hidden md:block" />
               <div className="md:pl-8">
-                <h2 className="leading-tight">
+                <h2 className="leading-tight text-2xl md:text-3xl">
                   NOSSA HISTÓRIA<br />
                   TRADIÇÃO E INOVAÇÃO<br />
                   EM CADA PROJETO
@@ -81,7 +81,7 @@ const Timeline = () => {
             {/* Right Column - Text with Orange Bar */}
             <div className="relative">
               <div className="absolute right-0 top-0 bottom-0 w-2 bg-[#FF8C00]" />
-              <div className="pr-8 space-y-6 leading-relaxed text-foreground/80">
+              <div className="pr-6 md:pr-8 space-y-4 md:space-y-6 leading-relaxed text-foreground/80">
                 <p>
                   Na Jungton, cada projeto é mais do que comunicação visual: é a soma de história, 
                   inovação e paixão pelo que fazemos. Nossa trajetória começou há mais de 50 anos 
@@ -152,7 +152,7 @@ const Timeline = () => {
           </div>
 
           {/* Additional History Text */}
-          <div className="mt-16 max-w-4xl mx-auto space-y-6 leading-relaxed text-foreground/80 text-justify">
+          <div className="mt-12 md:mt-16 max-w-4xl mx-auto space-y-4 md:space-y-6 leading-relaxed text-foreground/80 text-justify px-4">
             <p>
               De São Borja a Santa Maria, da pintura manual aos mais avançados recursos digitais, 
               crescemos junto com as transformações do mercado. O olhar cuidadoso e criativo que 
@@ -165,9 +165,9 @@ const Timeline = () => {
               confiança de que entregaremos dentro do prazo e com a qualidade de sempre.
             </p>
 
-            <div className="relative mt-12 pl-8">
+            <div className="relative mt-8 md:mt-12 pl-6 md:pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#FF8C00]" />
-              <h2 className="leading-tight">
+              <h2 className="leading-tight text-xl md:text-2xl">
                 A HISTÓRIA CONTINUA<br />
                 E CADA NOVO DESAFIO É UM<br />
                 CONVITE PARA INOVAR AINDA MAIS

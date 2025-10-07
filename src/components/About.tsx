@@ -13,11 +13,11 @@ const About = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center animate-fade-in relative">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center animate-fade-in relative">
             {/* Left Column - Text with Orange Bar */}
-            <div className="relative">
+            <div className="relative order-2 md:order-1">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#FF8C00]" />
-              <div className="pl-8 space-y-6 leading-relaxed text-foreground/80">
+              <div className="pl-6 md:pl-8 space-y-4 md:space-y-6 leading-relaxed text-foreground/80">
                 <p>
                   Na Jungton, temos soluções em comunicação visual que valorizam espaços, marcas e serviços. 
                   Atendemos escritórios de arquitetura e engenharia, construtoras, supermercadistas, varejistas, 
@@ -49,10 +49,10 @@ const About = () => {
             </div>
 
             {/* Right Column - Highlighted Statement */}
-            <div className="relative">
+            <div className="relative order-1 md:order-2">
               <div className="absolute right-0 top-0 bottom-0 w-px bg-border hidden md:block" />
               <div className="md:pr-8">
-                <h2 className="leading-tight">
+                <h2 className="leading-tight text-2xl md:text-3xl">
                   A JUNGTON<br />
                   COMUNICAÇÃO VISUAL<br />
                   QUE GERA CONEXÃO<br />

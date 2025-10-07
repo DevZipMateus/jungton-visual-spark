@@ -16,12 +16,12 @@ const BlogCTA = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center animate-fade-in">
+        <div className="max-w-4xl mx-auto text-center animate-fade-in px-4">
           {/* Decorative line with title and arrow */}
-          <div className="relative max-w-2xl mx-auto mb-8">
-            <div className="flex items-center justify-center gap-4">
+          <div className="relative max-w-2xl mx-auto mb-6 md:mb-8">
+            <div className="flex items-center justify-center gap-2 md:gap-4">
               <div className="flex-1 h-px bg-foreground" />
-              <h2 className="uppercase tracking-wider font-bold text-xl whitespace-nowrap">
+              <h2 className="whitespace-normal md:whitespace-nowrap text-sm md:text-xl text-center">
                 FIQUE POR DENTRO DAS NOVIDADES
               </h2>
               <div className="flex-1 h-px bg-foreground" />
@@ -33,7 +33,7 @@ const BlogCTA = () => {
             </div>
           </div>
           
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto px-4">
             No nosso blog você encontra dicas, cases de sucesso, tendências 
             do mercado e insights sobre comunicação visual que podem transformar 
             o seu negócio.

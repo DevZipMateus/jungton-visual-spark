@@ -10,11 +10,11 @@ const Footer = () => {
         className="bg-white text-foreground py-12 relative"
       >
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8">
           {/* Brand */}
-          <div>
+          <div className="text-center md:text-left">
             <div className="mb-4 inline-flex items-center justify-center bg-background rounded-full p-3">
-              <img src={logo} alt="Jungton" className="h-16" />
+              <img src={logo} alt="Jungton" className="h-12 md:h-16" />
             </div>
             <p className="text-foreground/70 text-sm">
               Comunicação visual que gera conexão e resultados
@@ -22,8 +22,8 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="mb-4">LINKS RÁPIDOS</h3>
+          <div className="text-center md:text-left">
+            <h3 className="mb-3 md:mb-4">LINKS RÁPIDOS</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <button
@@ -73,9 +73,9 @@ const Footer = () => {
           </div>
 
           {/* Social Media */}
-          <div>
-            <h3 className="mb-4">REDES SOCIAIS</h3>
-            <div className="flex gap-4">
+          <div className="text-center md:text-left">
+            <h3 className="mb-3 md:mb-4">REDES SOCIAIS</h3>
+            <div className="flex gap-4 justify-center md:justify-start">
               <a
                 href="https://www.facebook.com/jungtoncomunicacaovisual"
                 target="_blank"
@@ -113,7 +113,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-border pt-8 text-center text-sm text-foreground/70">
+        <div className="border-t border-border pt-6 md:pt-8 text-center text-sm text-foreground/70 px-4">
           <p>&copy; {new Date().getFullYear()} Jungton Comunicação Visual Ltda. Todos os direitos reservados.</p>
           <p className="mt-2">CNPJ: 87.802.179/0001-89</p>
         </div>

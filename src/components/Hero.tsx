@@ -35,14 +35,14 @@ const Hero = () => {
         </div>)}
       
       {/* Logo no canto superior esquerdo */}
-      <div className="absolute top-24 left-8 z-20 animate-fade-in">
-        <img src={logo} alt="Jungton" className="h-20 md:h-24 brightness-0 invert" />
+      <div className="absolute top-24 left-4 md:left-8 z-20 animate-fade-in">
+        <img src={logo} alt="Jungton" className="h-16 md:h-20 lg:h-24 brightness-0 invert" />
       </div>
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <h1 className="mb-6 text-white">
+        <div className="max-w-4xl mx-auto text-center animate-fade-in px-4">
+          <h1 className="mb-6 text-white text-xl md:text-2xl">
             Jungton Comunicação Visual Ltda
           </h1>
           
