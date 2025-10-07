@@ -69,10 +69,10 @@ const Timeline = () => {
               {/* Vertical line with right-pointing V-notch after text */}
               <div className="absolute right-0 top-0 bottom-0 hidden md:block">
                 <svg 
-                  width="60" 
+                  width="20" 
                   height="100%" 
                   preserveAspectRatio="none"
-                  viewBox="0 0 60 1000"
+                  viewBox="0 0 20 1000"
                   className="h-full"
                 >
                   {/* Line from top to V notch */}
@@ -80,13 +80,13 @@ const Timeline = () => {
                     x1="2" 
                     y1="0" 
                     x2="2" 
-                    y2="490" 
+                    y2="470" 
                     stroke="hsl(var(--foreground))" 
                     strokeWidth="2.5" 
                   />
-                  {/* Right-pointing V notch (wide open angle) */}
+                  {/* Right-pointing V notch (wider vertical spacing) */}
                   <polyline 
-                    points="2,490 50,500 2,510" 
+                    points="2,470 16,500 2,530" 
                     stroke="hsl(var(--foreground))" 
                     strokeWidth="2.5" 
                     fill="none"
@@ -96,7 +96,7 @@ const Timeline = () => {
                   {/* Line continuing to bottom */}
                   <line 
                     x1="2" 
-                    y1="510" 
+                    y1="530" 
                     x2="2" 
                     y2="1000" 
                     stroke="hsl(var(--foreground))" 
