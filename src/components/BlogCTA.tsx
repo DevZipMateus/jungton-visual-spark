@@ -19,18 +19,46 @@ const BlogCTA = () => {
         <div className="max-w-4xl mx-auto text-center animate-fade-in px-4">
           {/* Decorative line with title and arrow */}
           <div className="relative max-w-2xl mx-auto mb-6 md:mb-8">
-            <div className="flex items-center justify-center gap-2 md:gap-4">
-              <div className="flex-1 h-px bg-foreground" />
-              <h2 className="whitespace-normal md:whitespace-nowrap text-sm md:text-xl text-center">
-                FIQUE POR DENTRO DAS NOVIDADES
-              </h2>
-              <div className="flex-1 h-px bg-foreground" />
-            </div>
-            <div className="flex justify-center mt-2">
-              <svg className="w-4 h-4 text-foreground" viewBox="0 0 24 24" fill="currentColor">
-                <polygon points="12,17 7,12 17,12" />
-              </svg>
-            </div>
+            <h2 className="whitespace-normal md:whitespace-nowrap text-sm md:text-xl text-center mb-6">
+              FIQUE POR DENTRO DAS NOVIDADES
+            </h2>
+            
+            {/* Decorative line with downward V notch */}
+            <svg 
+              width="100%" 
+              height="16" 
+              preserveAspectRatio="none"
+              viewBox="0 0 1000 16"
+              className="w-full"
+            >
+              {/* Left line */}
+              <line 
+                x1="0" 
+                y1="2" 
+                x2="490" 
+                y2="2" 
+                stroke="hsl(var(--border))" 
+                strokeWidth="1.5" 
+              />
+              {/* Downward V notch */}
+              <polyline 
+                points="490,2 500,12 510,2" 
+                stroke="hsl(var(--border))" 
+                strokeWidth="1.5" 
+                fill="none"
+                strokeLinecap="square"
+                strokeLinejoin="miter"
+              />
+              {/* Right line */}
+              <line 
+                x1="510" 
+                y1="2" 
+                x2="1000" 
+                y2="2" 
+                stroke="hsl(var(--border))" 
+                strokeWidth="1.5" 
+              />
+            </svg>
           </div>
           
           <p className="text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto px-4">
