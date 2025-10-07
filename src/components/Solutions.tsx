@@ -209,7 +209,7 @@ const Solutions = () => {
             </div>
           </div>
           
-          {/* Full-width decorative line with upward V notch */}
+          {/* Full-width decorative line with upward V notch at start */}
           <div className="relative w-full mt-8">
             <svg 
               width="100%" 
@@ -218,27 +218,18 @@ const Solutions = () => {
               viewBox="0 0 1000 16"
               className="w-full"
             >
-              {/* Left line */}
-              <line 
-                x1="0" 
-                y1="12" 
-                x2="490" 
-                y2="12" 
-                stroke="hsl(var(--foreground))" 
-                strokeWidth="2.5" 
-              />
-              {/* Upward V notch */}
+              {/* Upward V notch at start */}
               <polyline 
-                points="490,12 500,2 510,12" 
+                points="15,12 25,2 35,12" 
                 stroke="hsl(var(--foreground))" 
                 strokeWidth="2.5" 
                 fill="none"
                 strokeLinecap="square"
                 strokeLinejoin="miter"
               />
-              {/* Right line */}
+              {/* Line continuing to end */}
               <line 
-                x1="510" 
+                x1="35" 
                 y1="12" 
                 x2="1000" 
                 y2="12" 
