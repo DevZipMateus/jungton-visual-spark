@@ -1,6 +1,49 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import textureGrid from "@/assets/texture-grid.png";
+
+const testimonials = [
+  {
+    name: "Claudia B",
+    rating: 5,
+    date: "Há 12 semanas",
+    text: "Super profissionais, trabalho de qualidade e agilidade. Atendimento excepcional. Super recomendo.",
+    initial: "C",
+    color: "bg-orange-600"
+  },
+  {
+    name: "Tríptica Arquitetura",
+    rating: 5,
+    date: "Há 32 semanas",
+    text: "Empresa excelente! Adoramos trabalhar com eles como nossos parceiros em tantos projetos!",
+    initial: "T",
+    color: "bg-slate-900"
+  },
+  {
+    name: "Marcos Cavalheiro",
+    rating: 5,
+    date: "16 de mar. de 2024",
+    text: "Nota 10 em todos os quesitos: qualidade, cumprimento de prazo, preço justo, atendimento.",
+    initial: "M",
+    color: "bg-pink-600"
+  },
+  {
+    name: "Gabriel Colpo",
+    rating: 5,
+    date: "8 de mar. de 2024",
+    text: "Ótimo serviço prestado! Rapidez em todo processo e profissionalismo! Recomendo!",
+    initial: "G",
+    color: "bg-teal-600"
+  },
+  {
+    name: "Nathália Coelho",
+    rating: 5,
+    date: "13 de jul. de 2023",
+    text: "Produtos de ótima qualidade, sempre apoiam as demandas e abraçam as ideias mais diferentes que inventamos. Quando compramos temos todo suporte do início a entrega do produto!",
+    initial: "N",
+    color: "bg-blue-600"
+  }
+];
 
 const Contact = () => {
   return (
@@ -31,7 +74,7 @@ const Contact = () => {
             <div className="flex-1 h-px bg-border" />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Contact Information */}
             <div className="space-y-8 animate-fade-in">
               <div className="flex items-start gap-4">
@@ -123,6 +166,39 @@ const Contact = () => {
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Localização Jungton Comunicação Visual"
               />
+            </div>
+
+            {/* Testimonials */}
+            <div className="space-y-4 animate-fade-in">
+              <h3 className="font-semibold text-lg mb-4">Avaliações de Clientes</h3>
+              <div className="space-y-4 max-h-[600px] overflow-y-auto pr-2">
+                {testimonials.map((testimonial, index) => (
+                  <div
+                    key={index}
+                    className="bg-card border border-border rounded-lg p-4 hover:shadow-md transition-smooth"
+                  >
+                    <div className="flex items-start gap-3 mb-3">
+                      <div className={`flex-shrink-0 w-10 h-10 rounded-full ${testimonial.color} flex items-center justify-center text-white font-semibold`}>
+                        {testimonial.initial}
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="font-semibold text-sm">{testimonial.name}</h4>
+                        <div className="flex items-center gap-2 mt-1">
+                          <div className="flex gap-0.5">
+                            {[...Array(testimonial.rating)].map((_, i) => (
+                              <Star key={i} className="w-3 h-3 fill-yellow-500 text-yellow-500" />
+                            ))}
+                          </div>
+                          <span className="text-xs text-foreground/60">{testimonial.date}</span>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="text-sm text-foreground/80 leading-relaxed">
+                      {testimonial.text}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
