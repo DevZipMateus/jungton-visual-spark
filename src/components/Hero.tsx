@@ -26,8 +26,8 @@ const Hero = () => {
     }
   };
   return <>
-      {/* Full-width decorative line with downward V notch */}
-      <div className="relative w-full bg-background pt-20">
+      {/* Full-width decorative line with downward V notch - at header/hero division */}
+      <div className="fixed top-20 left-0 right-0 w-full bg-background z-40">
         <svg 
           width="100%" 
           height="16" 
@@ -65,7 +65,7 @@ const Hero = () => {
         </svg>
       </div>
       
-      <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
+      <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background Images Carousel */}
       {backgroundImages.map((image, index) => <div key={index} className="absolute inset-0 transition-opacity duration-1000 ease-in-out" style={{
       opacity: currentImageIndex === index ? 1 : 0
