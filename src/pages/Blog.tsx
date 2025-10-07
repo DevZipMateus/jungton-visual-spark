@@ -843,7 +843,7 @@ const Blog = () => {
         <section className="py-12 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-7xl mx-auto">
-              <TitleWithCenteredDivider title="FIQUE POR DENTRO DAS NOVIDADES" className="mb-8" />
+              <TitleWithCenteredDivider title="FIQUE POR DENTRO DAS NOVIDADES" showImage={true} className="mb-8" />
               <p className="text-lg text-muted-foreground mb-12 text-center max-w-3xl mx-auto">
                 Tendências e dicas sobre comunicação visual
               </p>
