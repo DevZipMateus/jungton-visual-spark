@@ -80,13 +80,13 @@ const Timeline = () => {
                     x1="2" 
                     y1="0" 
                     x2="2" 
-                    y2="470" 
+                    y2="440" 
                     stroke="hsl(var(--foreground))" 
                     strokeWidth="2.5" 
                   />
                   {/* Right-pointing V notch (wider vertical spacing) */}
                   <polyline 
-                    points="2,470 16,500 2,530" 
+                    points="2,440 16,500 2,560" 
                     stroke="hsl(var(--foreground))" 
                     strokeWidth="2.5" 
                     fill="none"
@@ -96,7 +96,7 @@ const Timeline = () => {
                   {/* Line continuing to bottom */}
                   <line 
                     x1="2" 
-                    y1="530" 
+                    y1="560" 
                     x2="2" 
                     y2="1000" 
                     stroke="hsl(var(--foreground))" 
