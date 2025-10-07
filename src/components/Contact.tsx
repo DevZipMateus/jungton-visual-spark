@@ -16,9 +16,20 @@ const Contact = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-center mb-16 animate-fade-in">
-            Contato
-          </h2>
+          <div className="flex items-center gap-4 mb-16 animate-fade-in">
+            <div className="flex items-start gap-3">
+              <div className="w-1 h-12 bg-primary" />
+              <div>
+                <div className="text-sm font-light text-foreground/70 uppercase tracking-wider">
+                  ENTRE EM
+                </div>
+                <div className="text-3xl font-bold uppercase tracking-wide">
+                  CONTATO
+                </div>
+              </div>
+            </div>
+            <div className="flex-1 h-px bg-border" />
+          </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
