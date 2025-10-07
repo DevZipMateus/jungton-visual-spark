@@ -66,7 +66,7 @@ const Timeline = () => {
                   EM CADA PROJETO
                 </h2>
               </div>
-              {/* Vertical line with left-pointing V-notch after text */}
+              {/* Vertical line with right-pointing V-notch after text */}
               <div className="absolute right-0 top-0 bottom-0 hidden md:block">
                 <svg 
                   width="16" 
@@ -77,16 +77,16 @@ const Timeline = () => {
                 >
                   {/* Line from top to V notch */}
                   <line 
-                    x1="14" 
+                    x1="2" 
                     y1="0" 
-                    x2="14" 
+                    x2="2" 
                     y2="490" 
                     stroke="hsl(var(--foreground))" 
                     strokeWidth="2.5" 
                   />
-                  {/* Left-pointing V notch (same size as horizontal) */}
+                  {/* Right-pointing V notch (same size as horizontal) */}
                   <polyline 
-                    points="14,490 4,500 14,510" 
+                    points="2,490 12,500 2,510" 
                     stroke="hsl(var(--foreground))" 
                     strokeWidth="2.5" 
                     fill="none"
@@ -95,9 +95,9 @@ const Timeline = () => {
                   />
                   {/* Line continuing to bottom */}
                   <line 
-                    x1="14" 
+                    x1="2" 
                     y1="510" 
-                    x2="14" 
+                    x2="2" 
                     y2="1000" 
                     stroke="hsl(var(--foreground))" 
                     strokeWidth="2.5" 
