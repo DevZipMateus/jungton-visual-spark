@@ -57,10 +57,17 @@ const Timeline = () => {
         <div className="max-w-7xl mx-auto">
           {/* Header Section with Layout Similar to About */}
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center animate-fade-in relative mb-12 md:mb-16">
-            {/* Left Column - Highlighted Statement with Vertical Decorative Line */}
+            {/* Left Column - Highlighted Statement with Vertical Decorative Line on Right */}
             <div className="relative">
-              {/* Vertical line with right-pointing V-notch after text */}
-              <div className="absolute left-0 top-0 bottom-0 hidden md:block">
+              <div className="md:pl-8 md:pr-8">
+                <h2 className="leading-tight text-2xl md:text-3xl font-bold uppercase">
+                  NOSSA HISTÓRIA<br />
+                  TRADIÇÃO E INOVAÇÃO<br />
+                  EM CADA PROJETO
+                </h2>
+              </div>
+              {/* Vertical line with left-pointing V-notch after text */}
+              <div className="absolute right-0 top-0 bottom-0 hidden md:block">
                 <svg 
                   width="16" 
                   height="100%" 
@@ -70,16 +77,16 @@ const Timeline = () => {
                 >
                   {/* Line from top to V notch */}
                   <line 
-                    x1="2" 
+                    x1="14" 
                     y1="0" 
-                    x2="2" 
+                    x2="14" 
                     y2="490" 
                     stroke="hsl(var(--foreground))" 
                     strokeWidth="2.5" 
                   />
-                  {/* Right-pointing V notch (same size as horizontal) */}
+                  {/* Left-pointing V notch (same size as horizontal) */}
                   <polyline 
-                    points="2,490 12,500 2,510" 
+                    points="14,490 4,500 14,510" 
                     stroke="hsl(var(--foreground))" 
                     strokeWidth="2.5" 
                     fill="none"
@@ -88,21 +95,14 @@ const Timeline = () => {
                   />
                   {/* Line continuing to bottom */}
                   <line 
-                    x1="2" 
+                    x1="14" 
                     y1="510" 
-                    x2="2" 
+                    x2="14" 
                     y2="1000" 
                     stroke="hsl(var(--foreground))" 
                     strokeWidth="2.5" 
                   />
                 </svg>
-              </div>
-              <div className="md:pl-8">
-                <h2 className="leading-tight text-2xl md:text-3xl font-bold uppercase">
-                  NOSSA HISTÓRIA<br />
-                  TRADIÇÃO E INOVAÇÃO<br />
-                  EM CADA PROJETO
-                </h2>
               </div>
             </div>
 
