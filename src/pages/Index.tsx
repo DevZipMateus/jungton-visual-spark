@@ -31,14 +31,22 @@ const Index = () => {
             stroke="hsl(var(--foreground))" 
             strokeWidth="2.5" 
           />
-          {/* Downward V notch with white fill */}
-          <polyline 
-            points="490,2 500,12 510,2" 
+          {/* Downward V notch - two separate lines */}
+          <line 
+            x1="490" 
+            y1="2" 
+            x2="500" 
+            y2="12" 
             stroke="hsl(var(--foreground))" 
             strokeWidth="2.5" 
-            fill="white"
-            strokeLinecap="square"
-            strokeLinejoin="miter"
+          />
+          <line 
+            x1="500" 
+            y1="12" 
+            x2="510" 
+            y2="2" 
+            stroke="hsl(var(--foreground))" 
+            strokeWidth="2.5" 
           />
           {/* Right line */}
           <line 
