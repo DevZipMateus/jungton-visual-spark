@@ -61,9 +61,6 @@ const About = () => {
               </div>
             </div>
           </div>
-
-          {/* Bottom Section */}
-          
         </div>
       </div>
     </section>;

@@ -21,13 +21,6 @@ const Index = () => {
         <Contact />
       </main>
       
-      {/* Monte Site Badge Section */}
-      <section className="py-8 bg-background">
-        <div className="container mx-auto px-4">
-          <div id="montesite-footer-badge" className="flex justify-center"></div>
-        </div>
-      </section>
-      
       <Footer />
       <WhatsAppButton />
     </div>
