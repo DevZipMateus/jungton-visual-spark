@@ -53,11 +53,11 @@ const Header = () => {
   }, [location, isHomePage]);
 
   const navItems = [
-    { label: "A Jungton", id: "about", type: "scroll" },
-    { label: "Nossa história", id: "history", type: "scroll" },
-    { label: "Soluções personalizadas", id: "solutions", type: "scroll" },
-    { label: "Blog", id: "blog", type: "link" },
-    { label: "Contato", id: "contact", type: "scroll" },
+    { label: "A JUNGTON", id: "about", type: "scroll" },
+    { label: "NOSSA HISTÓRIA", id: "history", type: "scroll" },
+    { label: "SOLUÇÕES PERSONALIZADAS", id: "solutions", type: "scroll" },
+    { label: "BLOG", id: "blog", type: "link" },
+    { label: "CONTATO", id: "contact", type: "scroll" },
   ];
 
   return (
@@ -83,7 +83,7 @@ const Header = () => {
                 <Link
                   key={item.id}
                   to={`/${item.id}`}
-                  className="text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
+                  className="text-sm font-bold uppercase text-foreground/80 hover:text-primary transition-smooth"
                 >
                   {item.label}
                 </Link>
@@ -91,7 +91,7 @@ const Header = () => {
                 <button
                   key={item.id}
                   onClick={() => handleNavigation(item.id)}
-                  className="text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
+                  className="text-sm font-bold uppercase text-foreground/80 hover:text-primary transition-smooth"
                 >
                   {item.label}
                 </button>
@@ -156,7 +156,7 @@ const Header = () => {
                   <Link
                     key={item.id}
                     to={`/${item.id}`}
-                    className="text-left text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
+                    className="text-left text-sm font-bold uppercase text-foreground/80 hover:text-primary transition-smooth"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
@@ -165,7 +165,7 @@ const Header = () => {
                   <button
                     key={item.id}
                     onClick={() => handleNavigation(item.id)}
-                    className="text-left text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
+                    className="text-left text-sm font-bold uppercase text-foreground/80 hover:text-primary transition-smooth"
                   >
                     {item.label}
                   </button>

@@ -42,9 +42,9 @@ const Timeline = () => {
   ];
 
   return (
-    <section id="history" className="py-20 bg-background relative overflow-hidden">
-      {/* Background Texture */}
-      <div className="absolute inset-0 opacity-30 pointer-events-none">
+    <section id="history" className="py-20 bg-background relative">
+      {/* Background Texture - Full Width */}
+      <div className="absolute inset-0 opacity-30 pointer-events-none full-width-container">
         <img 
           src={textureGrid} 
           alt="" 
@@ -60,7 +60,7 @@ const Timeline = () => {
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-px bg-border hidden md:block" />
               <div className="md:pl-8">
-                <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+                <h2 className="section-title text-3xl md:text-4xl leading-tight">
                   <strong>NOSSA HISTÓRIA</strong><br />
                   TRADIÇÃO E INOVAÇÃO<br />
                   EM CADA PROJETO
@@ -81,7 +81,7 @@ const Timeline = () => {
             {/* Right Column - Text with Orange Bar */}
             <div className="relative">
               <div className="absolute right-0 top-0 bottom-0 w-2 bg-[#FF8C00]" />
-              <div className="pr-8 space-y-6 text-base leading-relaxed text-foreground/80">
+              <div className="pr-8 space-y-6 body-text leading-relaxed text-foreground/80">
                 <p>
                   Na Jungton, cada projeto é mais do que comunicação visual: é a soma de história, 
                   inovação e paixão pelo que fazemos. Nossa trajetória começou há mais de 50 anos 
@@ -148,7 +148,7 @@ const Timeline = () => {
           </div>
 
           {/* Additional History Text */}
-          <div className="mt-16 max-w-4xl mx-auto space-y-6 text-lg leading-relaxed text-foreground/80 text-justify">
+          <div className="mt-16 max-w-4xl mx-auto space-y-6 body-text leading-relaxed text-foreground/80 text-justify">
             <p>
               De São Borja a Santa Maria, da pintura manual aos mais avançados recursos digitais, 
               crescemos junto com as transformações do mercado. O olhar cuidadoso e criativo que 

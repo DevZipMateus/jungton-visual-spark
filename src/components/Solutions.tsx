@@ -71,9 +71,9 @@ const Solutions = () => {
   }, []);
 
   return (
-    <section id="solutions" className="py-20 bg-muted/30 relative overflow-hidden">
-      {/* Background Texture */}
-      <div className="absolute inset-0 opacity-30 pointer-events-none">
+    <section id="solutions" className="py-20 bg-muted/30 relative">
+      {/* Background Texture - Full Width */}
+      <div className="absolute inset-0 opacity-30 pointer-events-none full-width-container">
         <img 
           src={textureGrid} 
           alt="" 
@@ -88,7 +88,7 @@ const Solutions = () => {
             <div className="relative max-w-2xl mx-auto mb-8">
               <div className="flex items-center justify-center gap-4">
                 <div className="flex-1 h-px bg-foreground" />
-                <h2 className="uppercase tracking-wider font-bold text-xl whitespace-nowrap">
+                <h2 className="section-title whitespace-nowrap">
                   SOLUÇÕES PERSONALIZADAS
                 </h2>
                 <div className="flex-1 h-px bg-foreground" />
@@ -101,7 +101,7 @@ const Solutions = () => {
             </div>
           </div>
           
-          <p className="text-center text-justify text-lg text-muted-foreground mb-16 max-w-3xl mx-auto">
+          <p className="text-center text-justify body-text text-muted-foreground mb-16 max-w-3xl mx-auto">
             Cada negócio tem sua identidade, seu público e suas próprias necessidades de comunicação visual. Por isso, na Jungton colocamos em prática, com excelência, os projetos desenvolvidos por escritórios de arquitetura, engenharia, agências de publicidade e empresas em geral.
           </p>
 
@@ -121,13 +121,13 @@ const Solutions = () => {
                     priority={index < 3}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent" />
-                  <h3 className="absolute bottom-4 left-4 right-4 text-secondary-foreground">
+                  <h3 className="absolute bottom-4 left-4 right-4 text-secondary-foreground section-subtitle">
                     {solution.title}
                   </h3>
                 </div>
                 
                 <CardContent className="p-6">
-                  <p className="text-muted-foreground mb-4">{solution.description}</p>
+                  <p className="body-text text-muted-foreground mb-4">{solution.description}</p>
                   
                   {expandedCard === index && (
                     <div className="space-y-2 animate-fade-in">

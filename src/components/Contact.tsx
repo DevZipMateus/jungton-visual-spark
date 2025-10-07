@@ -47,9 +47,9 @@ const testimonials = [
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-background relative overflow-hidden">
-      {/* Background Texture */}
-      <div className="absolute inset-0 opacity-30 pointer-events-none">
+    <section id="contact" className="py-20 bg-background relative">
+      {/* Background Texture - Full Width */}
+      <div className="absolute inset-0 opacity-30 pointer-events-none full-width-container">
         <img 
           src={textureGrid} 
           alt="" 
@@ -63,10 +63,10 @@ const Contact = () => {
             <div className="flex items-start gap-3">
               <div className="w-1 h-12 bg-primary" />
               <div>
-                <div className="text-sm font-light text-foreground/70 uppercase tracking-wider">
+                <div className="section-subtitle text-foreground/70">
                   ENTRE EM
                 </div>
-                <div className="text-3xl font-bold uppercase tracking-wide">
+                <div className="section-title text-3xl">
                   CONTATO
                 </div>
               </div>
