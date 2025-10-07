@@ -32,8 +32,8 @@ const Index = () => {
             strokeWidth="2.5" 
           />
           {/* Downward V notch with white fill */}
-          <polyline 
-            points="490,2 500,12 510,2" 
+          <path 
+            d="M 490 2 L 500 12 L 510 2" 
             stroke="hsl(var(--foreground))" 
             strokeWidth="2.5" 
             fill="white"
