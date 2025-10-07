@@ -5,15 +5,15 @@ const Footer = () => {
     <>
       <div id="montesite-footer-badge"></div>
       <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
-      <footer className="bg-secondary text-secondary-foreground py-12">
+      <footer className="bg-white text-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="mb-4 inline-flex items-center justify-center bg-white rounded-full p-3">
+            <div className="mb-4 inline-flex items-center justify-center bg-background rounded-full p-3">
               <img src={logo} alt="Jungton" className="h-16" />
             </div>
-            <p className="text-secondary-foreground/80 text-sm">
+            <p className="text-foreground/70 text-sm">
               Comunicação visual que gera conexão e resultados
             </p>
           </div>
@@ -28,7 +28,7 @@ const Footer = () => {
                     const element = document.getElementById("about");
                     element?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="text-secondary-foreground/80 hover:text-primary transition-smooth"
+                  className="text-foreground/70 hover:text-primary transition-smooth"
                 >
                   A Jungton
                 </button>
@@ -39,7 +39,7 @@ const Footer = () => {
                     const element = document.getElementById("history");
                     element?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="text-secondary-foreground/80 hover:text-primary transition-smooth"
+                  className="text-foreground/70 hover:text-primary transition-smooth"
                 >
                   Nossa história
                 </button>
@@ -50,7 +50,7 @@ const Footer = () => {
                     const element = document.getElementById("solutions");
                     element?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="text-secondary-foreground/80 hover:text-primary transition-smooth"
+                  className="text-foreground/70 hover:text-primary transition-smooth"
                 >
                   Soluções personalizadas
                 </button>
@@ -61,7 +61,7 @@ const Footer = () => {
                     const element = document.getElementById("contact");
                     element?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="text-secondary-foreground/80 hover:text-primary transition-smooth"
+                  className="text-foreground/70 hover:text-primary transition-smooth"
                 >
                   Contato
                 </button>
@@ -77,7 +77,7 @@ const Footer = () => {
                 href="https://www.facebook.com/jungtoncomunicacaovisual"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-secondary-foreground/80 hover:text-primary transition-smooth"
+                className="text-foreground/70 hover:text-primary transition-smooth"
                 aria-label="Facebook"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -88,7 +88,7 @@ const Footer = () => {
                 href="https://www.instagram.com/jungtoncomunicacao/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-secondary-foreground/80 hover:text-primary transition-smooth"
+                className="text-foreground/70 hover:text-primary transition-smooth"
                 aria-label="Instagram"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -99,7 +99,7 @@ const Footer = () => {
                 href="https://br.pinterest.com/jungtoncomunicacaovisual/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-secondary-foreground/80 hover:text-primary transition-smooth"
+                className="text-foreground/70 hover:text-primary transition-smooth"
                 aria-label="Pinterest"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -110,7 +110,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-secondary-foreground/20 pt-8 text-center text-sm text-secondary-foreground/80">
+        <div className="border-t border-border pt-8 text-center text-sm text-foreground/70">
           <p>&copy; {new Date().getFullYear()} Jungton Comunicação Visual Ltda. Todos os direitos reservados.</p>
           <p className="mt-2">CNPJ: 87.802.179/0001-89</p>
         </div>
