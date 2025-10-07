@@ -190,21 +190,62 @@ const Solutions = () => {
           </div>
 
           {/* Bottom Section with Decorative Design */}
-          <div className="mt-12 md:mt-16 flex flex-col md:flex-row items-start md:items-center gap-4 max-w-5xl mx-auto px-4">
-            {/* Orange Bar */}
-            <div className="w-1 h-12 md:h-16 bg-[#FF8C00] flex-shrink-0" />
-            
-            {/* Text */}
-            <div className="flex-shrink-0">
-              <h2 className="leading-tight text-lg md:text-xl">
-                NA JUNGTON<br />
-                SEU PROJETO GANHA VIDA<br />
-                COM QUALIDADE E PRECISÃO
-              </h2>
+          <div className="mt-12 md:mt-16 max-w-5xl mx-auto px-4">
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
+              {/* Orange Bar */}
+              <div className="w-1 h-12 md:h-16 bg-[#FF8C00] flex-shrink-0" />
+              
+              {/* Text */}
+              <div className="flex-shrink-0">
+                <h2 className="leading-tight text-lg md:text-xl font-bold uppercase">
+                  NA JUNGTON<br />
+                  SEU PROJETO GANHA VIDA<br />
+                  COM QUALIDADE E PRECISÃO
+                </h2>
+              </div>
+              
+              {/* Decorative Line with Diamond */}
+              <DecorativeLine className="flex-grow ml-0 md:ml-4 w-full md:w-auto" />
             </div>
-            
-            {/* Decorative Line with Diamond */}
-            <DecorativeLine className="flex-grow ml-0 md:ml-4 w-full md:w-auto" />
+          </div>
+          
+          {/* Full-width decorative line with upward V notch */}
+          <div className="relative w-full mt-8">
+            <svg 
+              width="100%" 
+              height="16" 
+              preserveAspectRatio="none"
+              viewBox="0 0 1000 16"
+              className="w-full"
+            >
+              {/* Left line */}
+              <line 
+                x1="0" 
+                y1="12" 
+                x2="490" 
+                y2="12" 
+                stroke="hsl(var(--foreground))" 
+                strokeWidth="2.5" 
+              />
+              {/* Upward V notch */}
+              <polyline 
+                points="490,12 500,2 510,12" 
+                stroke="hsl(var(--foreground))" 
+                strokeWidth="2.5" 
+                fill="none"
+                strokeLinecap="square"
+                strokeLinejoin="miter"
+              />
+              {/* Right line */}
+              <line 
+                x1="510" 
+                y1="12" 
+                x2="1000" 
+                y2="12" 
+                stroke="hsl(var(--foreground))" 
+                strokeWidth="2.5" 
+              />
+            </svg>
           </div>
         </div>
       </div>
