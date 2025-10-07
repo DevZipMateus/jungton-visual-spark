@@ -39,7 +39,7 @@ const TitleWithLeftDivider = ({ subtitle, title, className }: TitleWithLeftDivid
           />
           {/* Left-pointing V notch on vertical */}
           <polyline 
-            points="16,40 2,100 16,160" 
+            points="16,40 0,100 16,160" 
             stroke="hsl(var(--foreground))" 
             strokeWidth="2.5" 
             fill="none"
