@@ -6,39 +6,6 @@
 All colors MUST be HSL.
 */
 
-/* Kozuka Go Pro Font Family */
-@font-face {
-  font-family: 'Kozuka Go Pro';
-  src: url('/fonts/KozGoProLight.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Kozuka Go Pro';
-  src: url('/fonts/KozGoProRegular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Kozuka Go Pro';
-  src: url('/fonts/KozGoProMedium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Kozuka Go Pro';
-  src: url('/fonts/KozGoProBold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -122,13 +89,23 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Kozuka Go Pro', sans-serif;
     font-feature-settings: "kern" 1, "liga" 1;
   }
 
-  /* Padronização de tamanhos de fonte */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Kozuka Go Pro', sans-serif;
+    @apply font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
   }
 }
 
@@ -139,33 +116,5 @@ All colors MUST be HSL.
 
   .shadow-elegant {
     box-shadow: var(--shadow-elegant);
-  }
-
-  /* Padronização de títulos - CAIXA ALTA, NEGRITO, MESMO TAMANHO */
-  .section-title {
-    @apply text-2xl font-bold uppercase tracking-wide;
-    font-family: 'Kozuka Go Pro', sans-serif;
-  }
-
-  /* Padronização de subtítulos - MESMO TAMANHO, SEM NEGRITO */
-  .section-subtitle {
-    @apply text-lg font-normal;
-    font-family: 'Kozuka Go Pro', sans-serif;
-  }
-
-  /* Padronização de textos - MESMO TAMANHO */
-  .body-text {
-    @apply text-base;
-    font-family: 'Kozuka Go Pro', sans-serif;
-  }
-
-  /* Container full width para linhas e texturas */
-  .full-width-container {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
   }
 }

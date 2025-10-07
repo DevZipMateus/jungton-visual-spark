@@ -5,16 +5,15 @@ import textureGrid from "@/assets/texture-grid.png";
 
 const BlogCTA = () => {
   return (
-    <section className="py-20 relative">
-      {/* Background Texture - Full Width */}
-      <div className="absolute inset-0 pointer-events-none full-width-container">
+    <section className="py-20 bg-muted/30 relative overflow-hidden">
+      {/* Background Texture */}
+      <div className="absolute inset-0 opacity-30 pointer-events-none">
         <img 
           src={textureGrid} 
           alt="" 
-          className="w-full h-full object-cover opacity-90"
+          className="w-full h-full object-cover"
         />
       </div>
-      <div className="absolute inset-0 bg-background/80" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
@@ -22,7 +21,7 @@ const BlogCTA = () => {
           <div className="relative max-w-2xl mx-auto mb-8">
             <div className="flex items-center justify-center gap-4">
               <div className="flex-1 h-px bg-foreground" />
-              <h2 className="section-title whitespace-nowrap">
+              <h2 className="uppercase tracking-wider font-bold text-xl whitespace-nowrap">
                 FIQUE POR DENTRO DAS NOVIDADES
               </h2>
               <div className="flex-1 h-px bg-foreground" />
@@ -34,7 +33,7 @@ const BlogCTA = () => {
             </div>
           </div>
           
-          <p className="body-text text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             No nosso blog você encontra dicas, cases de sucesso, tendências 
             do mercado e insights sobre comunicação visual que podem transformar 
             o seu negócio.
