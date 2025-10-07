@@ -846,45 +846,50 @@ const Blog = () => {
               <h2 className="text-center font-bold uppercase text-lg md:text-xl mb-6">
                 FIQUE POR DENTRO DAS NOVIDADES
               </h2>
-              
-              {/* Decorative line with downward V notch */}
-              <div className="mb-8">
-                <svg 
-                  width="100%" 
-                  height="16" 
-                  preserveAspectRatio="none"
-                  viewBox="0 0 1000 16"
-                  className="w-full"
-                >
-                  {/* Left line */}
-                  <line 
-                    x1="0" 
-                    y1="2" 
-                    x2="490" 
-                    y2="2" 
-                    stroke="hsl(var(--foreground))" 
-                    strokeWidth="2.5" 
-                  />
-                  {/* Downward V notch */}
-                  <polyline 
-                    points="490,2 500,12 510,2" 
-                    stroke="hsl(var(--foreground))" 
-                    strokeWidth="2.5" 
-                    fill="none"
-                    strokeLinecap="square"
-                    strokeLinejoin="miter"
-                  />
-                  {/* Right line */}
-                  <line 
-                    x1="510" 
-                    y1="2" 
-                    x2="1000" 
-                    y2="2" 
-                    stroke="hsl(var(--foreground))" 
-                    strokeWidth="2.5" 
-                  />
-                </svg>
-              </div>
+            </div>
+          </div>
+          
+          {/* Full-width decorative line with downward V notch */}
+          <div className="relative w-full mb-8">
+            <svg 
+              width="100%" 
+              height="16" 
+              preserveAspectRatio="none"
+              viewBox="0 0 1000 16"
+              className="w-full"
+            >
+              {/* Left line */}
+              <line 
+                x1="0" 
+                y1="2" 
+                x2="490" 
+                y2="2" 
+                stroke="hsl(var(--foreground))" 
+                strokeWidth="2.5" 
+              />
+              {/* Downward V notch */}
+              <polyline 
+                points="490,2 500,12 510,2" 
+                stroke="hsl(var(--foreground))" 
+                strokeWidth="2.5" 
+                fill="none"
+                strokeLinecap="square"
+                strokeLinejoin="miter"
+              />
+              {/* Right line */}
+              <line 
+                x1="510" 
+                y1="2" 
+                x2="1000" 
+                y2="2" 
+                stroke="hsl(var(--foreground))" 
+                strokeWidth="2.5" 
+              />
+            </svg>
+          </div>
+          
+          <div className="container mx-auto px-4">
+            <div className="max-w-7xl mx-auto">
               
               <p className="text-lg text-muted-foreground mb-12 text-center max-w-3xl mx-auto">
                 Tendências e dicas sobre comunicação visual

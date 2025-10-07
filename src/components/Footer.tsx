@@ -7,7 +7,7 @@ const Footer = () => {
       <div id="montesite-footer-badge"></div>
       <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
       
-      {/* Decorative line with downward V notch */}
+      {/* Decorative line with downward V notch - Full Width */}
       <div className="relative w-full py-8">
         <svg 
           width="100%" 

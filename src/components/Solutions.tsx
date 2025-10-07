@@ -88,9 +88,48 @@ const Solutions = () => {
             {/* Decorative line with title */}
             <div className="relative max-w-2xl mx-auto mb-6 md:mb-8 px-4">
               <DecorativeLine className="mb-4" />
-              <h2 className="text-center text-base md:text-xl">
+              <h2 className="text-center text-base md:text-xl font-bold uppercase mb-8">
                 SOLUÇÕES PERSONALIZADAS
               </h2>
+            </div>
+            
+            {/* Full-width decorative line with V notch */}
+            <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen mb-8">
+              <svg 
+                width="100%" 
+                height="16" 
+                preserveAspectRatio="none"
+                viewBox="0 0 1000 16"
+                className="w-full"
+              >
+                {/* Left line */}
+                <line 
+                  x1="0" 
+                  y1="2" 
+                  x2="490" 
+                  y2="2" 
+                  stroke="hsl(var(--foreground))" 
+                  strokeWidth="2.5" 
+                />
+                {/* Downward V notch */}
+                <polyline 
+                  points="490,2 500,12 510,2" 
+                  stroke="hsl(var(--foreground))" 
+                  strokeWidth="2.5" 
+                  fill="none"
+                  strokeLinecap="square"
+                  strokeLinejoin="miter"
+                />
+                {/* Right line */}
+                <line 
+                  x1="510" 
+                  y1="2" 
+                  x2="1000" 
+                  y2="2" 
+                  stroke="hsl(var(--foreground))" 
+                  strokeWidth="2.5" 
+                />
+              </svg>
             </div>
           </div>
           
