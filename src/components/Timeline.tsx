@@ -59,7 +59,7 @@ const Timeline = () => {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center animate-fade-in relative mb-12 md:mb-16">
             {/* Left Column - Highlighted Statement with Vertical Decorative Line */}
             <div className="relative">
-              {/* Vertical line with right-pointing V-notch */}
+              {/* Vertical line with right-pointing V-notch after text */}
               <div className="absolute left-0 top-0 bottom-0 hidden md:block">
                 <svg 
                   width="16" 
@@ -73,13 +73,13 @@ const Timeline = () => {
                     x1="2" 
                     y1="0" 
                     x2="2" 
-                    y2="300" 
+                    y2="490" 
                     stroke="hsl(var(--foreground))" 
                     strokeWidth="2.5" 
                   />
-                  {/* Right-pointing V notch */}
+                  {/* Right-pointing V notch (same size as horizontal) */}
                   <polyline 
-                    points="2,300 12,310 2,320" 
+                    points="2,490 12,500 2,510" 
                     stroke="hsl(var(--foreground))" 
                     strokeWidth="2.5" 
                     fill="none"
@@ -89,7 +89,7 @@ const Timeline = () => {
                   {/* Line continuing to bottom */}
                   <line 
                     x1="2" 
-                    y1="320" 
+                    y1="510" 
                     x2="2" 
                     y2="1000" 
                     stroke="hsl(var(--foreground))" 
