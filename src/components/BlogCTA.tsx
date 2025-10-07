@@ -37,13 +37,13 @@ const BlogCTA = () => {
                 y1="2" 
                 x2="490" 
                 y2="2" 
-                stroke="hsl(var(--border))" 
+                stroke="hsl(var(--foreground))" 
                 strokeWidth="2.5" 
               />
               {/* Downward V notch */}
               <polyline 
                 points="490,2 500,12 510,2" 
-                stroke="hsl(var(--border))" 
+                stroke="hsl(var(--foreground))" 
                 strokeWidth="2.5" 
                 fill="none"
                 strokeLinecap="square"
@@ -55,7 +55,7 @@ const BlogCTA = () => {
                 y1="2" 
                 x2="1000" 
                 y2="2" 
-                stroke="hsl(var(--border))" 
+                stroke="hsl(var(--foreground))" 
                 strokeWidth="2.5" 
               />
             </svg>

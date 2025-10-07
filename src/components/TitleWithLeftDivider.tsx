@@ -31,7 +31,7 @@ const TitleWithLeftDivider = ({ subtitle, title, className }: TitleWithLeftDivid
           {/* Downward V notch at start */}
           <polyline 
             points="15,2 25,12 35,2" 
-            stroke="hsl(var(--border))" 
+            stroke="hsl(var(--foreground))" 
             strokeWidth="2.5" 
             fill="none"
             strokeLinecap="square"
@@ -43,7 +43,7 @@ const TitleWithLeftDivider = ({ subtitle, title, className }: TitleWithLeftDivid
             y1="2" 
             x2="1000" 
             y2="2" 
-            stroke="hsl(var(--border))" 
+            stroke="hsl(var(--foreground))" 
             strokeWidth="2.5" 
           />
         </svg>
