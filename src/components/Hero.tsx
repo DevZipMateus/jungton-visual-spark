@@ -37,7 +37,7 @@ const Hero = () => {
       
       {/* Logo no canto superior esquerdo */}
       <div className="absolute top-24 left-4 md:left-8 z-20 animate-fade-in">
-        <img src={logo} alt="Jungton" className="h-16 md:h-20 lg:h-24 brightness-0 invert" />
+        <img src={logo} alt="Jungton" className="h-20 md:h-24 lg:h-32 brightness-0 invert" />
       </div>
 
       {/* Content */}
