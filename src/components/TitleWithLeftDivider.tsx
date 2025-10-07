@@ -19,32 +19,19 @@ const TitleWithLeftDivider = ({ subtitle, title, className }: TitleWithLeftDivid
         </div>
       </div>
       
-      {/* Line with arrow chevron at the end */}
+      {/* Line with V notch at start and chevron at end */}
       <div className="flex-grow relative h-3">
         <svg 
           width="100%" 
-          height="14" 
+          height="12" 
           preserveAspectRatio="none"
           className="absolute top-1/2 -translate-y-1/2"
-          viewBox="0 0 1000 14"
         >
-          {/* Horizontal line */}
-          <line 
-            x1="0" 
-            y1="7" 
-            x2="985" 
-            y2="7" 
+          <path 
+            d="M 0 11 L 15 11 L 20 6 L 25 11 L 5000 11" 
             stroke="hsl(var(--border))" 
             strokeWidth="1.5" 
-          />
-          {/* Arrow chevron pointing right */}
-          <polyline 
-            points="985,2 993,7 985,12" 
-            stroke="hsl(var(--border))" 
-            strokeWidth="1.5" 
-            fill="none"
-            strokeLinecap="square"
-            strokeLinejoin="miter"
+            fill="none" 
           />
         </svg>
       </div>
