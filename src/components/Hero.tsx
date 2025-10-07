@@ -26,8 +26,8 @@ const Hero = () => {
     }
   };
   return <>
-      {/* Full-width decorative line with downward V notch - at header/hero division */}
-      <div className="fixed top-20 left-0 right-0 w-full bg-background z-40">
+      {/* Full-width decorative line at header/hero division */}
+      <div className="relative w-full bg-background">
         <svg 
           width="100%" 
           height="16" 
@@ -44,12 +44,12 @@ const Hero = () => {
             stroke="hsl(var(--foreground))" 
             strokeWidth="2.5" 
           />
-          {/* Downward V notch */}
+          {/* Downward V notch with white fill */}
           <polyline 
             points="490,2 500,12 510,2" 
             stroke="hsl(var(--foreground))" 
             strokeWidth="2.5" 
-            fill="none"
+            fill="white"
             strokeLinecap="square"
             strokeLinejoin="miter"
           />
@@ -65,7 +65,7 @@ const Hero = () => {
         </svg>
       </div>
       
-      <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Images Carousel */}
       {backgroundImages.map((image, index) => <div key={index} className="absolute inset-0 transition-opacity duration-1000 ease-in-out" style={{
       opacity: currentImageIndex === index ? 1 : 0
