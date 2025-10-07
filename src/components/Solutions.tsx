@@ -71,15 +71,16 @@ const Solutions = () => {
   }, []);
 
   return (
-    <section id="solutions" className="py-20 bg-muted/30 relative">
+    <section id="solutions" className="py-20 relative">
       {/* Background Texture - Full Width */}
-      <div className="absolute inset-0 opacity-30 pointer-events-none full-width-container">
+      <div className="absolute inset-0 pointer-events-none full-width-container">
         <img 
           src={textureGrid} 
           alt="" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-90"
         />
       </div>
+      <div className="absolute inset-0 bg-background/80" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
