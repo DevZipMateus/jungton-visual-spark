@@ -94,22 +94,26 @@ const Timeline = () => {
           {/* Desktop Timeline - Horizontal */}
           <div className="hidden lg:block relative">
             {/* Line */}
-            <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-primary/20 -translate-y-1/2" />
+            <div className="absolute top-24 left-0 right-0 h-0.5 bg-primary/20" />
             
             <div className="relative grid grid-cols-6 gap-4">
               {milestones.map((milestone, index) => {
                 const Icon = milestone.icon;
                 return (
                   <div key={index} className="relative animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                    {/* Connector Dot */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background z-10" />
+                    {/* Year - Above the dot */}
+                    <div className="text-center mb-4">
+                      <div className="font-bold text-2xl text-primary">{milestone.year}</div>
+                    </div>
                     
-                    {/* Content */}
-                    <div className="text-center pt-24">
+                    {/* Connector Dot */}
+                    <div className="absolute top-24 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background z-10" />
+                    
+                    {/* Content - Below the dot */}
+                    <div className="text-center pt-28">
                       <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 text-primary mb-4">
                         <Icon className="w-8 h-8" />
                       </div>
-                      <div className="font-bold text-2xl text-primary mb-2">{milestone.year}</div>
                       <h3 className="mb-2">{milestone.title}</h3>
                       <p className="text-muted-foreground">{milestone.description}</p>
                     </div>
