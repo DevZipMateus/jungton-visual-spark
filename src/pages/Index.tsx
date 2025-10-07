@@ -14,7 +14,7 @@ const Index = () => {
       <Header />
       
       {/* Decorative line at header/hero division */}
-      <div className="relative w-full bg-background pt-20">
+      <div className="relative w-full pt-20">
         <svg 
           width="100%" 
           height="16" 
