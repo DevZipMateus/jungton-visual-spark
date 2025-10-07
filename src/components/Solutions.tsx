@@ -218,7 +218,16 @@ const Solutions = () => {
               viewBox="0 0 1000 16"
               className="w-full"
             >
-              {/* Upward V notch at start */}
+              {/* Line from start to V notch */}
+              <line 
+                x1="0" 
+                y1="12" 
+                x2="15" 
+                y2="12" 
+                stroke="hsl(var(--foreground))" 
+                strokeWidth="2.5" 
+              />
+              {/* Upward V notch */}
               <polyline 
                 points="15,12 25,2 35,12" 
                 stroke="hsl(var(--foreground))" 
