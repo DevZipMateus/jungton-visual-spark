@@ -72,7 +72,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center transition-smooth hover:opacity-80">
-            <img src={logo} alt="Jungton Comunicação Visual" className="h-20" />
+            <img src={logo} alt="Jungton Comunicação Visual" className="h-24" />
           </Link>
 
           {/* Desktop Navigation */}
