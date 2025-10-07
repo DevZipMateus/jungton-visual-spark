@@ -19,7 +19,7 @@ const TitleWithLeftDivider = ({ subtitle, title, className }: TitleWithLeftDivid
         </div>
       </div>
       
-      {/* Line with V notch - horizontal then vertical with upward V */}
+      {/* Line with vertical start and horizontal continuation */}
       <div className="flex-grow relative">
         <svg 
           width="100%" 
@@ -28,48 +28,39 @@ const TitleWithLeftDivider = ({ subtitle, title, className }: TitleWithLeftDivid
           viewBox="0 0 1000 200"
           className="w-full"
         >
-          {/* Downward V notch at start */}
+          {/* Vertical line from top */}
+          <line 
+            x1="2" 
+            y1="0" 
+            x2="2" 
+            y2="60" 
+            stroke="hsl(var(--foreground))" 
+            strokeWidth="2.5" 
+          />
+          {/* Right-pointing V notch on vertical */}
           <polyline 
-            points="15,2 25,12 35,2" 
+            points="2,60 16,100 2,140" 
             stroke="hsl(var(--foreground))" 
             strokeWidth="2.5" 
             fill="none"
             strokeLinecap="square"
             strokeLinejoin="miter"
           />
-          {/* Horizontal line continuing to near end */}
+          {/* Vertical line continuing down to corner */}
           <line 
-            x1="35" 
-            y1="2" 
-            x2="980" 
-            y2="2" 
+            x1="2" 
+            y1="140" 
+            x2="2" 
+            y2="198" 
             stroke="hsl(var(--foreground))" 
             strokeWidth="2.5" 
           />
-          {/* Vertical line going up */}
+          {/* Horizontal line continuing to end */}
           <line 
-            x1="980" 
-            y1="2" 
-            x2="980" 
-            y2="140" 
-            stroke="hsl(var(--foreground))" 
-            strokeWidth="2.5" 
-          />
-          {/* Upward V notch on vertical line */}
-          <polyline 
-            points="980,140 990,100 980,60" 
-            stroke="hsl(var(--foreground))" 
-            strokeWidth="2.5" 
-            fill="none"
-            strokeLinecap="square"
-            strokeLinejoin="miter"
-          />
-          {/* Vertical line continuing up */}
-          <line 
-            x1="980" 
-            y1="60" 
-            x2="980" 
-            y2="0" 
+            x1="2" 
+            y1="198" 
+            x2="1000" 
+            y2="198" 
             stroke="hsl(var(--foreground))" 
             strokeWidth="2.5" 
           />
