@@ -40,7 +40,7 @@ const About = () => {
               <div className="absolute right-0 top-0 bottom-0 w-px bg-border hidden md:block" />
               <div className="md:pr-8">
                 <h2 className="leading-tight text-2xl md:text-3xl">
-                  A JUNGTON<br />
+                  A JUNGTON,<br />
                   COMUNICAÇÃO VISUAL<br />
                   QUE GERA CONEXÃO<br />
                   E RESULTADOS
