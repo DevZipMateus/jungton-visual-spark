@@ -1,6 +1,6 @@
 import { MapPin, Phone, Mail, Clock, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import TitleWithLeftDivider from "@/components/TitleWithLeftDivider";
+import TitleWithCenteredDivider from "@/components/TitleWithCenteredDivider";
 
 const testimonials = [
   {
@@ -50,9 +50,8 @@ const Contact = () => {
     <section id="contact" className="py-12 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <TitleWithLeftDivider 
-            subtitle="ENTRE EM" 
-            title="CONTATO" 
+          <TitleWithCenteredDivider 
+            title="ENTRE EM CONTATO" 
             className="mb-12 md:mb-16 animate-fade-in px-4 md:px-0" 
           />
 
