@@ -2,10 +2,19 @@ import { useState, useEffect } from "react";
 import { Menu, X, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
 import logo from "@/assets/jungton-logo.png";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const location = useLocation();
   const navigate = useNavigate();
   const isHomePage = location.pathname === "/";
@@ -46,6 +55,16 @@ const Header = () => {
       setTimeout(() => scrollToSection(id), 100);
     }
   }, [location, isHomePage]);
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      // Navegar para página de resultados de pesquisa ou filtrar conteúdo
+      navigate(`/blog?search=${encodeURIComponent(searchQuery.trim())}`);
+      setIsSearchOpen(false);
+      setSearchQuery("");
+    }
+  };
+
   const navItems = [{
     label: "A Jungton",
     id: "about",
@@ -81,7 +100,11 @@ const Header = () => {
 
           {/* Social Links - Desktop */}
           <div className="hidden lg:flex items-center gap-4">
-            <button className={`hover:text-primary transition-smooth ${isScrolled ? 'text-foreground/60' : 'text-white'}`} aria-label="Pesquisar">
+            <button 
+              onClick={() => setIsSearchOpen(true)}
+              className={`hover:text-primary transition-smooth ${isScrolled ? 'text-foreground/60' : 'text-white'}`} 
+              aria-label="Pesquisar"
+            >
               <Search className="w-5 h-5" />
             </button>
             <a href="https://www.facebook.com/jungtoncomunicacaovisual" target="_blank" rel="noopener noreferrer" className={`hover:text-primary transition-smooth ${isScrolled ? 'text-foreground/60' : 'text-white'}`} aria-label="Facebook">
@@ -116,7 +139,11 @@ const Header = () => {
                     {item.label}
                   </button>)}
               <div className="flex items-center gap-4 pt-4 border-t border-border">
-                <button className="text-foreground/60 hover:text-primary transition-smooth" aria-label="Pesquisar">
+                <button 
+                  onClick={() => setIsSearchOpen(true)}
+                  className="text-foreground/60 hover:text-primary transition-smooth" 
+                  aria-label="Pesquisar"
+                >
                   <Search className="w-5 h-5" />
                 </button>
                 <a href="https://www.facebook.com/jungtoncomunicacaovisual" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary transition-smooth" aria-label="Facebook">
@@ -138,6 +165,31 @@ const Header = () => {
             </nav>
           </div>}
       </div>
+
+      {/* Search Dialog */}
+      <Dialog open={isSearchOpen} onOpenChange={setIsSearchOpen}>
+        <DialogContent className="sm:max-w-[500px]">
+          <DialogHeader>
+            <DialogTitle>Pesquisar no site</DialogTitle>
+          </DialogHeader>
+          <form onSubmit={handleSearch} className="space-y-4">
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+              <Input
+                type="text"
+                placeholder="Digite o que você procura..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="pl-10"
+                autoFocus
+              />
+            </div>
+            <Button type="submit" className="w-full">
+              Pesquisar
+            </Button>
+          </form>
+        </DialogContent>
+      </Dialog>
     </header>;
 };
 export default Header;
