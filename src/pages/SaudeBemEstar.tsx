@@ -58,18 +58,18 @@ const SaudeBemEstar = () => {
             </Link>
 
             <div className="max-w-6xl mx-auto">
-              <h1 className="mb-3 md:mb-4 text-xl md:text-2xl">Saúde & Bem-estar</h1>
-              <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8">
+              <h1 className="mb-3 md:mb-4 text-xl md:text-2xl font-bold">Saúde & Bem-estar</h1>
+              <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8 leading-relaxed">
                 Ambientes que inspiram confiança, credibilidade e bem-estar
               </p>
 
-              <div className="bg-card p-4 md:p-6 rounded-lg shadow-sm mb-8 md:mb-12">
-                <h2 className="mb-3 md:mb-4">Serviços inclusos:</h2>
+              <div className="bg-card p-4 md:p-6 rounded-lg shadow-sm mb-8 md:mb-12 border-l-4 border-primary">
+                <h2 className="mb-3 md:mb-4 font-semibold">Serviços inclusos:</h2>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3">
                   {services.map((service, idx) => (
                     <li key={idx} className="flex items-start">
-                      <span className="text-primary mr-2">•</span>
-                      <span className="text-foreground/80">{service}</span>
+                      <span className="text-primary mr-2 font-bold">•</span>
+                      <span className="text-foreground/80 leading-relaxed">{service}</span>
                     </li>
                   ))}
                 </ul>
