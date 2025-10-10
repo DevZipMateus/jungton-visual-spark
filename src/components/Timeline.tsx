@@ -200,7 +200,7 @@ const Timeline = () => {
             </p>
 
             <div className="relative mt-8 md:mt-12 pl-6 md:pl-8">
-              <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#FF8C00]" />
+              <div className="absolute left-0 top-0 bottom-0 w-2 bg-primary" />
               <h2 className="leading-tight text-xl md:text-2xl">
                 A HISTÓRIA CONTINUA<br />
                 E CADA NOVO DESAFIO É UM<br />
