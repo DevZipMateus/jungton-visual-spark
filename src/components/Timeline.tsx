@@ -49,7 +49,7 @@ const Timeline = () => {
         <img 
           src={textureGrid} 
           alt="" 
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover opacity-60"
         />
       </div>
       

@@ -46,7 +46,7 @@ const Solutions = () => {
   return <section id="solutions" className="py-20 relative overflow-hidden">
       {/* Background Texture - Full Width */}
       <div className="absolute inset-0 pointer-events-none">
-        <img src={textureGrid} alt="" className="w-full h-full object-cover opacity-40" />
+        <img src={textureGrid} alt="" className="w-full h-full object-cover opacity-60" />
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
