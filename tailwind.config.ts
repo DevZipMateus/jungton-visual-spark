@@ -15,7 +15,8 @@ export default {
     extend: {
       fontFamily: {
         'jungton': ['JungtonFont', 'sans-serif'],
-        'sans': ['JungtonFont', 'sans-serif'],
+        'jungton2': ['JungtonFont2', 'sans-serif'],
+        'sans': ['JungtonFont', 'JungtonFont2', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

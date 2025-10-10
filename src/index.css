@@ -14,6 +14,14 @@ All colors MUST be HSL.
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'JungtonFont2';
+  src: url('/fonts/custom-font-2.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -120,21 +128,21 @@ All colors MUST be HSL.
 
   /* Títulos de seção - CAIXA ALTA e NEGRITO - tamanho uniforme */
   h1 {
-    @apply text-xl font-bold uppercase tracking-wider;
+    @apply text-xl font-bold uppercase tracking-wider font-jungton2;
   }
 
   h2 {
-    @apply text-xl font-bold uppercase tracking-wider;
+    @apply text-xl font-bold uppercase tracking-wider font-jungton2;
   }
 
   /* Subtítulos - sem negrito - tamanho uniforme */
   h3 {
-    @apply text-base font-normal;
+    @apply text-base font-normal font-jungton2;
   }
 
   /* Textos padrão */
   p {
-    @apply text-base;
+    @apply text-base font-jungton;
   }
 }
 
