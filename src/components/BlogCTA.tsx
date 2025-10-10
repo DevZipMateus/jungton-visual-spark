@@ -7,7 +7,7 @@ const BlogCTA = () => {
   return (
     <section className="py-20 bg-muted/30 relative overflow-hidden">
       {/* Background Texture */}
-      <div className="absolute inset-0 opacity-30 pointer-events-none">
+      <div className="absolute inset-0 opacity-50 pointer-events-none">
         <img 
           src={textureGrid} 
           alt="" 

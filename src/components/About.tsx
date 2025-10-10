@@ -8,7 +8,7 @@ const About = () => {
         <img 
           src={textureGrid} 
           alt="" 
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover opacity-40"
         />
       </div>
       
