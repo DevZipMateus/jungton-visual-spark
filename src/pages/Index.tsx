@@ -31,12 +31,12 @@ const Index = () => {
             stroke="hsl(var(--foreground))" 
             strokeWidth="2.5" 
           />
-          {/* Downward V notch with white fill */}
+          {/* Downward V notch */}
           <path 
             d="M 490 2 L 500 12 L 510 2" 
             stroke="hsl(var(--foreground))" 
             strokeWidth="2.5" 
-            fill="white"
+            fill="transparent"
             strokeLinecap="square"
             strokeLinejoin="miter"
           />
