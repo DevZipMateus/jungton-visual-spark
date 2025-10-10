@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const BlogCTA = () => {
   return (
-    <section className="py-20 bg-muted/30 relative overflow-hidden">
+    <section className="py-12 bg-muted/30 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in px-4">
           <h2 className="whitespace-normal md:whitespace-nowrap text-sm md:text-xl text-center mb-6 font-bold uppercase">
