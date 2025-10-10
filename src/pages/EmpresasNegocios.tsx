@@ -43,24 +43,24 @@ const EmpresasNegocios = () => {
     <div className="min-h-screen">
       <Header />
       <main className="pt-20">
-        <section className="py-12 bg-muted/30">
+        <section className="py-8 md:py-12 bg-muted/30">
           <div className="container mx-auto px-4">
             <Link to="/#solutions">
-              <Button variant="ghost" className="mb-6">
+              <Button variant="ghost" className="mb-4 md:mb-6">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Voltar para soluções
               </Button>
             </Link>
 
             <div className="max-w-6xl mx-auto">
-              <h1 className="mb-4">Empresas & Negócios em Geral</h1>
-              <p className="text-lg text-muted-foreground mb-8">
+              <h1 className="mb-3 md:mb-4 text-xl md:text-2xl">Empresas & Negócios em Geral</h1>
+              <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8">
                 Presença visual para marcas de todos os segmentos
               </p>
 
-              <div className="bg-card p-6 rounded-lg shadow-sm mb-12">
-                <h2 className="mb-4">Serviços inclusos:</h2>
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div className="bg-card p-4 md:p-6 rounded-lg shadow-sm mb-8 md:mb-12">
+                <h2 className="mb-3 md:mb-4">Serviços inclusos:</h2>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3">
                   {services.map((service, idx) => (
                     <li key={idx} className="flex items-start">
                       <span className="text-primary mr-2">•</span>
@@ -70,7 +70,7 @@ const EmpresasNegocios = () => {
                 </ul>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                 {images.map((image, idx) => (
                   <div
                     key={idx}
@@ -81,7 +81,7 @@ const EmpresasNegocios = () => {
                     <img
                       src={`/imagens/empresas e negocios/${image}`}
                       alt={`Projeto empresarial ${idx + 1}`}
-                      className="w-full h-64 object-cover hover:scale-110 transition-smooth"
+                      className="w-full h-48 md:h-64 object-cover hover:scale-110 transition-smooth"
                     />
                   </div>
                 ))}
