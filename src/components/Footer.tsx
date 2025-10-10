@@ -24,7 +24,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="text-center md:text-left">
             <div className="mb-4 inline-flex items-center justify-center bg-background rounded-full p-3">
-              <img src={logo} alt="Jungton" className="h-12 md:h-16" />
+              <img src={logo} alt="Jungton" className="h-20 md:h-24" />
             </div>
             
           </div>
