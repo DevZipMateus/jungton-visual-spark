@@ -57,12 +57,70 @@ const Header = () => {
   }, [location, isHomePage]);
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    if (searchQuery.trim()) {
-      // Navegar para página de resultados de pesquisa ou filtrar conteúdo
-      navigate(`/blog?search=${encodeURIComponent(searchQuery.trim())}`);
-      setIsSearchOpen(false);
-      setSearchQuery("");
+    const query = searchQuery.trim().toLowerCase();
+    
+    if (!query) return;
+
+    // Mapeamento de termos de pesquisa para seções/páginas
+    const searchMap: Record<string, { type: 'section' | 'page', target: string }> = {
+      // Seções da home
+      'jungton': { type: 'section', target: 'about' },
+      'sobre': { type: 'section', target: 'about' },
+      'empresa': { type: 'section', target: 'about' },
+      'quem somos': { type: 'section', target: 'about' },
+      'história': { type: 'section', target: 'history' },
+      'historia': { type: 'section', target: 'history' },
+      'trajetória': { type: 'section', target: 'history' },
+      'trajetoria': { type: 'section', target: 'history' },
+      'soluções': { type: 'section', target: 'solutions' },
+      'solucoes': { type: 'section', target: 'solutions' },
+      'serviços': { type: 'section', target: 'solutions' },
+      'servicos': { type: 'section', target: 'solutions' },
+      'contato': { type: 'section', target: 'contact' },
+      'fale conosco': { type: 'section', target: 'contact' },
+      
+      // Páginas
+      'blog': { type: 'page', target: '/blog' },
+      'novidades': { type: 'page', target: '/blog' },
+      'artigos': { type: 'page', target: '/blog' },
+      'arquitetura': { type: 'page', target: '/arquitetura-engenharia' },
+      'engenharia': { type: 'page', target: '/arquitetura-engenharia' },
+      'empresas': { type: 'page', target: '/empresas-negocios' },
+      'negócios': { type: 'page', target: '/empresas-negocios' },
+      'negocios': { type: 'page', target: '/empresas-negocios' },
+      'saúde': { type: 'page', target: '/saude-bem-estar' },
+      'saude': { type: 'page', target: '/saude-bem-estar' },
+      'bem estar': { type: 'page', target: '/saude-bem-estar' },
+      'supermercado': { type: 'page', target: '/supermercados-varejo' },
+      'varejo': { type: 'page', target: '/supermercados-varejo' },
+    };
+
+    // Buscar correspondência exata
+    let result = searchMap[query];
+
+    // Se não encontrar exata, buscar por correspondência parcial
+    if (!result) {
+      for (const [key, value] of Object.entries(searchMap)) {
+        if (query.includes(key) || key.includes(query)) {
+          result = value;
+          break;
+        }
+      }
     }
+
+    if (result) {
+      if (result.type === 'section') {
+        handleNavigation(result.target);
+      } else {
+        navigate(result.target);
+      }
+    } else {
+      // Se não encontrar nada, buscar no blog
+      navigate(`/blog?search=${encodeURIComponent(query)}`);
+    }
+
+    setIsSearchOpen(false);
+    setSearchQuery("");
   };
 
   const navItems = [{
