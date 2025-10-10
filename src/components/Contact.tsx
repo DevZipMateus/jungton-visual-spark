@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, Star } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Star, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TitleWithCenteredDivider from "@/components/TitleWithCenteredDivider";
 
@@ -81,17 +81,23 @@ const Contact = () => {
                   <a href="tel:+555532217731" className="text-foreground/80 hover:text-primary transition-smooth">
                     (55) 3221-7731
                   </a>
-                  <div className="mt-2">
-                    <h3 className="mb-1">WhatsApp</h3>
-                    <a
-                      href="https://wa.me/5555991630953"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-foreground/80 hover:text-primary transition-smooth"
-                    >
-                      (55) 9.9163-0953
-                    </a>
-                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <MessageCircle className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="mb-2">WhatsApp</h3>
+                  <a
+                    href="https://wa.me/5555991630953"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/80 hover:text-primary transition-smooth"
+                  >
+                    (55) 9.9163-0953
+                  </a>
                 </div>
               </div>
 
