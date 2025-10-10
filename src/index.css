@@ -6,6 +6,14 @@
 All colors MUST be HSL.
 */
 
+@font-face {
+  font-family: 'JungtonFont';
+  src: url('/fonts/custom-font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -88,7 +96,7 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-kozuka;
+    @apply bg-background text-foreground font-jungton;
     font-feature-settings: "kern" 1, "liga" 1;
     position: relative;
   }

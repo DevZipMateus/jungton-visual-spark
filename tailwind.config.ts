@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        'kozuka': ['Noto Serif JP', 'serif'],
-        'sans': ['Noto Serif JP', 'serif'],
+        'jungton': ['JungtonFont', 'sans-serif'],
+        'sans': ['JungtonFont', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
