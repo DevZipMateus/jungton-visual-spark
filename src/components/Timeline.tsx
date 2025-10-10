@@ -1,5 +1,4 @@
 import { Building2, Palette, Monitor, Users, TrendingUp, Home } from "lucide-react";
-import textureGrid from "@/assets/texture-grid.png";
 import DecorativeLine from "@/components/DecorativeLine";
 
 const Timeline = () => {
@@ -44,15 +43,6 @@ const Timeline = () => {
 
   return (
     <section id="history" className="py-20 relative overflow-hidden">
-      {/* Background Texture - Full Width */}
-      <div className="absolute inset-0 pointer-events-none">
-        <img 
-          src={textureGrid} 
-          alt="" 
-          className="w-full h-full object-cover opacity-60"
-        />
-      </div>
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Header Section with Layout Similar to About */}

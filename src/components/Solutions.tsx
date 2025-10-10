@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import OptimizedImage from "@/components/OptimizedImage";
-import textureGrid from "@/assets/texture-grid.png";
 import DecorativeLine from "@/components/DecorativeLine";
 const Solutions = () => {
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
@@ -44,11 +43,6 @@ const Solutions = () => {
     });
   }, []);
   return <section id="solutions" className="py-20 relative overflow-hidden">
-      {/* Background Texture - Full Width */}
-      <div className="absolute inset-0 pointer-events-none">
-        <img src={textureGrid} alt="" className="w-full h-full object-cover opacity-60" />
-      </div>
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 md:mb-16 animate-fade-in">

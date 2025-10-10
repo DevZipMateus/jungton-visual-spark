@@ -1,6 +1,5 @@
 import { MapPin, Phone, Mail, Clock, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import textureGrid from "@/assets/texture-grid.png";
 import TitleWithLeftDivider from "@/components/TitleWithLeftDivider";
 
 const testimonials = [
@@ -49,15 +48,6 @@ const testimonials = [
 const Contact = () => {
   return (
     <section id="contact" className="py-20 relative overflow-hidden">
-      {/* Background Texture - Full Width */}
-      <div className="absolute inset-0 pointer-events-none">
-        <img 
-          src={textureGrid} 
-          alt="" 
-          className="w-full h-full object-cover opacity-60"
-        />
-      </div>
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           <TitleWithLeftDivider 

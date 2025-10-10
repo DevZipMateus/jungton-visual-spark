@@ -1,20 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import textureGrid from "@/assets/texture-grid.png";
 
 const BlogCTA = () => {
   return (
     <section className="py-20 bg-muted/30 relative overflow-hidden">
-      {/* Background Texture */}
-      <div className="absolute inset-0 opacity-60 pointer-events-none">
-        <img 
-          src={textureGrid} 
-          alt="" 
-          className="w-full h-full object-cover"
-        />
-      </div>
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in px-4">
           <h2 className="whitespace-normal md:whitespace-nowrap text-sm md:text-xl text-center mb-6 font-bold uppercase">
