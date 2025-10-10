@@ -3,12 +3,12 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowLeft, X } from "lucide-react";
+import { ArrowLeft, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ArquiteturaEngenharia = () => {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
   
   const images = [
     "0808bb33-eb15-44b7-9289-1e48e5d19744.jpg",
@@ -48,6 +48,35 @@ const ArquiteturaEngenharia = () => {
     "Decorativos e branding em áreas comuns",
   ];
 
+  const handlePrevious = () => {
+    if (selectedImageIndex !== null && selectedImageIndex > 0) {
+      setSelectedImageIndex(selectedImageIndex - 1);
+    }
+  };
+
+  const handleNext = () => {
+    if (selectedImageIndex !== null && selectedImageIndex < images.length - 1) {
+      setSelectedImageIndex(selectedImageIndex + 1);
+    }
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (selectedImageIndex === null) return;
+      
+      if (e.key === "ArrowLeft") {
+        handlePrevious();
+      } else if (e.key === "ArrowRight") {
+        handleNext();
+      } else if (e.key === "Escape") {
+        setSelectedImageIndex(null);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedImageIndex]);
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -85,7 +114,7 @@ const ArquiteturaEngenharia = () => {
                     key={idx}
                     className="overflow-hidden rounded-lg shadow-sm hover:shadow-elegant transition-smooth animate-scale-in cursor-pointer"
                     style={{ animationDelay: `${idx * 0.05}s` }}
-                    onClick={() => setSelectedImage(`/imagens/arquitetura e engenharia/${image}`)}
+                    onClick={() => setSelectedImageIndex(idx)}
                   >
                     <img
                       src={`/imagens/arquitetura e engenharia/${image}`}
@@ -102,15 +131,36 @@ const ArquiteturaEngenharia = () => {
       <Footer />
       <WhatsAppButton />
       
-      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+      <Dialog open={selectedImageIndex !== null} onOpenChange={() => setSelectedImageIndex(null)}>
         <DialogContent className="max-w-[100vw] max-h-[100vh] w-screen h-screen p-0 m-0 bg-black border-0 rounded-none overflow-hidden flex items-center justify-center">
           <DialogClose className="absolute right-4 top-4 z-50 rounded-sm opacity-70 bg-white/20 p-2 transition-opacity hover:opacity-100 focus:outline-none disabled:pointer-events-none">
             <X className="h-6 w-6 text-white" />
             <span className="sr-only">Fechar</span>
           </DialogClose>
-          {selectedImage && (
+          
+          {selectedImageIndex !== null && selectedImageIndex > 0 && (
+            <button
+              onClick={handlePrevious}
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-50 rounded-full opacity-70 bg-white/20 p-3 transition-opacity hover:opacity-100 focus:outline-none"
+              aria-label="Imagem anterior"
+            >
+              <ChevronLeft className="h-8 w-8 text-white" />
+            </button>
+          )}
+          
+          {selectedImageIndex !== null && selectedImageIndex < images.length - 1 && (
+            <button
+              onClick={handleNext}
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-50 rounded-full opacity-70 bg-white/20 p-3 transition-opacity hover:opacity-100 focus:outline-none"
+              aria-label="Próxima imagem"
+            >
+              <ChevronRight className="h-8 w-8 text-white" />
+            </button>
+          )}
+          
+          {selectedImageIndex !== null && (
             <img
-              src={selectedImage}
+              src={`/imagens/arquitetura e engenharia/${images[selectedImageIndex]}`}
               alt="Imagem expandida"
               className="max-w-full max-h-full w-auto h-auto object-contain"
             />
