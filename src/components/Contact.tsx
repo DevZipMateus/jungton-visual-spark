@@ -94,7 +94,7 @@ const Contact = () => {
                     href="https://wa.me/5555991630953"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-foreground/80 hover:text-primary transition-smooth"
+                    className="text-primary hover:text-primary/80 transition-smooth"
                   >
                     (55) 9.9163-0953
                   </a>
