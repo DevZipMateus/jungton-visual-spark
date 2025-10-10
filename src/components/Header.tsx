@@ -67,14 +67,9 @@ const Header = () => {
     id: "contact",
     type: "scroll"
   }];
-  return <header className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${isScrolled ? "bg-background/95 backdrop-blur-sm shadow-lg" : "bg-background"}`}>
+  return <header className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${isScrolled ? "bg-background/80 backdrop-blur-md shadow-lg" : "bg-transparent"}`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center transition-smooth hover:opacity-80">
-            <img src={logo} alt="Jungton Comunicação Visual" className="h-24" />
-          </Link>
-
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6">
             {navItems.map(item => item.type === "link" ? <Link key={item.id} to={`/${item.id}`} className="font-medium text-foreground/80 hover:text-primary transition-smooth uppercase">
