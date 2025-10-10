@@ -814,13 +814,36 @@ const Blog = () => {
     }
   ];
 
+  // Function to parse Portuguese date format to Date object
+  const parsePortugueseDate = (dateStr: string): Date => {
+    const months: { [key: string]: number } = {
+      'janeiro': 0, 'fevereiro': 1, 'março': 2, 'abril': 3,
+      'maio': 4, 'junho': 5, 'julho': 6, 'agosto': 7,
+      'setembro': 8, 'outubro': 9, 'novembro': 10, 'dezembro': 11
+    };
+    
+    const parts = dateStr.toLowerCase().split(' de ');
+    if (parts.length === 3) {
+      const day = parseInt(parts[0]);
+      const month = months[parts[1]];
+      const year = parseInt(parts[2]);
+      return new Date(year, month, day);
+    }
+    return new Date();
+  };
+
+  // Sort posts by date (most recent first)
+  const sortedPosts = [...posts].sort((a, b) => {
+    return parsePortugueseDate(b.date).getTime() - parsePortugueseDate(a.date).getTime();
+  });
+
   // Extract unique categories
-  const allCategories = [...new Set(posts.map(post => post.category))].sort();
+  const allCategories = [...new Set(sortedPosts.map(post => post.category))].sort();
 
   // Filter posts based on selected category
   const filteredPosts = selectedCategory 
-    ? posts.filter(post => post.category === selectedCategory)
-    : posts;
+    ? sortedPosts.filter(post => post.category === selectedCategory)
+    : sortedPosts;
 
   return (
     <div className="min-h-screen">
