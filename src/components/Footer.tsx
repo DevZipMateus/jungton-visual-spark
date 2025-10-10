@@ -1,5 +1,6 @@
 import logo from "@/assets/jungton-logo.png";
 import footerBg from "@/assets/footer-background.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -108,6 +109,14 @@ const Footer = () => {
                 >
                   Contato
                 </button>
+              </li>
+              <li>
+                <Link
+                  to="/blog"
+                  className="text-foreground/70 hover:text-primary transition-smooth"
+                >
+                  Blog
+                </Link>
               </li>
             </ul>
           </div>
