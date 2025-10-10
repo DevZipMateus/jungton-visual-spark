@@ -112,9 +112,9 @@ const Timeline = () => {
               className="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-32"
             />
 
-            {/* Right Column - Text with Orange Bar */}
+            {/* Right Column - Text with Yellow Bar */}
             <div className="relative">
-              <div className="absolute right-0 top-0 bottom-0 w-2 bg-[#FF8C00]" />
+              <div className="absolute right-0 top-0 bottom-0 w-2 bg-primary" />
               <div className="pr-6 md:pr-8 space-y-4 md:space-y-6 leading-relaxed text-foreground/80">
                 <p>
                   Na Jungton, cada projeto é mais do que comunicação visual: é a soma de história, 

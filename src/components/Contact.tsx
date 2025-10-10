@@ -10,7 +10,7 @@ const testimonials = [
     date: "Há 12 semanas",
     text: "Super profissionais, trabalho de qualidade e agilidade. Atendimento excepcional. Super recomendo.",
     initial: "C",
-    color: "bg-orange-600"
+    color: "bg-primary"
   },
   {
     name: "Tríptica Arquitetura",

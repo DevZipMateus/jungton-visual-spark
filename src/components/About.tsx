@@ -15,9 +15,9 @@ const About = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center animate-fade-in relative">
-            {/* Left Column - Text with Orange Bar */}
+            {/* Left Column - Text with Yellow Bar */}
             <div className="relative order-2 md:order-1">
-              <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#FF8C00]" />
+              <div className="absolute left-0 top-0 bottom-0 w-2 bg-primary" />
               <div className="pl-6 md:pl-8 space-y-4 md:space-y-6 leading-relaxed text-foreground/80">
                 <p>
                   Na Jungton, temos soluções em comunicação visual que valorizam espaços, marcas e serviços. 

@@ -192,8 +192,8 @@ const Solutions = () => {
           {/* Bottom Section with Decorative Design */}
           <div className="mt-12 md:mt-16 max-w-5xl mx-auto px-4">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
-              {/* Orange Bar */}
-              <div className="w-1 h-12 md:h-16 bg-[#FF8C00] flex-shrink-0" />
+              {/* Yellow Bar */}
+              <div className="w-1 h-12 md:h-16 bg-primary flex-shrink-0" />
               
               {/* Text */}
               <div className="flex-shrink-0">
