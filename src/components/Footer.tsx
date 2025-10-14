@@ -40,7 +40,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="text-center md:text-left">
             <div className="mb-4 inline-flex items-center justify-center bg-background rounded-full p-3">
-              <img src={logo} alt="Jungton" className="h-24 md:h-32" />
+              <img src={logo} alt="Jungton" className="h-24 md:h-32" translate="no" />
             </div>
             
           </div>
@@ -101,8 +101,8 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border pt-6 md:pt-8 text-center text-sm text-foreground/70 px-4">
-          <p>&copy; {new Date().getFullYear()} Jungton Comunicação Visual Ltda. Todos os direitos reservados.</p>
-          <p className="mt-2">CNPJ: 87.802.179/0001-89</p>
+          <p>&copy; {new Date().getFullYear()} <span className="notranslate">Jungton Comunicação Visual Ltda</span>. Todos os direitos reservados.</p>
+          <p className="mt-2" translate="no">CNPJ: 87.802.179/0001-89</p>
         </div>
       </div>
     </footer>
