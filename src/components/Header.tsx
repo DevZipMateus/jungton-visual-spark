@@ -146,14 +146,9 @@ const Header = () => {
   }];
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg" : "bg-background/20 backdrop-blur-sm"}`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link to="/" className="flex-shrink-0">
-            <img src={logo} alt="Jungton" className="h-10 md:h-12 w-auto" />
-          </Link>
-
+        <div className="flex items-center justify-between h-20 w-full">
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-6 flex-1 justify-center">
+          <nav className="hidden lg:flex items-center gap-6">
             {navItems.map(item => item.type === "link" ? <Link key={item.id} to={`/${item.id}`} className={`font-medium hover:text-primary transition-smooth uppercase text-sm ${isScrolled ? 'text-foreground/80' : 'text-white'}`}>
                   {item.label}
                 </Link> : <button key={item.id} onClick={() => handleNavigation(item.id)} className={`font-medium hover:text-primary transition-smooth uppercase text-sm ${isScrolled ? 'text-foreground/80' : 'text-white'}`}>
