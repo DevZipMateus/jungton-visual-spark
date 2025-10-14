@@ -734,9 +734,25 @@ const BlogPost = () => {
 
               {post.content.sections.map((section, index) => <div key={index} className="mb-10">
                   <h2 className="text-2xl font-bold mb-4">{section.title}</h2>
-                  {section.content.split('\n\n').map((paragraph, pIndex) => <p key={pIndex} className="mb-4 leading-relaxed">
-                      {paragraph}
-                    </p>)}
+                  {section.content.split('\n\n').map((paragraph, pIndex) => {
+                    // Verifica se o parágrafo contém itens de lista com •
+                    if (paragraph.includes('•')) {
+                      return (
+                        <div key={pIndex} className="mb-4 leading-relaxed">
+                          {paragraph.split('\n').map((line, lIndex) => (
+                            <p key={lIndex} className={line.trim().startsWith('•') ? 'mb-2' : 'mb-4'}>
+                              {line}
+                            </p>
+                          ))}
+                        </div>
+                      );
+                    }
+                    return (
+                      <p key={pIndex} className="mb-4 leading-relaxed">
+                        {paragraph}
+                      </p>
+                    );
+                  })}
                   {section.image && <div className="relative w-full my-6 rounded-lg overflow-hidden bg-muted">
                       <img src={section.image} alt={section.title} className="w-full h-auto object-contain" />
                     </div>}
