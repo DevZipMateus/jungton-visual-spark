@@ -13,45 +13,6 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       
-      {/* Decorative line at header/hero division */}
-      <div className="fixed top-20 left-0 right-0 w-full z-40">
-        <svg 
-          width="100%" 
-          height="16" 
-          preserveAspectRatio="none"
-          viewBox="0 0 1000 16"
-          className="w-full"
-        >
-          {/* Left line */}
-          <line 
-            x1="0" 
-            y1="2" 
-            x2="490" 
-            y2="2" 
-            stroke="hsl(var(--foreground))" 
-            strokeWidth="2.5" 
-          />
-          {/* Downward V notch */}
-          <path 
-            d="M 490 2 L 500 12 L 510 2" 
-            stroke="hsl(var(--foreground))" 
-            strokeWidth="2.5" 
-            fill="transparent"
-            strokeLinecap="square"
-            strokeLinejoin="miter"
-          />
-          {/* Right line */}
-          <line 
-            x1="510" 
-            y1="2" 
-            x2="1000" 
-            y2="2" 
-            stroke="hsl(var(--foreground))" 
-            strokeWidth="2.5" 
-          />
-        </svg>
-      </div>
-      
       <main>
         <Hero />
         <About />
