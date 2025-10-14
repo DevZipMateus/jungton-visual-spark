@@ -118,9 +118,9 @@ All colors MUST be HSL.
     height: 100%;
     background-image: url('/src/assets/texture-grid.png');
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 400px 400px;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     opacity: 0.6;
     pointer-events: none;
     z-index: -1;
