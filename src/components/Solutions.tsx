@@ -72,7 +72,7 @@ const Solutions = () => {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 px-4 md:px-0">
-            {solutions.map((solution, index) => <Card key={index} className="overflow-hidden transition-smooth hover:shadow-elegant cursor-pointer animate-scale-in" style={{
+            {solutions.map((solution, index) => <Card key={index} className="overflow-hidden transition-smooth hover:shadow-elegant cursor-pointer animate-scale-in flex flex-col" style={{
             animationDelay: `${index * 0.1}s`
           }} onClick={() => setExpandedCard(expandedCard === index ? null : index)}>
                 <div className="relative h-48 overflow-hidden">
@@ -83,21 +83,23 @@ const Solutions = () => {
                   </h3>
                 </div>
                 
-                <CardContent className="p-6">
-                  <h3 className="mb-4">{solution.description}</h3>
+                <CardContent className="p-6 flex flex-col h-full">
+                  <div className="flex-grow">
+                    <h3 className="mb-4">{solution.description}</h3>
+                    
+                    {expandedCard === index && <div className="space-y-2 animate-fade-in">
+                        <p className="font-semibold text-primary mb-2">Serviços inclusos:</p>
+                        <ul className="space-y-1">
+                          {solution.services.map((service, idx) => <li key={idx} className="text-foreground/80 flex items-start">
+                              <span className="text-primary mr-2">•</span>
+                              {service}
+                            </li>)}
+                        </ul>
+                      </div>}
+                  </div>
                   
-                  {expandedCard === index && <div className="space-y-2 animate-fade-in">
-                      <p className="font-semibold text-primary mb-2">Serviços inclusos:</p>
-                      <ul className="space-y-1">
-                        {solution.services.map((service, idx) => <li key={idx} className="text-foreground/80 flex items-start">
-                            <span className="text-primary mr-2">•</span>
-                            {service}
-                          </li>)}
-                      </ul>
-                    </div>}
-                  
-                  <Link to={solution.link}>
-                    <Button variant="outline" size="sm" className="w-full mt-4">
+                  <Link to={solution.link} className="mt-4">
+                    <Button variant="outline" size="sm" className="w-full">
                       Ver mais
                     </Button>
                   </Link>
