@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, lazy, Suspense } from "react";
 import { Menu, X, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import logo from "@/assets/jungton-logo.png";
+import { searchBlogPost, type BlogPost } from "@/utils/searchBlogPosts";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -55,7 +56,7 @@ const Header = () => {
       setTimeout(() => scrollToSection(id), 100);
     }
   }, [location, isHomePage]);
-  const handleSearch = (e: React.FormEvent) => {
+  const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
     const query = searchQuery.trim().toLowerCase();
     
@@ -114,8 +115,28 @@ const Header = () => {
       } else {
         navigate(result.target);
       }
-    } else {
-      // Se não encontrar nada, buscar no blog
+      setIsSearchOpen(false);
+      setSearchQuery("");
+      return;
+    }
+
+    // Buscar nos posts do blog
+    try {
+      // Importa os posts dinamicamente
+      const BlogModule = await import('@/pages/Blog');
+      const blogPosts = BlogModule.getBlogPosts?.() || [];
+      
+      const matchedPost = searchBlogPost(query, blogPosts);
+      
+      if (matchedPost) {
+        // Redireciona direto para o post
+        navigate(`/blog/${matchedPost.slug}`);
+      } else {
+        // Se não encontrar, vai para a página do blog com busca
+        navigate(`/blog?search=${encodeURIComponent(query)}`);
+      }
+    } catch (error) {
+      // Fallback: vai para a página do blog
       navigate(`/blog?search=${encodeURIComponent(query)}`);
     }
 

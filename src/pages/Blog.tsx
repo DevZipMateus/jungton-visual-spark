@@ -9,10 +9,8 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Tag } from "lucide-react";
 import TitleWithCenteredDivider from "@/components/TitleWithCenteredDivider";
 
-const Blog = () => {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  
-  const posts = [
+// Array de posts extraído para poder ser exportado
+const blogPosts = [
     {
       slug: "memoria-documentacao-projetos-nuvem",
       title: "A MEMÓRIA QUE NÃO SE APAGA: Por que documentamos cada detalhe do seu projeto na nuvem",
@@ -811,8 +809,15 @@ const Blog = () => {
         ],
         images: []
       }
-    }
-  ];
+  }
+];
+
+// Export function to get blog posts for search functionality
+export const getBlogPosts = () => blogPosts;
+
+const Blog = () => {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const posts = blogPosts;
 
   // Function to parse Portuguese date format to Date object
   const parsePortugueseDate = (dateStr: string): Date => {
