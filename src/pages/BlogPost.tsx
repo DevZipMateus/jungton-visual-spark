@@ -730,7 +730,7 @@ const BlogPost = () => {
             </div>
 
             <div className="prose prose-lg max-w-none">
-              <p className="text-lg leading-relaxed mb-8">{post.content.introduction}</p>
+              <p className="leading-relaxed mb-8">{post.content.introduction}</p>
 
               {post.content.sections.map((section, index) => <div key={index} className="mb-10">
                   <h2 className="text-2xl font-bold mb-4">{section.title}</h2>
