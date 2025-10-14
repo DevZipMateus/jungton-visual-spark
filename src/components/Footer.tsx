@@ -1,7 +1,23 @@
 import logo from "@/assets/jungton-logo.png";
 import footerBg from "@/assets/footer-background.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollToSection = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        element?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      element?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return <>
       <div id="montesite-footer-badge"></div>
       <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
@@ -34,42 +50,22 @@ const Footer = () => {
             <h3 className="mb-3 md:mb-4">LINKS RÁPIDOS</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <button onClick={() => {
-                  const element = document.getElementById("about");
-                  element?.scrollIntoView({
-                    behavior: "smooth"
-                  });
-                }} className="text-foreground/70 hover:text-primary transition-smooth">
+                <button onClick={() => scrollToSection("about")} className="text-foreground/70 hover:text-primary transition-smooth">
                   A Jungton
                 </button>
               </li>
               <li>
-                <button onClick={() => {
-                  const element = document.getElementById("history");
-                  element?.scrollIntoView({
-                    behavior: "smooth"
-                  });
-                }} className="text-foreground/70 hover:text-primary transition-smooth">
+                <button onClick={() => scrollToSection("history")} className="text-foreground/70 hover:text-primary transition-smooth">
                   Nossa história
                 </button>
               </li>
               <li>
-                <button onClick={() => {
-                  const element = document.getElementById("solutions");
-                  element?.scrollIntoView({
-                    behavior: "smooth"
-                  });
-                }} className="text-foreground/70 hover:text-primary transition-smooth">
+                <button onClick={() => scrollToSection("solutions")} className="text-foreground/70 hover:text-primary transition-smooth">
                   Soluções personalizadas
                 </button>
               </li>
               <li>
-                <button onClick={() => {
-                  const element = document.getElementById("contact");
-                  element?.scrollIntoView({
-                    behavior: "smooth"
-                  });
-                }} className="text-foreground/70 hover:text-primary transition-smooth">
+                <button onClick={() => scrollToSection("contact")} className="text-foreground/70 hover:text-primary transition-smooth">
                   Contato
                 </button>
               </li>
