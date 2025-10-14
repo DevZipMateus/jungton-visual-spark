@@ -29,9 +29,12 @@ const Hero = () => {
       <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Images Carousel */}
       {backgroundImages.map((image, index) => <div key={index} className="absolute inset-0 transition-opacity duration-1000 ease-in-out" style={{
-        opacity: currentImageIndex === index ? 1 : 0
+        opacity: currentImageIndex === index ? 1 : 0,
+        backgroundImage: `url(${image})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
       }}>
-          <img src={image} alt={`Hero background ${index + 1}`} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/60" />
         </div>)}
       
