@@ -734,9 +734,13 @@ const BlogPost = () => {
 
               {post.content.sections.map((section, index) => <div key={index} className="mb-10">
                   <h2 className="text-2xl font-bold mb-4">{section.title}</h2>
-                  {section.content.split('\n\n').map((paragraph, pIndex) => <p key={pIndex} className="mb-4 leading-relaxed">
-                      {paragraph}
-                    </p>)}
+                  {section.content.split('\n\n').map((paragraph, pIndex) => <div key={pIndex} className="mb-4">
+                      {paragraph.split('. ').map((sentence, sIndex, arr) => (
+                        <p key={sIndex} className="leading-relaxed mb-2">
+                          {sentence}{sIndex < arr.length - 1 && !sentence.endsWith('.') ? '.' : ''}
+                        </p>
+                      ))}
+                    </div>)}
                   {section.image && <div className="relative w-full my-6 rounded-lg overflow-hidden bg-muted">
                       <img src={section.image} alt={section.title} className="w-full h-auto object-contain" />
                     </div>}
