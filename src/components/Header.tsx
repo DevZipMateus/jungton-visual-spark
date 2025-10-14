@@ -169,7 +169,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20 w-full">
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-6 ml-auto mr-8">
             {navItems.map(item => item.type === "link" ? <Link key={item.id} to={`/${item.id}`} className={`font-medium hover:text-primary transition-smooth uppercase text-sm ${isScrolled ? 'text-foreground/80' : 'text-white'}`}>
                   {item.label}
                 </Link> : <button key={item.id} onClick={() => handleNavigation(item.id)} className={`font-medium hover:text-primary transition-smooth uppercase text-sm ${isScrolled ? 'text-foreground/80' : 'text-white'}`}>
