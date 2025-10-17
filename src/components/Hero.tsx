@@ -1,17 +1,12 @@
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/jungton-logo.png";
-import heroNew1 from "@/assets/hero-new-1.jpg";
-import heroNew2 from "@/assets/hero-new-2.jpg";
-import heroNew3 from "@/assets/hero-new-3.jpg";
-import heroNew4 from "@/assets/hero-new-4.jpg";
-import heroNew5 from "@/assets/hero-new-5.jpg";
-import heroNew6 from "@/assets/hero-new-6.jpg";
-import heroNew7 from "@/assets/hero-new-7.jpg";
-import heroNew8 from "@/assets/hero-new-8.jpg";
+import heroBanner1 from "@/assets/hero-banner-1.jpg";
+import heroBanner2 from "@/assets/hero-banner-2.jpg";
+import heroCarousel8 from "@/assets/hero-carousel-8.jpg";
 import { useState, useEffect } from "react";
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const backgroundImages = [heroNew1, heroNew2, heroNew3, heroNew4, heroNew5, heroNew6, heroNew7, heroNew8];
+  const backgroundImages = [heroBanner1, heroBanner2, heroCarousel8];
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex(prevIndex => (prevIndex + 1) % backgroundImages.length);
