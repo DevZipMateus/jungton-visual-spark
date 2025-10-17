@@ -9,6 +9,7 @@ export interface BlogPost {
   excerpt: string;
   image: string;
   category: string;
+  tags?: string[];
   content: {
     introduction: string;
     sections: Array<{
@@ -56,6 +57,30 @@ export const searchBlogPost = (query: string, posts: BlogPost[]): BlogPost | nul
     // Busca exata no título tem maior peso
     if (normalizedTitle.includes(normalizedQuery)) {
       score += 100;
+    }
+
+    // Busca nas tags (alta prioridade)
+    if (post.tags) {
+      const normalizedTags = post.tags.map(tag => removeAccents(tag.toLowerCase()));
+      
+      // Tag exata
+      if (normalizedTags.some(tag => tag === normalizedQuery)) {
+        score += 90;
+      }
+      
+      // Tag contém a query
+      if (normalizedTags.some(tag => tag.includes(normalizedQuery))) {
+        score += 70;
+      }
+
+      // Query contém a tag (busca parcial)
+      queryWords.forEach((word) => {
+        if (word.length >= 3) {
+          if (normalizedTags.some(tag => tag.includes(word) || word.includes(tag))) {
+            score += 12;
+          }
+        }
+      });
     }
 
     // Busca exata na categoria

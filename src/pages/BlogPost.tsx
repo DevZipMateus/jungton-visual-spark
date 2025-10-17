@@ -16,6 +16,7 @@ const BlogPost = () => {
     excerpt: "Você já precisou refazer um material de comunicação visual depois de algum tempo e percebeu que a cor não era exatamente a mesma? A memória humana falha, anotações se perdem e computadores podem quebrar.",
     image: "/imagens/blog/memoria-documentacao-nuvem.jpg",
     category: "Gestão de Projetos",
+    tags: ["gestão", "documentação", "nuvem", "cloud", "processos", "qualidade", "registro", "histórico", "padronização", "tintas", "cores", "materiais", "equipamentos", "impressão", "perfil de cor", "LED", "iluminação", "estrutura metálica", "madeira", "fita dupla face", "manutenção", "segurança", "dados", "arquivo", "organização", "projeto", "orçamento", "fachadas", "luminosos", "adesivos", "lonas", "ACM", "acrílico", "frota", "veículos", "identidade visual", "marca"],
     content: {
       introduction: "Você já precisou refazer um material de comunicação visual depois de algum tempo e percebeu que a cor não era exatamente a mesma? Ou talvez quisesse replicar um projeto em uma nova filial, mas as medidas e os detalhes de instalação originais haviam se perdido? A memória humana falha, anotações se perdem e computadores podem quebrar. É por isso que, na Jungton Comunicação Visual, tratamos cada projeto como um ativo valioso da sua marca, com um registro que não se perde: uma memória digital completa e segura na nuvem.",
       sections: [{
@@ -53,6 +54,7 @@ const BlogPost = () => {
     excerpt: "Quando a arquitetura comercial trabalha junto com a comunicação visual a chance é que essa estratégia impulsione resultados, fidelize clientes, crie valor para uma marca, eleve números de venda ou de alcance, entre outras coisas.",
     image: "/imagens/blog/comunicacao-visual-loja-praxis.jpg",
     category: "Arquitetura Comercial",
+    tags: ["arquitetura", "arquitetura comercial", "praxis", "loja", "fachada", "ACM", "letras caixa", "iluminação", "pórtico", "vitrine", "Santa Maria", "identidade", "marca", "valor de marca", "sinalização interna", "reforma", "projeto", "revestimento", "alumínio", "azul", "branco", "LED", "experiência", "cliente", "shopping", "centro", "pintura", "cores", "texturas", "decoração", "móveis", "visual", "design"],
     content: {
       introduction: "Quando a arquitetura comercial trabalha junto com a comunicação visual a chance é que essa estratégia impulsione resultados, fidelize clientes, crie valor para uma marca, eleve números de venda ou de alcance, entre outras coisas. O resultado alcançado na nova loja Praxis em Santa Maria explica na prática como essa união pode funcionar.",
       sections: [{
@@ -82,6 +84,7 @@ const BlogPost = () => {
     excerpt: "Há casos em que as imagens impactam muito mais do que o texto puro. A comunicação visual tem o objetivo de comunicar para o público tudo o que ele precisa associar a sua marca.",
     image: "/imagens/blog/comunicacao-visual-eventos-900x500px.jpg",
     category: "Eventos",
+    tags: ["eventos", "sinalização", "stands", "estande", "feiras", "inauguração", "corporativo", "palestras", "RD Summit", "marketing digital", "leads", "banner", "lona", "tecido", "cubos", "totens", "displays", "acessibilidade", "braile", "piso tátil", "flyers", "folders", "backdrop", "fotos", "adesivação", "testeiras", "painéis", "roleta", "sorteios", "branding", "networking", "imóveis", "empresas", "patrocinadoras", "redes sociais", "impressos", "identidade"],
     content: {
       introduction: "Há casos em que as imagens impactam muito mais do que o texto puro, que precisa ser lido e interpretado antes de entregar a sua mensagem. As imagens também são lidas, contudo são capazes de entregar uma mensagem que pode ser assimilada mais rapidamente. A comunicação visual tem o objetivo de comunicar para o público tudo o que ele precisa associar a sua marca.\n\nEm eventos, transmitir a essência da marca é ainda mais importante, e é por isso que a comunicação visual e a sinalização do evento precisa ser uma etapa mapeada na hora de planejar o evento.",
       sections: [{
@@ -107,6 +110,7 @@ const BlogPost = () => {
     excerpt: "O retrofit é uma técnica que busca revitalizar fachadas comerciais e residenciais. Entenda como o retrofit faz parte da comunicação visual do seu negócio.",
     image: "/imagens/blog/retrofit-fachadas-comerciais.jpg",
     category: "Fachadas",
+    tags: ["retrofit", "fachadas", "fachadas comerciais", "artestilo", "molduras", "revitalização", "modernização", "ACM", "letreiro vazado", "iluminação", "reforma", "Santa Maria", "showroom", "quadros", "espelhos", "decoração", "Europa", "prédio histórico", "eficiência energética", "ventilação", "revestimento", "estrutura", "identidade visual", "20 anos", "arquitetos", "variedade", "instalação"],
     content: {
       introduction: "O retrofit é uma técnica que busca revitalizar fachadas comerciais e residenciais, além de também ser um conceito aplicado à renovação de um espaço físico, como a renovação de um bairro ou de uma parte dele. Entenda como o retrofit faz parte da comunicação visual do seu negócio, e de que maneira ele pode valorizar a fachada da sua loja, escritório, restaurante ou outro estabelecimento.",
       sections: [{
@@ -136,6 +140,7 @@ const BlogPost = () => {
     excerpt: "Quem é que consegue recusar um brigadeiro? A gourmetização na gastronomia abre portas para a criatividade, e está muito ligada ao empreendedorismo, aos produtos artesanais e ao valor agregado.",
     image: "/imagens/blog/gourmetizacao-granulare.jpg",
     category: "Ramo alimentício",
+    tags: ["gourmetização", "gourmet", "gastronomia", "brigadeiros", "granulare", "doces", "brigadeiro", "bolo", "alimentício", "culinária", "empreendedorismo", "artesanal", "valor agregado", "MasterChef", "sabores", "leite ninho", "churros", "morango", "coxinha de brigadeiro", "bolo de cenoura", "embalagem", "adesivos", "Floriano Peixoto", "Santa Maria", "letras caixa", "painéis fotográficos", "identidade artesanal", "experiência", "diferencial", "qualidade"],
     content: {
       introduction: "Quem é que consegue recusar um brigadeiro? E ainda mais quando além do sabor tradicional tem também o de leite ninho, brigadeiro de churros, de morango… A gourmetização na gastronomia abre portas para a criatividade, e está muito ligada ao empreendedorismo, aos produtos artesanais e ao valor agregado. O conceito da gourmetização está diretamente relacionado ao oferecimento de um diferencial, de uma experiência que conquista além do paladar.",
       sections: [{
@@ -161,6 +166,7 @@ const BlogPost = () => {
     excerpt: "As letras caixa são um tipo de sinalização visual muito utilizada em fachadas. Uma tendência que nunca sai de moda, a letra caixa conta com diversas qualidades que fazem dela uma opção que se encaixa com praticamente todo projeto.",
     image: "/imagens/blog/letras-caixa-jungton.jpg",
     category: "Fachadas",
+    tags: ["letras caixa", "letra caixa", "letra bloco", "fachadas", "sinalização", "aço galvanizado", "alumínio", "inox", "inox escovado", "PVC expandido", "acrílico", "corte a laser", "iluminação", "LED", "face iluminada", "retroiluminação", "iluminação traseira", "durabilidade", "50 anos", "custo-benefício", "restaurante", "consultório", "escritório", "condomínio", "numeração", "afastadores", "tendência", "design", "fachadas comerciais"],
     content: {
       introduction: "As letras caixa são um tipo de sinalização visual muito utilizada em fachadas, tanto nas comerciais quanto nas de prédios e condomínios. Além disso, também aparecem em ambientes internos, como na sinalização de consultórios, escritórios e lojas.\n\nUma tendência que nunca sai de moda, a letra caixa conta com diversas qualidades que fazem dela uma opção que se encaixa com praticamente todo projeto.",
       sections: [{
@@ -194,6 +200,7 @@ const BlogPost = () => {
     excerpt: "Na era da sobrecarga de informações, é necessário ter cada vez mais criatividade para atingir potenciais clientes. Uma ótima estratégia é o envelopamento de frota.",
     image: "/imagens/blog/envelopamento-de-frota-delivery.jpg",
     category: "Marketing",
+    tags: ["envelopamento", "frota", "adesivagem", "plotagem", "veículos", "outdoor móvel", "marketing", "motocicleta", "automóvel", "carro", "van", "kombi", "trailer", "food truck", "caminhão", "ônibus", "PVC vinil", "proteção", "pintura", "Detran", "delivery", "Ipiranga", "Domus", "combustível", "lavagem", "manutenção", "profissionalismo", "visibilidade", "confiabilidade", "valor de mercado"],
     content: {
       introduction: "Na era da sobrecarga de informações, é necessário ter cada vez mais criatividade para atingir potenciais clientes da sua marca. Uma ótima estratégia de comunicação visual é o envelopamento de frota, que pode ser feito em motocicletas, automóveis, vans, kombis, trailers de food truck, caminhões e ônibus.\n\nAlém de fazer sua marca circular, o envelopamento também protege a pintura contra danos do sol e pequenos riscos. Confira todos os benefícios de aderir ao envelopamento de frota.",
       sections: [{
@@ -227,6 +234,7 @@ const BlogPost = () => {
     excerpt: "Uma fachada comercial que transmite a essência do seu empreendimento é uma poderosa ferramenta de comunicação visual. As fachadas em ACM aliam modernidade com durabilidade.",
     image: "/imagens/blog/fachadas-em-acm-escutebem.jpg",
     category: "Fachadas",
+    tags: ["ACM", "aluminum composite", "painel composto", "alumínio", "polietileno", "fachadas", "fachadas comerciais", "moderno", "arrojado", "revestimento", "durabilidade", "10 anos", "isolamento térmico", "isolamento acústico", "ar condicionado", "flexibilidade", "leveza", "resistência", "fosco", "brilho", "cores", "texturas", "letras caixas", "letreiros luminosos", "Escute Bem", "Cauzzo", "Nilo", "limpeza", "manutenção", "liner", "instalação"],
     content: {
       introduction: "Uma fachada comercial que transmite a essência do seu empreendimento é uma poderosa ferramenta de comunicação visual, capaz de influenciar na construção de valor da marca, estimular vendas e garantir o destaque do seu empreendimento.\n\nAs fachadas em ACM aliam modernidade com durabilidade. Saiba se esse é o material perfeito para a fachada do seu negócio.",
       sections: [{
@@ -252,6 +260,7 @@ const BlogPost = () => {
     excerpt: "O Visual Merchandising engloba técnicas de varejo que podem melhorar vendas, estimular o movimento na sua loja, contribuir para a fidelização de clientes e estimular o aumento do valor de marca.",
     image: "/imagens/blog/visual-merchandising-jungton.jpg",
     category: "Merchandising",
+    tags: ["visual merchandising", "merchandising", "PDV", "ponto de venda", "vitrine", "vitrinismo", "varejo", "vendas", "cliente", "produto", "layout", "exposição", "iluminação", "cores", "manequins", "display", "prateleira", "gôndola", "organização", "experiência", "conversão", "fidelização", "estoque", "sazonalidade", "tendências", "moda", "retail design", "storytelling", "loja", "uniformes"],
     content: {
       introduction: "O Visual Merchandising engloba técnicas de varejo que já abordamos aqui, como Retail Design e Vitrinismo. Ampliar o conhecimento de técnicas pode melhorar vendas, estimular o movimento na sua loja, contribuir para a fidelização de clientes e estimular o aumento do valor de marca.",
       sections: [{
@@ -306,6 +315,7 @@ const BlogPost = () => {
     excerpt: "Todo dono de loja física sabe que a vitrine é o seu principal expositor para conquistar o público. Com boas técnicas de vitrinismo, é possível incentivar potenciais clientes a entrarem.",
     image: "/imagens/blog/vitrine_900_600px.jpg",
     category: "Vitrinismo",
+    tags: ["vitrinismo", "vitrine", "loja física", "comunicação visual", "técnicas de venda", "público", "clientes", "tendências", "mercado", "psicologia do consumo", "geração Y", "geração Z", "experiência", "tecnologia", "realidade aumentada", "interatividade", "redes sociais", "calendário", "promoções", "natal", "queima de estoque", "datas comemorativas", "cores", "identidade", "marca", "varejo", "design de serviço"],
     content: {
       introduction: "Todo dono de loja física sabe que a vitrine é o seu principal expositor para conquistar o público com comunicação visual. Com boas técnicas de venda, o vitrinismo é responsável por incentivar potenciais clientes a entrarem para conhecer mais os produtos.\n\nCriar o hábito de acompanhar as tendências de mercado e principalmente o desejo do público faz com que ela precise mudar constantemente. Entender um pouco mais sobre vitrinismo e saber como usá-lo com base na psicologia do consumo é o que pode transformar a sua vitrine em um convite irresistível para quem estava 'só olhando'.",
       sections: [{
@@ -335,6 +345,7 @@ const BlogPost = () => {
     excerpt: "O Retail Design é um conjunto de técnicas que ajudam alcançar uma quantidade de lucro onde se torna possível realizar saldões sem ter prejuízos. Descubra como usá-lo.",
     image: "/imagens/blog/IMG_8717_1200_800px.jpg",
     category: "Retail Design",
+    tags: ["retail design", "varejo", "vendas", "produtos", "lucro", "Black Friday", "saldão", "promoções", "organização espacial", "layout", "loja", "corredores", "psicologia do consumo", "comunicação visual", "ambiente", "displays", "ofertas", "Renner", "Clip", "Santa Maria", "multilojas", "fachada", "interior", "Jonathan Levav", "Stanford", "escolha", "decisão", "gas tank"],
     content: {
       introduction: "Os Estados Unidos é um exemplo a ser seguido por ser uma potência mundial, inclusive quando falamos em venda e consumo. Seus modelos de promoção são replicados em vários países com a expectativa de aumentar o lucro das empresas, como a famosa Black Friday. O que pouca gente entende é que para realizar esse tipo de oferta os outros dias do ano são movidos por vendas intensas, e isso só é possível com um bom Retail Design.\n\nE ele nada mais é do que um conjunto de técnicas que ajudam alcançar uma quantidade de lucro, onde se torna possível realizar até um saldão, como o Black Friday sem ter prejuízos. Então separamos 4 dicas para você entender o que é Retail Design, como usá-lo em seu empreendimento e ainda um exemplo que faz sucesso na região Sul do país.\n\nTodas as dicas são com base nos fundamentos de Jonathan Levav, professor da Escola de Negócios na Universidade de Stanford, especialista em psicologia do consumo, e responsável por pesquisas que explicam o peso do poder de escolha na mente humana.",
       sections: [{
@@ -368,6 +379,7 @@ const BlogPost = () => {
     excerpt: "A imagem de uma empresa deve conduzi-la ao sucesso. Ela pode ser comunicada de diversas formas, mas é necessário ter cautela para não afetar a confiabilidade do serviço.",
     image: "/imagens/blog/DSC_0008_1200_800px-1.jpg",
     category: "Prestação de Serviço",
+    tags: ["confiabilidade", "empresa", "fidelização", "clientes", "imagem", "comunicação", "ruídos", "postura", "redes sociais", "promoções", "qualidade", "compromisso", "erros", "delivery", "profissionais liberais", "advogados", "dentistas", "médicos", "arquitetos", "consultório", "Larissa Giacomelli", "odontologia", "ortodontia", "Alexandra Scotta", "adesivo", "acrílico", "recepção", "placas", "identificação", "Santa Maria"],
     content: {
       introduction: "A imagem de uma empresa deve conduzi-la ao sucesso. Ela pode ser comunicada de diversas formas, mas é necessário ter cautela para não afetar a confiabilidade do serviço. Qualquer ruído vira prejuízo e pode baixar os números de lucro e público. Se uma multinacional passa por um escândalo e suas ações desvalorizam de forma responsiva, a sua equipe de comunicação entra em ação para gerir a crise e evitar danos maiores. Mas e quando é uma empresa menor ou um profissional liberal?",
       sections: [{
@@ -409,6 +421,7 @@ const BlogPost = () => {
     excerpt: "A personalidade de como uma empresa oferece seu serviço é o que está por trás do sucesso que ela tem, e várias etapas são necessárias para construí-lo.",
     image: "/imagens/blog/img_post_1200_800px.jpg",
     category: "Design de Serviço",
+    tags: ["design de serviço", "serviço", "experiência", "cliente", "atendimento", "personalização", "Uber", "diferencial", "identidade", "valor agregado", "fidelização", "PDV", "vitrine", "móveis", "conforto", "sugestões", "reclamações", "operadora", "telefonia", "qualidade", "marca", "40 anos", "jungton", "balas", "água", "comodidade", "sinalização", "comunicação visual"],
     content: {
       introduction: "A personalidade de como uma empresa oferece seu serviço é o que está por trás do sucesso que ela tem, e várias etapas são necessárias para construí-lo. Conseguir entender o que cliente deseja para surpreendê-lo, especialmente oferecendo o seu produto da forma como ele merece, faz com que ele sinta que a sua empresa é algo que facilita a rotina da vida dele.",
       sections: [{
@@ -438,6 +451,7 @@ const BlogPost = () => {
     excerpt: "A internet trouxe consigo mais alternativas para as empresas alcançarem suas metas, principalmente para quem pretende solidificar o seu negócio. No setor alimentício não foi diferente.",
     image: "/imagens/blog/MG_9038_1200_800px.jpg",
     category: "Restaurantes",
+    tags: ["restaurante", "Santo Garden", "gastronomia", "food", "alimentação", "redes sociais", "Instagram", "fotografia", "culinária", "fome social", "fome fisiológica", "pratos", "cardápio", "jantar", "identidade", "arquitetura", "adesivos", "vinil transparente", "recorte", "banheiros", "sinalização", "totem", "ACM", "inox polido", "entrada", "críticos gastronômicos", "feed", "timeline", "Santa Maria", "Fabiano Rosa", "placas direcionais"],
     content: {
       introduction: "A internet trouxe consigo mais alternativas para as empresas alcançarem suas metas, principalmente para quem pretende solidificar o seu negócio. No setor alimentício não foi diferente, as novas possibilidades abriram as portas para mais restaurantes como o Santo Garden. As redes sociais têm sido uma grande amiga na hora de estampar a personalidade, conquistar mais clientes e divulgar a qualidade por trás do serviço.",
       sections: [{
@@ -467,6 +481,7 @@ const BlogPost = () => {
     excerpt: "Numa sociedade cada vez mais consciente, não basta respeitar apenas os seus clientes, é necessário tratar com igualdade a sociedade e o meio ambiente onde estamos inseridos.",
     image: "/imagens/blog/relona-4_800_600px.jpg",
     category: "Sustentabilidade",
+    tags: ["RElona", "projeto", "reciclagem", "lonas", "ecológico", "sustentabilidade", "UFSM", "universidade", "Marta Tocchetto", "Grupo Incorpore", "bolsas", "sacolas", "estojos", "reutilização", "AAPECAN", "câncer", "voluntários", "social", "doação", "coleta gratuita", "etiquetas", "ferramentas", "réguas", "estiletes", "conscientização", "meio ambiente", "responsabilidade", "preservação", "impacto ambiental"],
     content: {
       introduction: "Numa sociedade cada vez mais consciente, não basta respeitar apenas os seus clientes, é necessário tratar com igualdade a sociedade e o meio ambiente onde estamos inseridos. Com foco nisso, estabelecer uma meta de redução de resíduos para favorecer a preservação ecológica foi um compromisso da Jungton em todas as suas produções.",
       sections: [{
@@ -496,6 +511,7 @@ const BlogPost = () => {
     excerpt: "Se a primeira impressão é a que fica, a comunicação visual cria a experiência no PDV e vira a fotografia que seu cliente armazena como uma memória afetiva.",
     image: "/imagens/blog/MG_9372_1200_800px.jpg",
     category: "Técnicas de Venda",
+    tags: ["multissensorial", "sensorial", "vendas", "técnicas de venda", "psicologia", "consumo", "experiência", "PDV", "memória afetiva", "música", "trilha sonora", "tato", "toque", "qualidade", "cheiro", "olfativo", "fragrância", "dopamina", "prazer", "visão", "iluminação", "mobiliário", "acessibilidade", "conforto", "Zana", "loja feminina", "roupa", "vitrinismo", "MDF", "luminosas", "displays", "fachada", "ACM"],
     content: {
       introduction: "Se a primeira impressão é a que fica, a comunicação visual cria a experiência no PDV e vira a fotografia que seu cliente armazena como uma memória afetiva. Tudo faz parte das técnicas de venda baseadas em psicologia do consumo para criar um ambiente multissensorial que estimula o consumidor a comprar. Daí em diante, a imagem que ele tem do seu empreendimento é muito mais do que os olhos puderam ver, é um conjunto de técnicas que foram aplicadas para agregar valor a sua marca.",
       sections: [{
@@ -529,6 +545,7 @@ const BlogPost = () => {
     excerpt: "Apoiar causas filantrópicas promove a interação entre as empresas por intermédio das ações sociais, tornando-se uma relação de benefício mútuo quando o empreendedor participa de projetos de forma voluntária.",
     image: "/imagens/blog/DSC_7713_1200_800px.jpg",
     category: "Ação Social",
+    tags: ["ação social", "filantropia", "projeto social", "Orquestrando Arte", "música", "orquestra", "cultura", "arte", "inclusão social", "crianças", "adolescentes", "jovens", "voluntariado", "brechó", "doações", "ULBRA", "Boca do Monte", "colaboradores", "engajamento", "Santa Maria", "apresentação", "eventos", "parceria", "apoio", "valor de marca"],
     content: {
       introduction: "Apoiar causas filantrópicas promove a interação entre as empresas por intermédio das ações sociais, tornando-se uma relação de benefício mútuo quando o empreendedor participa de projetos de forma voluntária. Além do incentivo social, isso agrega valor à marca e melhora até as relações sociais de seus colaboradores.",
       sections: [{
@@ -554,6 +571,7 @@ const BlogPost = () => {
     excerpt: "Se \"uma imagem vale mais que mil palavras\", conseguir dizer mil coisas sobre si é o melhor caminho para a empresa que busca seu espaço no mercado.",
     image: "/imagens/blog/MG_9329_1200_800px.jpg",
     category: "Ponto de Venda",
+    tags: ["Totem Vestibulares", "cursinho", "educação", "vestibular", "ENEM", "ensino", "estudantes", "comunicação visual", "PDV", "identidade", "marca", "sinalização", "placas", "banners", "materiais", "recepção", "salas", "orientação", "informação", "imagem", "mil palavras", "mercado", "competitividade", "qualidade", "segurança", "conforto", "jovialidade", "valor agregado", "fidelização"],
     content: {
       introduction: "Se \"uma imagem vale mais que mil palavras\", conseguir dizer mil coisas sobre si é o melhor caminho para a empresa que busca seu espaço no mercado. Investir em comunicação visual é a porta de entrada para novos clientes, principalmente no ponto de venda. Isso garante até 40% de aumento em número de vendas e um bom retorno sob o valor investido em publicidade.",
       sections: [{
@@ -579,6 +597,7 @@ const BlogPost = () => {
     excerpt: "Prédios em construção fazem parte da rotina santa-mariense. Tão comuns, só não passam despercebidos pelo barulho que emitem, e ser imperceptível não seria o ideal para esse tipo de mercado.",
     image: "/imagens/blog/IMG_5968_1200_800px.jpg",
     category: "Construção Civil",
+    tags: ["construção civil", "construtora", "Jobim", "empreendimento", "imóvel", "planta", "comunicação visual", "presença de marca", "percepção", "lembrança de marca", "público-alvo", "Espírito Santo", "torres", "Santa Maria", "J. Adams", "placas", "veículos", "display", "MDF", "letras caixa", "numeração", "adesivação", "tapumes", "vidros", "PDV", "publicidade", "identidade visual", "sinalização", "referência", "vendas"],
     content: {
       introduction: "Prédios em construção fazem parte da rotina santa-mariense. Tão comuns, só não passam despercebidos pelo barulho que emitem, e ser imperceptível não seria o ideal para esse tipo de mercado. Como saída, o setor da construção civil tem investido em publicidade, focando na comunicação visual dos seus pontos de venda (PDV).",
       sections: [{
@@ -604,6 +623,7 @@ const BlogPost = () => {
     excerpt: "O RElona é um projeto do Programa Grupo Incorpore: Ações Coletivas para o Meio Ambiente da UFSM que faz o reaproveitamento de lonas publicitárias para produção de bolsas e sacolas.",
     image: "/imagens/blog/projeto-relona.jpg",
     category: "Responsabilidade Social",
+    tags: ["RElona", "apoio", "projeto", "UFSM", "Grupo Incorpore", "meio ambiente", "reciclagem", "lonas publicitárias", "bolsas", "sacolas", "AAPECAN", "câncer", "sustentabilidade", "coleta gratuita", "doação", "responsabilidade social", "ecologia", "reaproveitamento", "destino ecológico"],
     content: {
       introduction: "O RElona é um projeto do Programa Grupo Incorpore: Ações Coletivas para o Meio Ambiente da Universidade Federal de Santa Maria (UFSM) que faz o reaproveitamento de lonas publicitárias para produção de bolsas e sacolas. Além de dar o destino ecologicamente correto para estas lonas, traz uma nova fonte de renda para a Associação de Apoio a Pessoas com Câncer (AAPECAN).",
       sections: [{
@@ -621,6 +641,7 @@ const BlogPost = () => {
     excerpt: "O acrílico conquista cada vez mais o mercado de comunicação visual pela sua facilidade de adquirir formas, uniformidade e alta resistência.",
     image: "/imagens/blog/acrilico.jpg",
     category: "Matéria-prima",
+    tags: ["acrílico", "material", "matéria-prima", "resistência", "versatilidade", "uniformidade", "formas", "espessuras", "displays", "luminosos", "placas", "interno", "externo", "comunicação visual", "produção", "transparente", "durabilidade", "qualidade"],
     content: {
       introduction: "O acrílico conquista cada vez mais o mercado de comunicação visual pela sua facilidade de adquirir formas, uniformidade e alta resistência. Por ser versátil, pode ser usado tanto em ambientes internos quanto externos. Disponível em diversas espessuras, a Jungton utiliza o acrílico para produzir, displays, luminosos, placas, entre outros.",
       sections: [],
@@ -634,6 +655,7 @@ const BlogPost = () => {
     excerpt: "Desde o lançamento do Programa \"Todos Jungton pelo meio Ambiente\", temos adotado algumas práticas para reduzir os resíduos de produção.",
     image: "/imagens/blog/RECICLE.jpg",
     category: "Responsabilidade Ambiental",
+    tags: ["resíduos", "redução", "programa ambiental", "Todos Jungton", "meio ambiente", "reciclagem", "Cetric", "Resilog", "matéria-prima reciclável", "reutilização", "substratos", "destinação", "produção", "descarte", "responsabilidade ambiental", "sustentabilidade", "preservação", "práticas ambientais"],
     content: {
       introduction: "Desde o lançamento do Programa \"Todos Jungton pelo meio Ambiente\", temos adotado algumas práticas para reduzir os resíduos de produção. Dentre elas: a adoção de matérias-primas recicláveis e a reutilização de substratos que antes eram descartados. Mesmo com estas práticas, alguns resíduos tem que ser destinados e para tanto, contamos com dois parceiros: a Cetric e Resilog.",
       sections: [],
@@ -647,6 +669,7 @@ const BlogPost = () => {
     excerpt: "Os troféus de acrílico são uma escolha moderna e sofisticada para valorizar o desempenho dos corretores no mercado imobiliário.",
     image: "/imagens/blog/trofeu-imovest.png",
     category: "Premiação",
+    tags: ["troféus", "premiação", "acrílico", "imobiliária", "corretores", "vendas", "campanha", "reconhecimento", "personalização", "logotipo", "design", "transparente", "colorido", "cerimônia", "Estrelas da Venda", "marketing interno", "motivação", "ranking", "metas", "desempenho", "ouro", "prata", "bronze", "revelação", "evento", "certificado", "backdrop", "Instagram", "redes sociais", "branding", "identidade visual"],
     content: {
       introduction: "Os troféus de acrílico são uma escolha moderna e sofisticada para valorizar o desempenho dos corretores no mercado imobiliário. Versáteis e elegantes, eles podem ser produzidos em diferentes formas e tamanhos, refletindo a identidade visual da imobiliária e o tema da campanha de vendas.",
       sections: [{
